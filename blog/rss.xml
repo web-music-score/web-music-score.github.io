@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Web Music Score Blog</title>
+        <link>https://web-music-score.org/blog</link>
+        <description>Web Music Score Blog</description>
+        <lastBuildDate>Sun, 23 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Getting Started]]></title>
+            <link>https://web-music-score.org/blog/getting-started</link>
+            <guid>https://web-music-score.org/blog/getting-started</guid>
+            <pubDate>Sun, 23 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Started learning Docusaurus today and creating web site for web-music-score.org.]]></description>
+            <content:encoded><![CDATA[<p>Started learning <a href="https://web-music-score.org/blog/docusaurus.io" target="_blank" rel="noopener noreferrer" class="">Docusaurus</a> today and creating web site for <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a>.</p>
+<p>Hope I get everything up and running soon!</p>]]></content:encoded>
+            <category>web-music-score.org</category>
+        </item>
+    </channel>
+</rss>

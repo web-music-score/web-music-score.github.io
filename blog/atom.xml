@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://web-music-score.org/blog</id>
+    <title>Web Music Score Blog</title>
+    <updated>2025-11-23T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://web-music-score.org/blog"/>
+    <subtitle>Web Music Score Blog</subtitle>
+    <icon>https://web-music-score.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Getting Started]]></title>
+        <id>https://web-music-score.org/blog/getting-started</id>
+        <link href="https://web-music-score.org/blog/getting-started"/>
+        <updated>2025-11-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Started learning Docusaurus today and creating web site for web-music-score.org.]]></summary>
+        <content type="html"><![CDATA[<p>Started learning <a href="https://web-music-score.org/blog/docusaurus.io" target="_blank" rel="noopener noreferrer" class="">Docusaurus</a> today and creating web site for <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a>.</p>
+<p>Hope I get everything up and running soon!</p>]]></content>
+        <author>
+            <name>Stefan B.</name>
+        </author>
+        <category label="web-music-score.org" term="web-music-score.org"/>
+    </entry>
+</feed>
