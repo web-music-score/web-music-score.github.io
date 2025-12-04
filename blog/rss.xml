@@ -4,10 +4,19 @@
         <title>Web Music Score Blog</title>
         <link>https://web-music-score.org/blog</link>
         <description>Web Music Score Blog</description>
-        <lastBuildDate>Sun, 23 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 04 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Tutorial Pages Update]]></title>
+            <link>https://web-music-score.org/blog/tutorial-update</link>
+            <guid>https://web-music-score.org/blog/tutorial-update</guid>
+            <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Updated web-music-score.org with tutorial pages.]]></description>
+            <content:encoded><![CDATA[<p>Updated <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a> with tutorial pages.</p>]]></content:encoded>
+            <category>web-music-score.org</category>
+        </item>
         <item>
             <title><![CDATA[Getting Started]]></title>
             <link>https://web-music-score.org/blog/getting-started</link>

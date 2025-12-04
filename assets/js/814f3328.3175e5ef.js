@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkweb_music_score_org=globalThis.webpackChunkweb_music_score_org||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Getting Started","permalink":"/blog/getting-started","unlisted":false,"date":"2025-11-23T00:00:00.000Z"}]}')}}]);

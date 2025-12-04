@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://web-music-score.org/blog</id>
     <title>Web Music Score Blog</title>
-    <updated>2025-11-23T00:00:00.000Z</updated>
+    <updated>2025-12-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://web-music-score.org/blog"/>
     <subtitle>Web Music Score Blog</subtitle>
     <icon>https://web-music-score.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Tutorial Pages Update]]></title>
+        <id>https://web-music-score.org/blog/tutorial-update</id>
+        <link href="https://web-music-score.org/blog/tutorial-update"/>
+        <updated>2025-12-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Updated web-music-score.org with tutorial pages.]]></summary>
+        <content type="html"><![CDATA[<p>Updated <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a> with tutorial pages.</p>]]></content>
+        <author>
+            <name>Stefan B.</name>
+        </author>
+        <category label="web-music-score.org" term="web-music-score.org"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Getting Started]]></title>
         <id>https://web-music-score.org/blog/getting-started</id>
