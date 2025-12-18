@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkweb_music_score_org=globalThis.webpackChunkweb_music_score_org||[]).push([[8121],{8070(e){e.exports=JSON.parse('{"tags":[{"label":"web-music-score.org","permalink":"/blog/tags/web-music-score-org","description":"Web Music Score website","count":3},{"label":"v6.0.0","permalink":"/blog/tags/v-6-0-0","count":1}]}')}}]);
