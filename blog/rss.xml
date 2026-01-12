@@ -4,10 +4,29 @@
         <title>Web Music Score Blog</title>
         <link>https://web-music-score.org/blog</link>
         <description>Web Music Score Blog</description>
-        <lastBuildDate>Thu, 18 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Website and Lib Update]]></title>
+            <link>https://web-music-score.org/blog/update</link>
+            <guid>https://web-music-score.org/blog/update</guid>
+            <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[WebMusicScore Update]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="webmusicscore-update">WebMusicScore Update<a href="https://web-music-score.org/blog/update#webmusicscore-update" class="hash-link" aria-label="Direct link to WebMusicScore Update" title="Direct link to WebMusicScore Update" translate="no">​</a></h2>
+<p><code>v6.1.0</code> Introduced custom HTML elements:</p>
+<ul>
+<li class=""><code>&lt;wms-view&gt;</code></li>
+<li class=""><code>&lt;wms-controls&gt;</code>.</li>
+</ul>
+<p><code>v6.1.0</code> renamed and deprecated following classes:</p>
+<table><thead><tr><th>Deprecated Name</th><th>New Name</th></tr></thead><tbody><tr><td>Score.MRenderContext</td><td>Score.WmsView</td></tr><tr><td>Score.MPlaybackButtons</td><td>Score.WmsControls</td></tr><tr><td>Score.MPlayer</td><td>Score.PLayer</td></tr><tr><td>Score.MRenderContext</td><td>Score.WmsView</td></tr><tr><td>ReactUI.MusicScoreView</td><td>ReactUI.WmsView</td></tr><tr><td>ReactUI.PlaybackButtons</td><td>ReactUI.WmsControls</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="website-update">Website update<a href="https://web-music-score.org/blog/update#website-update" class="hash-link" aria-label="Direct link to Website update" title="Direct link to Website update" translate="no">​</a></h2>
+<p>Introduced changes to support multiple versions in the future.</p>]]></content:encoded>
+            <category>web-music-score.org</category>
+            <category>web-music-score</category>
+        </item>
         <item>
             <title><![CDATA[Website Ready]]></title>
             <link>https://web-music-score.org/blog/website-ready</link>
@@ -17,16 +36,7 @@
             <content:encoded><![CDATA[<p>This website <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a> is now ready to be
 published together with WebMusicScore stable version 6.0.0.</p>]]></content:encoded>
             <category>web-music-score.org</category>
-            <category>v6.0.0</category>
-        </item>
-        <item>
-            <title><![CDATA[Tutorial Pages Update]]></title>
-            <link>https://web-music-score.org/blog/tutorial-update</link>
-            <guid>https://web-music-score.org/blog/tutorial-update</guid>
-            <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Updated web-music-score.org with tutorial pages.]]></description>
-            <content:encoded><![CDATA[<p>Updated <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a> with tutorial pages.</p>]]></content:encoded>
-            <category>web-music-score.org</category>
+            <category>web-music-score</category>
         </item>
         <item>
             <title><![CDATA[Getting Started]]></title>
