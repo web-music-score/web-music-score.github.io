@@ -1,0 +1,15 @@
+.hint {
+    display: flex;
+    align-items: flex-start;
+    background: var(--ifm-color-emphasis-0);
+    border-radius: var(--ifm-pre-border-radius);
+    margin: 1em 0;
+}
+
+.icon {
+    margin-right: 0.75em;
+}
+
+.content {
+    flex: 1;
+}

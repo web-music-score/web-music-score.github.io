@@ -1,0 +1,9 @@
+website:
+  label: web-music-score.org
+  permalink: /web-music-score-org
+  description: WebMusicScore website
+
+lib:
+  label: web-music-score
+  permalink: /web-music-score
+  description: WebMusicScore library
