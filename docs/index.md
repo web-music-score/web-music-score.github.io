@@ -78,6 +78,6 @@ Instruments:
 - Synthesizer (default)
 - Classical Guitar (optional)
 
-### 🎨 Colors
+## 🎨 Colors
 
 Use `Score.Paint` for coloring.
