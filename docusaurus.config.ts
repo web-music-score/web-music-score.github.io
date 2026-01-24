@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Web Music Score',
-  tagline: 'Growing into a great music score component for the web.',
+  tagline: 'A music score component for the web.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,16 +15,18 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://web-music-score.org',
+  url: 'https://web-music-score.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'web-music-score', // Usually your GitHub org/user name.
+  organizationName: 'web-music-score',      // Usually your GitHub org/user name.
   projectName: 'web-music-score.github.io', // Usually your repo name.
-  deploymentBranch: 'main',
+  deploymentBranch: 'gh-pages',
+  
+  trailingSlash: false, // optional but recommended
 
   onBrokenLinks: 'throw',
 
