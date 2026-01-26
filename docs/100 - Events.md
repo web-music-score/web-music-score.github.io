@@ -11,7 +11,7 @@ import ExampleCodePlainJS from "@site/src/docs/examples/v6/events-plain-js";
 
 # Events
 
-<NewFeature since="6.4.0">Events got updated and documented.</NewFeature>
+<NewFeature since="6.4.0">Events: Upcoming v6.4.0 release will have updated and documented event handling.</NewFeature>
 
 ```ts
 function onScoreEvent(event: Score.ScoreEvent) {
