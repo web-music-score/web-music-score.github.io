@@ -6,7 +6,7 @@ import Hint from "@site/src/Components/Hint";
 
 # Use With HTML
 
-IIFE bundles are available via unpkg and jsDelivr CDN's to use directly in HTML documents.
+IIFE bundles are available via unpkg and jsDelivr CDNs to use directly in HTML documents.
 
 <Hint>Use correct versio number when loading scripts via CDN.</Hint>
 
