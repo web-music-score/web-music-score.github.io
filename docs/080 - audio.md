@@ -15,9 +15,9 @@ const { Synthesizer } = AudioSynth;  // Not required, is installed by default.
 const { ClassicalGuitar } = AudioCG;
 
 Audio.addInstrument(ClassicalGuitar);
-```
 
-<Hint>This will also set the instrument active for playback.</Hint>
+// Adding instrument also activates it for use.
+```
 
 ## Manage instruments
 

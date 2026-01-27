@@ -18,11 +18,9 @@ const paint = new Score.Paint();
 
 See [**Create View**](./category/create-view) category for ways to set paint to a view.
 
-## Set Colors
+## Color Keys
 
-The colorable elements are declared with `Score.ColorKey`.
-
-It contains following strings, each giving color to a certain element of the music score:
+The colorable elements are declared with `Score.ColorKey`. They are:
 
 ```ts
 "background"
@@ -64,36 +62,31 @@ It contains following strings, each giving color to a certain element of the mus
 "tab.element.label"
 ```
 
-For example, to set color of staff signature clef:
+## Examples
 
 ```ts
+// Set color of staff signature clef
 paint.setColor("staff.signature.clef", "red");
 ```
 
-You can also set color using key parts.
-
-For example set color of all elements that contain `"staff"` part:
-
 ```ts
+// Set color of all elements that contain "staff"
 paint.setColor("staff", "red");  // You can use color name
 paint.setColor("staff", "#F00"); // You can use color code
 ```
 
-Or set color of all elements that contain `"staff"` and `"signature"` parts:
-
 ```ts
+// Set color of all elements that contain both "staff" and "signature"
 paint.setColor(["staff", "signature"], "red");
 ```
 
-To set color of everything except background:
-
 ```ts
+// Set color of everything except background
 paint.setColor("all", "red");
 ```
 
-And to set background color:
-
 ```ts
+// Set background color
 paint.setColor("background", "#99D");
 ```
 
