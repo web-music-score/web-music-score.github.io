@@ -1,5 +1,7 @@
 const code = `
 function ExampleCode() {
+    // This example requires use of useEffect() because of React environment.
+    // In real world, the HTML elements need to be declared before using them in JavaScript.
     React.useEffect(() => {
         const doc = new Score.DocumentBuilder()
             .setScoreConfiguration("treble")
@@ -14,7 +16,12 @@ function ExampleCode() {
         player.bindElement("controlsId");
     }, []);
 
-    return <wms-controls id="controlsId"></wms-controls>;
+    return (
+        <div>
+            <p>Click below for playback.</p>
+            <wms-controls id="controlsId"></wms-controls>
+        </div>
+    );
 }`;
 
 export default code;

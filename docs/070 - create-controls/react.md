@@ -6,50 +6,43 @@ import { DeprecatedRename } from '@site/src/Components/ChangeNote' ;
 import { LiveExample } from "@site/src/Components/LiveExample";
 import ExampleCode from "@site/src/docs/examples/v6/create-controls-react";
 import Hint from "@site/src/Components/Hint";
+import NewFeature from "@site/src/Components/NewFeature";
 
 # JSX/TSX React
 
-## Use With Document
+## Use WmsControls
 
 <DeprecatedRename since="6.1.0" from="ReactUI.PlaybackButtons" to="ReactUI.WmsControls" simpleRename />
 
+<NewFeature since="6.3.0"><code>doc.getDefaultPlayer()</code> and <code>player</code> property of <code>WmsControls</code>.</NewFeature>
+
 ```ts
+// Create controls and set document
+const doc = new Score.DocumentBuilder().getDocument();
 <ReactUI.WmsControls doc={doc} />
-```
 
-## Use With Player (Since v6.3.0)
-
-```ts
+// Use with default player (since v6.3.0)
+const player = doc.getDefaultPlayer();
 <ReactUI.WmsControls player={player} />
-```
 
-## Possible Button Layouts
+// Use with new player (since v6.3.0)
+const player = new Score.Player(doc);
+<ReactUI.WmsControls player={player} />
 
-Single play button:
-
-```ts
+// Create single Play button
 <ReactUI.WmsControls doc={doc} singlePlay />
-```
 
-Single play/stop toggle button:
-
-```ts
+// Create single Play/Stop toggle button
 <ReactUI.WmsControls doc={doc} singlePlayStop playLabel="Play" stopLabel="Stop" />
-```
 
-Play and stop buttons:
-
-```ts
+// Create Play and Stop buttons
 <ReactUI.WmsControls doc={doc} playStop playLabel="▶" stopLabel="⏹" />
-```
 
-Play, pause and stop buttons:
-
-```ts
+// Create Play, Pause and Stop buttons
 <ReactUI.WmsControls doc={doc} playPauseStop />
 ```
 
-<Hint>Labels are optional, use default if omitted.</Hint>
+<Hint>Default labels if omitted are "Play", "Pause" and "Stop".</Hint>
 
 ## Live Example
 

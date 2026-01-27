@@ -27,11 +27,11 @@ export function ChangeNote({
             <code>{to}</code> replaces <code>{from}</code>.
             {type === 'deprecated' && (
                 <>
-                    <br />
+                    {' '}
                     <code>{from}</code> is deprecated and will be removed in a future major release.
                     {simpleRename && (
                         <>
-                            <br />
+                            {' '}
                             Existing code can be migrated by renaming <code>{from}</code> to <code>{to}</code>.
                         </>
                     )}

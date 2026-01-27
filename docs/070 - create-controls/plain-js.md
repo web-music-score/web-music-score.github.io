@@ -10,19 +10,10 @@ import Hint from "@site/src/Components/Hint";
 
 # Plain JavaScript
 
-## Create Controls
-
-```ts
-const controls = new Score.WmsControls();
-```
-
-<DeprecatedRename since="6.1.0" from="Score.MPlaybackButtons" to="Score.WmsControls" simpleRename />
-
-## Create buttons
-
-### In HTML
+## Create Buttons
 
 ```html
+<!-- Create button in HTML page -->
 <div class="wms-button-group">
     <button id="playButtonId" class="wms-button"></button>
     <button id="pauseButtonId" class="wms-button"></button>
@@ -30,130 +21,76 @@ const controls = new Score.WmsControls();
 </div>
 ```
 
-<Hint>This example uses included CSS styles `wms-button` and `wms-button-group`. You can use `bootstrap` or any other style system.</Hint>
-
-### Programmatically
+<Hint>This example uses built-in styles `wms-button` and `wms-button-group`.</Hint>
 
 ```ts
+// Create buttons in JavaScript
+// Do not forget to append buttons to HTML page!
 const playButtonEl = document.createElement("button");
 const pauseButtonEl = document.createElement("button");
 const stopButtonEl = document.createElement("button");
 ```
 
-<Hint>Do not forget to add buttons to the page!</Hint>
+## Use WmsControls
 
-## Set Buttons (Since v6.3.0)
+<DeprecatedRename since="6.1.0" from="Score.MPlaybackButtons" to="Score.WmsControls" simpleRename />
 
-Setup with single play button:
+<NewFeature since="6.3.0"><code>doc.getDefaultPlayer()</code> and <code>controls.setPlayer()</code>.</NewFeature>
 
 ```ts
-// With element id:
-controls.setSinglePlay("playButtonId", "Play");
+// Create controls
+const controls = new Score.WmsControls();
 
-// With element:
-controls.setSinglePlay(playButtonEl, "Play");
+// Set document for playback
+controls.setDocument(doc); 
+
+// Use default player and set to controls (since v6.3.0)
+const player = doc.getDefaultPlayer();
+controls.setPlayer(player);
+
+// Create new player and set to controls (since v6.3.0)
+const player = new Score.Player(doc);
+controls.setPlayer(player);
 ```
 
-Setup with single play/stop toggle button:
+### Set Buttons (Since v6.3.0)
 
 ```ts
-// With element id:
+// Setup single Play button
+controls.setSinglePlay("playButtonId", "Play"); // With element id,
+controls.setSinglePlay(playButtonEl, "Play");   // Or with element...
+
+// Setup single Play/Stop toggle button
 controls.setSinglePlayStop("playButtonId", "Play", "Stop");
 
-// With element:
-controls.setSinglePlayStop(playButtonEl, "Play", "Stop");
-```
+// Setup Play and Stop buttons, with custom labels
+controls.setPlayStop("playButtonId", "stopButtonId", "▶", "⏹");
 
-Setup with play and stop buttons:
-
-```ts
-// With element id:
-controls.setPlayStop("playButtonId", "stopButtonId", "Play", "Stop");
-
-// With element:
-controls.setPlayStop(playButtonEl, stopButtonEl, "Play", "Stop");
-```
-
-Setup with play, pause and stop buttons:
-
-```ts
-// With element id:
+// Setup Play, Pause and Stop buttons
 controls.setPlayPauseStop("playButtonId", "pauseButtonId", "stopButtonId");
-
-// With element:
-controls.setPlayPauseStop(playButtonEl, pauseButtonEl, stopButtonEl);
 ```
 
-<Hint>Labels are optional, use default if omitted.</Hint>
+<Hint>Default labels if omitted are "Play", "Pause" and "Stop".</Hint>
 
-## Set Buttons (Before v6.3.0)
-
-Setup with single play/stop toggle button:
+### Set Buttons (Before v6.3.0)
 
 ```ts
-// With element id:
-controls.setPlayStopButton("playButtonId", "Play", "Stop");
+// Setup single Play/Stop toggle button
+controls.setPlayStopButton("playButtonId", "Play", "Stop"); // With element id,
+controls.setPlayStopButton(playButtonEl, "Play", "Stop");   // Or with element...
 
-// With element:
-controls.setPlayStopButton(playButtonEl, "Play", "Stop");
-```
+// Setup Play and Stop buttons, with custom labels
+controls.setPlayButton("playButtonId", "▶");
+controls.setStopButton("stopButtonId", "⏹");
 
-Setup with play and stop buttons:
-
-```ts
-// With element id:
-controls.setPlayButton("playButtonId", "Play");
-controls.setStopButton("stopButtonId", "Stop");
-
-// With element:
-controls.setPlayButton(playButtonEl, "Play");
-controls.setStopButton(stopButtonEl, "Stop");
-```
-
-Setup with play, pause and stop buttons:
-
-```ts
-// With element id:
+// Setup Play, Pause and Stop buttons
 controls.setPlayButton("playButtonId");
 controls.setPauseButton("pauseButtonId");
 controls.setStopButton("stopButtonId");
-
-// With element:
-controls.setPlayButton(playButtonEl);
-controls.setPauseButton(pauseButtonEl);
-controls.setStopButton(stopButtonEl);
 ```
 
-<Hint>Labels are optional, use default if omitted.</Hint>
-
-## Set Document
-
-```
-controls.setDocument(doc); 
-```
-
-## Set Player (Since v6.3.0)
-
-Either get default player:
-
-```ts
-const player = doc.getDefaultPlayer();
-```
-
-Or create new player:
-
-```ts
-const player = new Score.Player(doc);
-```
-
-And bind player:
-
-```ts
-controls.setPlayer(player);
-```
+<Hint>Default labels if omitted are "Play", "Pause" and "Stop".</Hint>
 
 ## Live Example
 
 <LiveExample code={ExampleCode} />
-
-<Hint>Use HTML/JS version without <code>React.useEffect()</code>, just add HTML elements before JS code.</Hint>

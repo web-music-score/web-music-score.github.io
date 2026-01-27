@@ -10,7 +10,7 @@ function ExampleCode() {
 
     doc.play();
 
-    return <p>Should play on page load!</p>;
+    return <p>Should play now!</p>;
 }`;
 
 export default code;

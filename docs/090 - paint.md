@@ -8,19 +8,9 @@ import ExampleCode from "@site/src/docs/examples/v6/use-paint";
 
 # Paint
 
-## Create paint
-
-```ts
-const paint = new Score.Paint();
-```
-
-## Set Paint To View
-
-See [**Create View**](./category/create-view) category for ways to set paint to a view.
-
 ## Color Keys
 
-The colorable elements are declared with `Score.ColorKey`. They are:
+Here is a list of color keys, from type `Score.ColorKey`.
 
 ```ts
 "background"
@@ -62,30 +52,27 @@ The colorable elements are declared with `Score.ColorKey`. They are:
 "tab.element.label"
 ```
 
-## Examples
+## Use Paint
+
+See [**Create View**](./category/create-view) category for ways to set paint to a view.
 
 ```ts
+// Create paint
+const paint = new Score.Paint();
+
 // Set color of staff signature clef
 paint.setColor("staff.signature.clef", "red");
-```
 
-```ts
 // Set color of all elements that contain "staff"
 paint.setColor("staff", "red");  // You can use color name
 paint.setColor("staff", "#F00"); // You can use color code
-```
 
-```ts
 // Set color of all elements that contain both "staff" and "signature"
 paint.setColor(["staff", "signature"], "red");
-```
 
-```ts
 // Set color of everything except background
 paint.setColor("all", "red");
-```
 
-```ts
 // Set background color
 paint.setColor("background", "#99D");
 ```

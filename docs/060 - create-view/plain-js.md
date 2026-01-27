@@ -10,84 +10,43 @@ import Warn from "@site/src/Components/Warn";
 
 # Plain JavaScript
 
-## Create View
-
-```ts
-const view = new Score.WmsView();
-```
+## Use WmsView
 
 <DeprecatedRename since="6.1.0" from="Score.MRenderContext" to="Score.WmsView" simpleRename />
 
-## Set Canvas
-
-### Using HTML
-
-```html
-<canvas id="canvasId"></canvas>
-```
-
 ```ts
+// Create view.
+const view = new Score.WmsView();
+
+// Set canvas using canvas element id
+// Have <canvas id="canvasId"></canvas> in you HTML page
 view.setCanvas("canvasId");
-```
 
-<Hint>Do not forget to append canvas somewhere!</Hint>
-
-### Programmatically
-
-```ts
+// Or create canvas manually
+// Do not forget to append canvas to HTML page!
 const canvas = document.createElement("canvas");
-
 view.setCanvas(canvas);
-```
 
-## Set Document
-
-```ts
+// Set document
+const doc = new Score.DocumentBuilder().getdocument();
 view.setDocument(doc);
-```
 
-## Set Paint
-
-```ts
+// Set paint (optional)
+const paint = new Score.Paint();
 view.setPaint(paint);
-```
 
-<Hint>Paint is optional.</Hint>
-
-# Set View Size
-
-There are two ways to affect view size: zoom and staff size.
-
-### Set Zoom
-
-Set zoom:
-
-```ts
+// Set zoom (optional)
 view.setZoom(1.5);
-```
 
-<Hint>Default zoom if omitted is `1.0`.</Hint>
-
-### Set Staff Size
-
-Set view size with given distance between bottom and top staff lines:
-
-```ts
+// Set staff size, the distance between bottom and top staff lines (optional)
 view.setStaffSize("40px");
-```
 
-<Hint>Default staff size is connected to default font size.</Hint>
-
-<Warn>Using units "cm", "mm", "in", etc. can give unpredictable result depending on device.</Warn>
-
-## Render
-
-```ts
+// Render view
 view.draw();
 ```
+
+<Warn>Using staff size with units "cm", "mm", "in", etc. can give unpredictable result depending on device.</Warn>
 
 ## Live Example
 
 <LiveExample code={ExampleCode} />
-
-<Hint>Use HTML/JS version without <code>React.useEffect()</code>, just add HTML elements before JS code.</Hint>

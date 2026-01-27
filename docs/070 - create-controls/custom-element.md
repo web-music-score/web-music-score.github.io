@@ -9,47 +9,47 @@ import Hint from "@site/src/Components/Hint";
 
 # Custom HTML Element
 
-<NewFeature since="6.1.0">Custom HTML Elements.</NewFeature>
+<NewFeature since="6.1.0">Custom HTML element `wms-controls`.</NewFeature>
 
-## Add `<wms-controls>`
+## Create Controls In HTML
 
 ```html
-<wms-controls id="controlsId" single-play play-label="Play"></wms-controls>
+<!-- Create controls with single Play button -->
+<wms-controls id="controlsId" single-play></wms-controls>
+
+<!-- Create controls with single Play/Stop toggle button -->
 <wms-controls id="controlsId" single-play-stop play-label="Play" stopLabel="Stop"></wms-controls>
-<wms-controls id="controlsId" play-stop play-label="Play" stop-label="Stop"></wms-controls>
-<wms-controls id="controlsId" play-pause-stop play-label="Play" pause-label="Pause" stop-label="Stop"></wms-controls>
+
+<!-- Create controls with Play and Stop buttons, with custom labels -->
+<wms-controls id="controlsId" play-stop play-label="▶" stop-label="⏹"></wms-controls>
+
+<!-- Create controls with Play, Pause and Stop buttons -->
+<wms-controls id="controlsId" play-pause-stop></wms-controls>
 ```
 
-<Hint>Labels are optional, defaults are used if omitted.</Hint>
+<Hint>Default labels if omitted are "Play", "Pause" and "Stop".</Hint>
 
-<Hint>Library <code>v6.3.4</code> fixed attribute names to kebab-case,
-e.g. <code>singlePlay</code> => <code>single-play</code>.</Hint>
+<Hint>Library <code>v6.3.4</code> fixed attribute names to kebab-case (e.g. <code>singlePlay</code> =><code>single-play</code>).Old attribute names have no effect.</Hint>
 
-## Bind Document
+## Bind Controls In JavaScript
 
 ```html
 <script>
+    // Bind document to controls
     doc.bindElement("controlsId");
-</script>
-```
 
-## Bind Player (Since v6.3.0)
+    // Use default player and bind to controls (since v6.3.0)
+    const player = doc.getDefaultPlayer();
+    player.bindElement("controlsId");
 
-```html
-<script>
-    // Either get default player
-    const plyer = doc.getDefaultPlayer();
-
-    // Or create new player
+    // Create new player and bind to controls (since v6.3.0)
     const player = new Score.Player(doc);
-
-    // Bind player
     player.bindElement("controlsId");
 </script>
 ```
 
+<NewFeature since="6.3.0"><code>doc.getDefaultPlayer()</code> and <code>player.bindElement()</code>.</NewFeature>
+
 ## Live Example
 
 <LiveExample code={ExampleCode} />
-
-<Hint>Use HTML/JS version without <code>React.useEffect()</code>, just add HTML elements before JS code.</Hint>

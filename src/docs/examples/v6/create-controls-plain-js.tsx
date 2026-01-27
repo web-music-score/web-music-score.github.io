@@ -1,5 +1,7 @@
 const code = `
 function ExampleCode() {
+    // This example requires use of useEffect() because of React environment.
+    // In real world, the HTML elements need to be declared before using them in JavaScript.
     React.useEffect(() => {
         const doc = new Score.DocumentBuilder()
             .setScoreConfiguration("treble")
@@ -17,7 +19,8 @@ function ExampleCode() {
     }, []);
 
     return (
-        <div id="divId">
+        <div>
+            <p>Click below for playback.</p>
             <div className="wms-button-group">
                 <button id="playButtonId" className="wms-button"></button>
                 <button id="pauseButtonId" className="wms-button"></button>

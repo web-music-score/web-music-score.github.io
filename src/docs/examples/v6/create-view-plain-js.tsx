@@ -1,5 +1,7 @@
 const code = `
 function ExampleCode() {
+    // This example requires use of useEffect() because of React environment.
+    // In real world, the HTML elements need to be declared before using them in JavaScript.
     React.useEffect(() => {
         const doc = new Score.DocumentBuilder()
             .setScoreConfiguration("treble")
@@ -10,7 +12,7 @@ function ExampleCode() {
             .getDocument();
 
         const paint = new Score.Paint();
-        paint.setColor("background", "#eee")
+        paint.setColor("background", "#ffd")
 
         const view = new Score.WmsView();
         
@@ -19,6 +21,7 @@ function ExampleCode() {
         view.setCanvas(canvas);
         view.setDocument(doc);
         view.setPaint(paint);
+        view.setZoom(1.2);
 
         view.draw();
     }, []);

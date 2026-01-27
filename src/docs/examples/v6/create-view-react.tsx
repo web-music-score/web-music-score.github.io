@@ -9,7 +9,7 @@ function ExampleCode() {
         .getDocument();
 
     const paint = new Score.Paint();
-    paint.setColor("background", "#eee")
+    paint.setColor("background", "#ffd")
 
     return <ReactUI.WmsView doc={doc} paint={paint} zoom="1.2"/>;
 }`;

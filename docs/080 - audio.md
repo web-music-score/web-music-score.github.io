@@ -16,7 +16,7 @@ const { ClassicalGuitar } = AudioCG;
 
 Audio.addInstrument(ClassicalGuitar);
 
-// Adding instrument also activates it for use.
+// Adding instrument also sets it for playback.
 ```
 
 ## Manage instruments

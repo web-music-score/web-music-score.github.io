@@ -10,7 +10,9 @@ import ExampleCode from "@site/src/docs/examples/v6/event-handling";
 
 # Events
 
-<NewFeature since="6.4.0">Events: Upcoming v6.4.0 release will have updated and documented event handling.</NewFeature>
+<NewFeature since="6.4.0">Events: Upcoming release 6.4.0 will have updated event handling.</NewFeature>
+
+## Use Events
 
 ```ts
 function onScoreEvent(event: Score.ScoreEvent) {
