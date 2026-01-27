@@ -60,8 +60,6 @@ function onScoreEvent(event: Score.ScoreEvent) {
 }
 ```
 
-## Live Examples
-
-### React JSX/TSX
+## Live Example
 
 <LiveExample code={ExampleCode} />
