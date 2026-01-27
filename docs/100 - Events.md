@@ -6,8 +6,7 @@ import { DeprecatedRename } from '@site/src/Components/ChangeNote' ;
 import Hint from '@site/src/Components/Hint';
 import NewFeature from '@site/src/Components/NewFeature';
 import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCodeReact from "@site/src/docs/examples/v6/events-react";
-import ExampleCodePlainJS from "@site/src/docs/examples/v6/events-plain-js";
+import ExampleCode from "@site/src/docs/examples/v6/event-handling";
 
 # Events
 
@@ -65,10 +64,4 @@ function onScoreEvent(event: Score.ScoreEvent) {
 
 ### React JSX/TSX
 
-<LiveExample code={ExampleCodeReact} />
-
-### Plain JS
-
-<LiveExample code={ExampleCodePlainJS} />
-
-<Hint>Use HTML/JS version without <code>React.useEffect()</code>, just add HTML elements before JS code.</Hint>
+<LiveExample code={ExampleCode} />
