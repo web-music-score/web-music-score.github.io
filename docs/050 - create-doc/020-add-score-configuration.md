@@ -8,17 +8,18 @@ import Hint from "@site/src/Components/Hint";
 
 # Add Score Configuration
 
-For example add single treble staff line.
 
 ```ts
+// For example add staff line with G-clef.
 builder.setScoreConfiguration({ type: "staff", clef: "G" });
+
+// Add measure because score configuration takes place in next measure, which will also be on a new row.
 builder.addMeasure();
 ```
 
-The new score configuration will be used in the next measure. It will
-automatically begin a new row.
+## Configuration Objects
 
-## Staff Config
+### Staff Configuration Object
 
 ```ts
 builder.setScoreConfiguration({
@@ -33,7 +34,7 @@ builder.setScoreConfiguration({
 });
 ```
 
-## Tab Config
+### Tab Configuration Object
 
 ```ts
 builder.setScoreConfiguration({
@@ -45,63 +46,76 @@ builder.setScoreConfiguration({
 });
 ```
 
+### Multiple Configuration Objects
+
+```ts
+// You can set multiple staves or tabs per row using an array.
+builder.setScoreConfiguration([
+    { type: "staff", clef: "G", isOctaveDown: true },
+    { type: "tab" }
+]);
+```
+
 <Hint>
 `instrument` name tip:
  * `"!Piano"` hides instrument name.
- * `"!{Piano"` hides both instrument name and the left brace of instrument group.
+ * `"!{Piano"` hides both instrument name and the system left brace.
  </Hint>
 
 ## Preset Values
 
-These preset values are available: `"treble"`, `"bass"`, `"grand"`,
-`"guitarTreble"`, `"guitarTab"` and `"guitarCombined"`.
+Here are presets value with equal configuration objects:
 
-Here are presented each preset value with corresponding configuration setup.
-
-Staff with treble G-clef.
+- `"treble"` - staff with treble G-clef.
 ```ts
 builder.setScoreConfiguration("treble");
+// Equals
 builder.setScoreConfiguration({
     type: "staff", clef: "G"
 });
 ```
 
-Staff with bass F-clef.
+- `"bass"` - staff with bass F-clef.
 ```ts
 builder.setScoreConfiguration("bass");
+// Equals
 builder.setScoreConfiguration({
     type: "staff", clef: "F"
 });
 ```
 
-Grand staff (treble and bas staves).
+- `"grand"` - grand staff (treble and bas staves).
 ```ts
 builder.setScoreConfiguration("grand");
+// Equals
 builder.setScoreConfiguration([
     { type: "staff", clef: "G", grandId: "grand1" },
     { type: "staff", clef: "F", grandId: "grand1" }
 ]);
 ```
 
-Same as `treble` but one octave down.
+- `"guitarTreble"` - Same as `"treble"` but one octave down.
 ```ts
 builder.setScoreConfiguration("guitarTreble");
+// Equals
 builder.setScoreConfiguration({
     type: "staff", clef: "G", isOctaveDown: true
 });
 ```
 
-Guitar tab only.
+- `"guitarTab"` - guitar tab.
 ```ts
 builder.setScoreConfiguration("guitarTab");
+// Equals
 builder.setScoreConfiguration({
     type: "tab"
 });
 ```
 
-Treble and tab for guitar.
+- `"guitarCombined"` - treble and tab for guitar.
 ```ts
 builder.setScoreConfiguration("guitarCombined");
+// Equals
 builder.setScoreConfiguration([
     { type: "staff", clef: "G", isOctaveDown: true },
     { type: "tab" }

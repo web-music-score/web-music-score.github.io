@@ -32,7 +32,7 @@ builder.setTimeSignature("2/4");
 builder.setTimeSignature(2, 4);
 ```
 
-Beam grouping (`Theory.BeamGrouping`) can be set for 5/8 and 7/8 time signatures.
+Beam grouping can be set for `5/8` and `7/8` time signatures.
 
 ```ts
 builder.setTimeSignature("5/8", "2-3");

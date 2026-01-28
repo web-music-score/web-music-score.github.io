@@ -7,35 +7,32 @@ import ExampleCode from "@site/src/docs/examples/v6/add-measures-rows";
 
 # Add Measures And Rows
 
-## Add New Measure
+## Add A New Measure
 
 ```ts
+// Add new measure.
 builder.addMeasure();
 ```
 
-## Add New Row
-
-Initiate row change.
+## Add A New Row
 
 ```ts
+// Mark end of row.
 builder.endRow();
 ```
 
-This does not directly add new row but instead initiates a row change.
-The new row will be created when adding next measure.
+This does not add a new row but requests a row change.
+New row will be started by adding a measure.
 
-## Automatic Measures Per Row
+## Automatic Row Change
 
 You can set automatic row change by setting number of measures per row.
-In next example set 4 measures per row.
 
 ```ts
+// Set 4 measures per row.
 builder.setMesuresPerRow(4);
-```
 
-To turn of automatic row change set very big value.
-
-```ts
+// Turn of automatic row change with a big value.
 builder.setMesuresPerRow(Infinity);
 ```
 

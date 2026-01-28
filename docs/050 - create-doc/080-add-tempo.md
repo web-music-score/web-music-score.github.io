@@ -7,17 +7,21 @@ import ExampleCode from "@site/src/docs/examples/v6/add-tempo";
 
 # Add Tempo
 
-Set tempo from the start of current measure. Tempo uunit is beats per minute.
+Set tempo from the start of current measure.
 
 ```ts
+// Set tempo 100 bpm (betas per minute).
 builder.setTempo(100);
 ```
 
-You can also set tempo with custom beat length.
+You can also set tempo together with custom beat length.
 
 ```ts
-builder.setTempo(100, "4n"); // Use beat length of quarter note.
-builder.setTempo(80, "4.."); // Use beat length of double dotted quarter note.
+// Use beat length of quarter note.
+builder.setTempo(100, "4n");
+
+// Use beat length of double dotted quarter note.
+builder.setTempo(100, "4..");
 ```
 
 ## Live Example

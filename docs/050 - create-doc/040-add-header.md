@@ -7,13 +7,13 @@ import ExampleCode from "@site/src/docs/examples/v6/add-header";
 
 # Add Document Header
 
-Document header contains title, composer and arranger.
+Document header can contain title, composer and arranger.
 
 ```ts
 builder.setHeader("Title", "Composer", "Arranger");
 ```
 
-Any of `title`, `composer` and `arranger` can be omitted/set undefined.
+Any of `title`, `composer` and `arranger` can be omitted/undefined.
 
 ```ts
 builder.setHeader("Title");

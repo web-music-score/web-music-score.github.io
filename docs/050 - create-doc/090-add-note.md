@@ -34,23 +34,19 @@ builder.addChord(0, ["C3", "E3", "G3"], "2.", { arpeggio: "up" });
 ```
 Arguments:
 
-`voiceId`
+- `voiceId`
+    There are 4 voice tracks: `0`, `1`, `2` and `3`.
 
-There are 4 voice tracks: `0`, `1`, `2` and `3`.
+- `note`/`notes`
+    Note (e.g. "C4") / array of notes.
 
-`note`/`notes`
+- `noteLength`
+    Note length can be:
+    - `"1n"` (whole note), `"2n"` (half note), etc.
+    - `"4."` (dotted quarter note), `"4.."` (double dotted quarter note), etc.
 
-Note can be typeof `string` (e.g. "C4") or `Theory.Note`.
-
-`noteLength`
-
-Note length can be:
-- `"1n"` (whole note), `"2n"` (quarter note), etc.
-- `"2."` (dotted quarter note), `"2.."` (double dotted quarter note), etc.
-
-`noteOptions` (optional)
-
-Note options is object. All fields are optional.
+- `noteOptions` (optional)
+    Note options is object. All fields are optional.
 
 ```ts
 {

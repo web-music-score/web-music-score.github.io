@@ -8,40 +8,34 @@ import Hint from "@site/src/Components/Hint";
 
 # Build Document
 
-Scores ar created with `DocumentBuilder`.
+## Using `DocumentBuilder`
 
 ```ts
-import * as Score from "web-music-score-v6/score";
-
+// Create document builder.
 const builder = new Score.DocumentBuilder();
-```
 
-Then build the music document. Here are some functions just as an example.
-
-```ts
+// Build document. Here something just as an example.
+builder.setScoreConfiguration("treble");
+builder.setKeySignature("C Major");
+builder.setTimeSignature("3/4");
+builder.addNote(0, ["C4", "E4", "G4"], "4n");
 builder.addMeasure();
-builder.addNote(1, "C4", "2n");
-builder.addRest(1, "2n");
-```
+builder.addChord(0, ["C4", "E4", "G4"], "2.", { arpeggio: true });
 
-Finally get the music document.
-
-```ts
+// When finished, get the document.
 const doc = builder.getDocument();
-```
 
-Everything can be chained together because all operations return the builder itself.
-
-```ts
+// Everything can be chained together.
 const doc = new Score.DocumentBuilder()
-    .addMeasure()
-    .addNote(1, "C4", "2n")
-    .addRest(1, "2n")
-    .getDocument();
+        .setScoreConfiguration("treble")
+        .setTimeSignature("3/4")
+        .addNote(0, ["C4", "E4", "G4"], "4n")
+        .addMeasure()
+        .addChord(0, ["C4", "E4", "G4"], "2.", { arpeggio: true })
+        .getDocument();
 ```
 
-<Hint>From now and forward `builder` is used as known thing.</Hint>
-
+<Hint>From now on the `builder` is used as a known thing.</Hint>
 
 ## Live Example
 
