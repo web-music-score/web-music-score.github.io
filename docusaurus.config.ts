@@ -94,8 +94,8 @@ const config: Config = {
       items: [
         { label: 'Showcase', type: 'docSidebar', sidebarId: 'showcaseSidebar', docsPluginId: 'showcase', position: 'left' },
         { label: 'Documentation', type: 'docSidebar', sidebarId: 'docSidebar', position: 'left' },
-        { label: 'Support', to: '/support', position: 'left' },
         { label: 'Blog', to: '/blog', position: 'left' },
+        { label: 'Info', to: '/info', position: 'left' },
         { label: 'GitHub', href: 'https://github.com/web-music-score', position: 'right', },
         { label: 'NPM Package', href: 'https://npmjs.org/package/web-music-score', position: 'right' },
       ],
