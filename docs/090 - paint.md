@@ -10,7 +10,7 @@ import ExampleCode from "@site/src/docs/examples/v6/use-paint";
 
 ## Color Keys
 
-> Warning! Color keys will be updated (probably in `v6.4.0`) to match internal changes.
+> ⚠️ Color keys will be updated (probably in `v6.4.0`) to match internal changes.
 > I try to map old color keys to new ones as much as possible, but it is possible 
 > there will be some issues. It will not raise errors, but some elements might not
 > be colored how they used to. It affects the `*.element.*` keys.
