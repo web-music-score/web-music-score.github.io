@@ -110,7 +110,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'Follow',
+          title: 'Connections',
           items: [
             { label: 'Facebook', href: 'https://facebook.com/wmscore', },
             { label: 'Email', href: 'mailto:web-music-score@outlook.com', },
