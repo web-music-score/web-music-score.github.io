@@ -8,14 +8,102 @@ import ExampleCode from "@site/src/docs/examples/v6/use-paint";
 
 # Paint
 
+Coloring scores is like a non essential but nice extra feature.
+
+## Use Paint
+
+See [**Create View**](./category/create-view) category for ways to set paint to a view.
+
+```ts
+// Create paint
+const paint = new Score.Paint();
+
+// Set color of staff signature clef
+paint.setColor("staff.signature.clef", "red");
+
+// Set color of all color keys that contain "staff"
+paint.setColor("staff", "red");  // You can use color name
+paint.setColor("staff", "#F00"); // You can use color code
+
+// Set color of all color keys that contain both "staff" and "signature"
+paint.setColor(["staff", "signature"], "red");
+
+// Set color of everything except background
+paint.setColor("all", "red");
+
+// Set background color
+paint.setColor("background", "#99D");
+```
+
 ## Color Keys
 
-> ⚠️ Color keys will be updated (probably in `v6.4.0`) to match internal changes.
-> I try to map old color keys to new ones as much as possible, but it is possible 
-> there will be some issues. It will not raise errors, but some elements might not
-> be colored how they used to. It affects the `*.element.*` keys.
+In previous examples `"staff.signature.clef"` is an example color key.
+Next is a list of color keys.
 
-Here is a list of color keys, from type `Score.ColorKey`.
+Color keys getting an update. All `*.element.*` keys (6.3.x and earlier) are mapped to
+new `*.annotation.*` keys (planned for 6.4.x). These can still change before 6.4.0 stable release.
+
+### Planned for 6.4.x
+
+```ts
+"background"
+
+"header.title"
+"header.composer"
+"header.arranger"
+
+"rowgroup.instrument"
+"rowgroup.frame"
+
+"staff.frame"
+"staff.note"
+"staff.rest"
+"staff.lyrics"
+"staff.connective"
+"staff.arpeggio"
+"staff.signature.clef"
+"staff.signature.key"
+"staff.signature.time"
+"staff.signature.tempo"
+"staff.signature.measurenum"
+
+"staff.annotation.navigation"
+"staff.annotation.dynamics"
+"staff.annotation.tempo"
+"staff.annotation.articulation"
+"staff.annotation.expression"
+"staff.annotation.technique"
+"staff.annotation.temporal"
+"staff.annotation.label"
+"staff.annotation.ornament"
+"staff.annotation.misc"
+
+"tab.frame"
+"tab.note"
+"tab.rest"
+"tab.lyrics"
+"tab.connective"
+"tab.arpeggio"
+"tab.tuning"
+"tab.signature.clef"
+"tab.signature.key"
+"tab.signature.time"
+"tab.signature.tempo"
+"tab.signature.measurenum"
+
+"tab.annotation.navigation"
+"tab.annotation.dynamics"
+"tab.annotation.tempo"
+"tab.annotation.articulation"
+"tab.annotation.expression"
+"tab.annotation.technique"
+"tab.annotation.temporal"
+"tab.annotation.label"
+"tab.annotation.ornament"
+"tab.annotation.misc"
+```
+
+### 6.3.x and Earlier
 
 ```ts
 "background"
@@ -37,6 +125,7 @@ Here is a list of color keys, from type `Score.ColorKey`.
 "staff.signature.time"
 "staff.signature.tempo"
 "staff.signature.measurenum"
+
 "staff.element.annotation"
 "staff.element.navigation"
 "staff.element.fermata"
@@ -53,35 +142,11 @@ Here is a list of color keys, from type `Score.ColorKey`.
 "tab.signature.time"
 "tab.signature.tempo"
 "tab.signature.measurenum"
+
 "tab.element.annotation"
 "tab.element.navigation"
 "tab.element.fermata"
 "tab.element.label"
-```
-
-## Use Paint
-
-See [**Create View**](./category/create-view) category for ways to set paint to a view.
-
-```ts
-// Create paint
-const paint = new Score.Paint();
-
-// Set color of staff signature clef
-paint.setColor("staff.signature.clef", "red");
-
-// Set color of all elements that contain "staff"
-paint.setColor("staff", "red");  // You can use color name
-paint.setColor("staff", "#F00"); // You can use color code
-
-// Set color of all elements that contain both "staff" and "signature"
-paint.setColor(["staff", "signature"], "red");
-
-// Set color of everything except background
-paint.setColor("all", "red");
-
-// Set background color
-paint.setColor("background", "#99D");
 ```
 
 ## Live Example
