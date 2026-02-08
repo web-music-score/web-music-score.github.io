@@ -1,5 +1,5 @@
 ---
-sidebar_position: 150
+sidebar_position: 155
 ---
 
 import { LiveExample } from "@site/src/Components/LiveExample";
@@ -8,7 +8,14 @@ import Hint from "@site/src/Components/Hint";
 
 # Add Navigation
 
-Add navigation element to measure.
+## Planned for 6.4.x
+
+Fermata is one kind of annotation. See [Add Annotation](./add-annotation).
+
+But because navigation is a meaningful and special annotation kind,
+support for its own `addNavigation()` function will remain.
+
+## 6.3.x and Earlier
 
 ```ts
 builder.addNavigation("D.C. al Fine"); // Add "D.C. al Fine"
@@ -19,14 +26,10 @@ builder.addNavigation("Coda");         // Add "Coda"
 builder.addNavigation("toCoda");       // Ass "toCoda"
 builder.addNavigation("Segno");        // Add "Segno" symbol
 builder.addNavigation("Fine");         // Add "Fine"
-builder.addNavigation("startRepeat");  // Add repeat sections start position
-builder.addNavigation("endRepeat", 3); // Add repeat sections end position (play 3 times)
-builder.addNavigation("ending", 1, 2); // Add ending (played on 1st and 2nd run)
+builder.addNavigation("startRepeat");  // Add start repeat at start of measure
+builder.addNavigation("endRepeat", 3); // Add end repeat at end of measure, play 3 times
+builder.addNavigation("ending", 1, 2); // Add ending, play on 1st and 2nd passes
 ```
-
----
-
-<Hint>You can as well use `Score.Navigation` enum values.</Hint>
 
 ## Live Example
 

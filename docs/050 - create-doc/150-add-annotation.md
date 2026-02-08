@@ -1,5 +1,5 @@
 ---
-sidebar_position: 160
+sidebar_position: 150
 ---
 
 import { LiveExample } from "@site/src/Components/LiveExample";
@@ -8,12 +8,16 @@ import Hint from "@site/src/Components/Hint";
 
 # Add Annotation
 
-Add annotation text.
-It will be anchored to previously added symbol (note, rest).
+## Planned for 6.4.x
 
-## Add Dynamics Annotations
+
+
+## 6.3.x and Earlier
+
+Add annotation text. It will be anchored to previously added symbol (note, rest).
 
 ```ts
+// These are the supported dynamics annotations
 builder.addAnnotation("dynamics", "fff");
 builder.addAnnotation("dynamics", "ff");
 builder.addAnnotation("dynamics", "f");
@@ -26,38 +30,23 @@ builder.addAnnotation("dynamics", "ppp");
 builder.addAnnotation("dynamics", "cresc.");
 builder.addAnnotation("dynamics", "decresc.");
 builder.addAnnotation("dynamics", "dim.");
-```
 
-## Add Tempo Annotations
-
-```ts
+// These are the supported tempo annotations
 builder.addAnnotation("tempo", "accel.");
 builder.addAnnotation("tempo", "rit.");
 builder.addAnnotation("tempo", "a tempo");
-```
 
-## Add Articulation Annotations (Since v6.3.0)
-
-```ts
-builder.addAnnotation("articulation", "fermata");
-builder.addAnnotation("articulation", "measureEndFermata"); // Anchored to measures right bar line.
-```
-
-## Auto Detect Annotation Type
-
-```ts
+// First argument annotation group is optional for supported annotation kinds.
 builder.addAnnotation("ff");      // Detects "dynamics"
 builder.addAnnotation("accel.");  // Detects "tempo"
-builder.addAnnotation("fermata"); // Detects "articulation"
+
+// With annotation group you can add any annotation text.
+builder.addAnnotation("dynamics", "play loud");
+builder.addAnnotation("tempo", "play fast");
 ```
 
-<Hint>List of known annotation types is currently very simple.</Hint>
+<Hint>List of supported annotation kinds in version 6.3.x and earlier is minimal.</Hint>
 
----
-
-<Hint>You can as well use `Score.Annotation`, `Score.DynamicsAnnotation`,
-`Score.TempoAnnotation` and `Score.ArticulationAnnotation` enum values.</Hint>
-
-## Live Example
+### Live Example
 
 <LiveExample code={ExampleCode} />

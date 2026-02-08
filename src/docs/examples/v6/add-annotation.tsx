@@ -2,23 +2,28 @@ const code = `
 function ExampleCode() {
     const doc = new Score.DocumentBuilder()
         .setTempo(80)
-        .addNote(0, "C4", "4n").addAnnotation("dynamics", "ppp")
-        .addNote(0, "E4", "4n").addAnnotation("dynamics", "cresc.")
+        .addNote(0, "C4", "4n").addAnnotation("fff")
+        .addNote(0, "E4", "4n")
+        .addNote(0, "G4", "4n").addAnnotation("ppp")
+        .addNote(0, "C4", "4n")
+        .addMeasure()
+        .addNote(0, "C4", "4n").addAnnotation("cresc.")
+        .addNote(0, "E4", "4n")
         .addNote(0, "G4", "4n")
-        .addNote(0, "C4", "4n").addAnnotation("dynamics", "fff")
-        
+        .addNote(0, "C4", "4n").addAnnotation("fff")
+        .endRow()
+
         .addMeasure()
         .addNote(0, "C4", "4n").addAnnotation("tempo", "accel.")
         .addNote(0, "E4", "4n")
         .addNote(0, "G4", "4n")
         .addNote(0, "C4", "4n").addAnnotation("tempo", "a tempo")
-        
         .addMeasure()
-        .addNote(0, "C4", "4n")
-        .addNote(0, "E4", "4n").addAnnotation("fermata")
+        .addNote(0, "C4", "4n").addAnnotation("tempo", "rit.")
+        .addNote(0, "E4", "4n")
         .addNote(0, "G4", "4n")
-        .addNote(0, "C4", "4n")
-        .addAnnotation("measureEndFermata")
+        .addNote(0, "C4", "4n").addAnnotation("tempo", "a tempo")
+        
         .getDocument();
 
     return <div>
