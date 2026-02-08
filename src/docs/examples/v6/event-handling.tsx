@@ -7,7 +7,7 @@ function ExampleCode() {
     // In real world, the HTML elements need to be declared before using them in JavaScript.
     React.useEffect(() => {
         const doc = new Score.DocumentBuilder()
-            .setScoreConfiguration("treble")
+            .setScoreConfiguration({ type: "staff", clef: "G", minNote: "E3", maxNote: "E6" })
             .setKeySignature("C Major")
             .addNote(0, ["C4", "E4", "G4", "C5"], "4n")
             .addMeasure()

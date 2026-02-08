@@ -2,17 +2,14 @@
 sidebar_position: 100
 ---
 
-import { DeprecatedRename } from '@site/src/Components/ChangeNote' ;
-import Hint from '@site/src/Components/Hint';
-import NewFeature from '@site/src/Components/NewFeature';
 import { LiveExample } from "@site/src/Components/LiveExample";
 import ExampleCode from "@site/src/docs/examples/v6/event-handling";
 
 # Events
 
-<NewFeature since="6.4.0">Events: Upcoming release 6.4.0 will have updated event handling.</NewFeature>
+## Planned For 6.4.x
 
-## Use Events
+Upcoming release 6.4.x will have some event handling.
 
 ```ts
 function onScoreEvent(event: Score.ScoreEvent) {
@@ -62,6 +59,11 @@ function onScoreEvent(event: Score.ScoreEvent) {
 }
 ```
 
-## Live Example
+### Live Example
 
 <LiveExample code={ExampleCode} />
+
+## Version 6.3.x And Before
+
+Versions 6.3.x and prior also have some event handling but they are undocumented.
+Events for 6.4 required update after internal changes.
