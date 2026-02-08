@@ -8,7 +8,15 @@ import Hint from "@site/src/Components/Hint";
 
 # Add Label
 
-Add text label that will be anchored to previously added note or rest.
+## Planned for 6.4.x
+
+Labels are one kind of annotations. See [Add Annotation](./add-annotation).
+
+## 6.3.x and Earlier
+
+Labels have their own `addLabel` function.
+
+Label text will be anchored to previously added note or rest.
 
 ```ts
 // Add note/pitch label.

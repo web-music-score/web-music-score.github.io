@@ -7,7 +7,7 @@ import ExampleCode from "@site/src/docs/examples/v6/event-handling";
 
 # Events
 
-## Planned For 6.4.x
+## Planned for 6.4.x
 
 Upcoming release 6.4.x will have some event handling.
 
@@ -59,11 +59,13 @@ function onScoreEvent(event: Score.ScoreEvent) {
 }
 ```
 
-### Live Example
-
-<LiveExample code={ExampleCode} />
-
-## Version 6.3.x And Before
+## 6.3.x and Earlier
 
 Versions 6.3.x and prior also have some event handling but they are undocumented.
 Events for 6.4 required update after internal changes.
+
+## Live Example
+
+This example runs on 6.4.0-pre-release.
+
+<LiveExample code={ExampleCode} />
