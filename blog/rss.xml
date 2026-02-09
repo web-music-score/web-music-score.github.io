@@ -4,10 +4,27 @@
         <title>Web Music Score Blog</title>
         <link>https://web-music-score.github.io/blog</link>
         <description>Web Music Score Blog</description>
-        <lastBuildDate>Sat, 17 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Version 6.4.0-pre-release Update]]></title>
+            <link>https://web-music-score.github.io/blog/version-6-4-0-pre-update</link>
+            <guid>https://web-music-score.github.io/blog/version-6-4-0-pre-update</guid>
+            <pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Added some 6.4.0-pre-release documentation. There are some improvements]]></description>
+            <content:encoded><![CDATA[<p>Added some 6.4.0-pre-release documentation. There are some improvements
+and changes to make things more future compatible.</p>
+<p>Currently supported versions are:</p>
+<ul>
+<li class="">6.3.x - working on bug fixes.</li>
+<li class="">6.4.x-pre - working on improvements and new features.</li>
+</ul>
+<p>Versions 6.2.x and earlier are not maintained.</p>]]></content:encoded>
+            <category>web-music-score.org</category>
+            <category>web-music-score</category>
+        </item>
         <item>
             <title><![CDATA[Version 6.3.0 Update]]></title>
             <link>https://web-music-score.github.io/blog/version-6-3-0-update</link>
