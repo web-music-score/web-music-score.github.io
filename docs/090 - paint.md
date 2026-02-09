@@ -5,11 +5,14 @@ sidebar_position: 90
 import { DeprecatedRename } from '@site/src/Components/ChangeNote' ;
 import { LiveExample } from "@site/src/Components/LiveExample";
 import ExampleCode from "@site/src/docs/examples/v6/use-paint";
+import Hint from "@site/src/Components/Hint";
 
 # Paint
 
-Coloring scores is like a non essential but nice extra feature. It can be handy for example 
-for educational purposes to color certain elements.
+<Hint>This is considered an experimental feature and there might be changes.</Hint>
+
+Coloring scores is like a non essential but nice extra feature.
+It could be useful for educational purposes to color certain elements, as an example.
 
 ## Use Paint
 
@@ -41,12 +44,8 @@ paint.setColor("background", "#99D");
 In previous examples `"staff.signature.clef"` is an example color key.
 Next is a list of color keys.
 
-Color keys are getting an update. All `*.element.*` keys (6.3.x and earlier) are mapped to
-new `*.annotation.*` keys (planned for 6.4.x). These can still change before 6.4.0 stable release.
-
-### Planned for 6.4.x
-
-ℹ️ Available currently in 6.4.0-pre-releaes.
+<Hint>All `*.element.*` keys (6.3.x and earlier) are mapped to
+new `*.annotation.*` keys (planned for 6.4.x).</Hint>
 
 ```ts
 "background"
@@ -70,17 +69,6 @@ new `*.annotation.*` keys (planned for 6.4.x). These can still change before 6.4
 "staff.signature.tempo"
 "staff.signature.measurenum"
 
-"staff.annotation.navigation"
-"staff.annotation.dynamics"
-"staff.annotation.tempo"
-"staff.annotation.articulation"
-"staff.annotation.expression"
-"staff.annotation.technique"
-"staff.annotation.temporal"
-"staff.annotation.label"
-"staff.annotation.ornament"
-"staff.annotation.misc"
-
 "tab.frame"
 "tab.note"
 "tab.rest"
@@ -94,6 +82,35 @@ new `*.annotation.*` keys (planned for 6.4.x). These can still change before 6.4
 "tab.signature.tempo"
 "tab.signature.measurenum"
 
+// -------------------------
+// --- 6.3.x and Earlier ---
+// -------------------------
+
+"staff.element.annotation"
+"staff.element.navigation"
+"staff.element.fermata"
+"staff.element.label"
+
+"tab.element.annotation"
+"tab.element.navigation"
+"tab.element.fermata"
+"tab.element.label"
+
+// -------------------------
+// --- Planned for 6.4.x ---
+// -------------------------
+
+"staff.annotation.navigation"
+"staff.annotation.dynamics"
+"staff.annotation.tempo"
+"staff.annotation.articulation"
+"staff.annotation.expression"
+"staff.annotation.technique"
+"staff.annotation.temporal"
+"staff.annotation.label"
+"staff.annotation.ornament"
+"staff.annotation.misc"
+
 "tab.annotation.navigation"
 "tab.annotation.dynamics"
 "tab.annotation.tempo"
@@ -104,52 +121,6 @@ new `*.annotation.*` keys (planned for 6.4.x). These can still change before 6.4
 "tab.annotation.label"
 "tab.annotation.ornament"
 "tab.annotation.misc"
-```
-
-### 6.3.x and Earlier
-
-```ts
-"background"
-
-"header.title"
-"header.composer"
-"header.arranger"
-
-"rowgroup.instrument"
-"rowgroup.frame"
-
-"staff.frame"
-"staff.note"
-"staff.rest"
-"staff.lyrics"
-"staff.connective"
-"staff.signature.clef"
-"staff.signature.key"
-"staff.signature.time"
-"staff.signature.tempo"
-"staff.signature.measurenum"
-
-"staff.element.annotation"
-"staff.element.navigation"
-"staff.element.fermata"
-"staff.element.label"
-
-"tab.frame"
-"tab.note"
-"tab.rest"
-"tab.lyrics"
-"tab.connective"
-"tab.tuning"
-"tab.signature.clef"
-"tab.signature.key"
-"tab.signature.time"
-"tab.signature.tempo"
-"tab.signature.measurenum"
-
-"tab.element.annotation"
-"tab.element.navigation"
-"tab.element.fermata"
-"tab.element.label"
 ```
 
 ## Live Example
