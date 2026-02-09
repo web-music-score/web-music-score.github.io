@@ -61,7 +61,7 @@ function onScoreEvent(event: Score.ScoreEvent) {
 
 ## 6.3.x and Earlier
 
-Versions 6.3.x and prior also have some event handling but they are undocumented.
+Versions 6.3.x and earlier also have some event handling but they are undocumented.
 Events for 6.4 required update after internal changes.
 
 ## Live Example
