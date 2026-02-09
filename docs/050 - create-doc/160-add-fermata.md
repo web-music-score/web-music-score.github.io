@@ -11,7 +11,9 @@ import ExampleCode from "@site/src/docs/examples/v6/add-fermata";
 
 ## Planned for 6.4.x
 
-Fermata is one kind of annotation. See [Add Annotation](./add-annotation).
+ℹ️ Available currently in 6.4.0-pre-releaes.
+
+Fermata will be part of annotation. See [Add Annotation](./add-annotation).
 
 ## 6.3.x and Earlier
 

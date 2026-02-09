@@ -10,10 +10,12 @@ import Hint from "@site/src/Components/Hint";
 
 ## Planned for 6.4.x
 
-Fermata is one kind of annotation. See [Add Annotation](./add-annotation).
+ℹ️ Available currently in 6.4.0-pre-releaes.
 
-But because navigation is a meaningful and special annotation kind,
-support for its own `addNavigation()` function will remain.
+Navigation will be part of annotation. See [Add Annotation](./add-annotation).
+
+Support for `addNavigation()` function will remain because navigation
+is meaningful annotation kind.
 
 ## 6.3.x and Earlier
 

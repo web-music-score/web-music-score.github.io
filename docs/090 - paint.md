@@ -46,6 +46,8 @@ new `*.annotation.*` keys (planned for 6.4.x). These can still change before 6.4
 
 ### Planned for 6.4.x
 
+ℹ️ Available currently in 6.4.0-pre-releaes.
+
 ```ts
 "background"
 
