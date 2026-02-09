@@ -10,11 +10,44 @@ import Hint from "@site/src/Components/Hint";
 
 ## Planned for 6.4.x
 
+Version 6.4.x will make `addAnnotation()` more future compatible by adding introducing
+argument `AnnotaitionOptions`.
 
+<Hint>See API Reference for `Score.AnnotationGroup` for list of annotation groups.</Hint>
+<Hint>See API Reference for `Score.AnnotationKind` for list of known annotation kinds.</Hint>
+
+```ts
+// Add annotation from list of known annotation kinds.
+builder.addAnnotation("fff");
+// Add annotation to a specific annotation group
+builder.addAnnotation("accel.", { group "tempo" });
+
+// Add fermata
+builder.addAnnotation("fermata");
+// Add fermata over right bar line at measure end
+builder.addAnnotation("fermata", { anchor: "rightBarLine" });
+
+// Add label
+builder.addAnnotation("pitchLabel", "C4");
+builder.addAnnotation("chordLabel", "Am");
+
+// Add navigation
+builder.addAnnotation("D.C. al Fine");
+builder.addAnnotation("D.C. al Coda");
+builder.addAnnotation("D.S. al Fine");
+builder.addAnnotation("D.S. al Coda");
+builder.addAnnotation("Coda");
+builder.addAnnotation("toCoda");
+builder.addAnnotation("Segno");
+builder.addAnnotation("Fine");
+builder.addAnnotation("startRepeat");
+builder.addAnnotation("endRepeat", { repeatCount: 2 });
+builder.addAnnotation("ending", { endingPassages: [1, 2]});
+```
 
 ## 6.3.x and Earlier
 
-Add annotation text. It will be anchored to previously added symbol (note, rest).
+Add annotation.
 
 ```ts
 // These are the supported dynamics annotations
@@ -36,17 +69,17 @@ builder.addAnnotation("tempo", "accel.");
 builder.addAnnotation("tempo", "rit.");
 builder.addAnnotation("tempo", "a tempo");
 
-// First argument annotation group is optional for supported annotation kinds.
-builder.addAnnotation("ff");      // Detects "dynamics"
-builder.addAnnotation("accel.");  // Detects "tempo"
+// The first argument (annotation group) is optional for supported annotation kinds.
+builder.addAnnotation("ff");      // Resolves "dynamics"
+builder.addAnnotation("accel.");  // Resolves "tempo"
 
 // With annotation group you can add any annotation text.
-builder.addAnnotation("dynamics", "play loud");
-builder.addAnnotation("tempo", "play fast");
+builder.addAnnotation("dynamics", "Loud!");
+builder.addAnnotation("tempo", "Fast!");
 ```
 
 <Hint>List of supported annotation kinds in version 6.3.x and earlier is minimal.</Hint>
 
-### Live Example
+## Live Example
 
 <LiveExample code={ExampleCode} />

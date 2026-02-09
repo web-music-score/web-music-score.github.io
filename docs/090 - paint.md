@@ -8,7 +8,8 @@ import ExampleCode from "@site/src/docs/examples/v6/use-paint";
 
 # Paint
 
-Coloring scores is like a non essential but nice extra feature.
+Coloring scores is like a non essential but nice extra feature. It can be handy for example 
+for educational purposes to color certain elements.
 
 ## Use Paint
 
@@ -40,7 +41,7 @@ paint.setColor("background", "#99D");
 In previous examples `"staff.signature.clef"` is an example color key.
 Next is a list of color keys.
 
-Color keys getting an update. All `*.element.*` keys (6.3.x and earlier) are mapped to
+Color keys are getting an update. All `*.element.*` keys (6.3.x and earlier) are mapped to
 new `*.annotation.*` keys (planned for 6.4.x). These can still change before 6.4.0 stable release.
 
 ### Planned for 6.4.x
