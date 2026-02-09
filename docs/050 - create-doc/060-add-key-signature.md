@@ -17,8 +17,7 @@ builder.setKeySignature("D", "Major");         // Create D Major scale.
 builder.setKeySignature("A", "Natural Minor"); // Create A natural minor scale.
 ```
 
-Here is list of supported scale types. Alternatively you can use `Theory.ScaleType` enum values.
-
+Here is list of supported scale types:
 - `"Major"`
 - `"Natural Minor"`
 - `"Harmonic Minor"`
@@ -34,7 +33,6 @@ Here is list of supported scale types. Alternatively you can use `Theory.ScaleTy
 - `"Major Hexatonic Blues"`
 - `"Minor Hexatonic Blues"`
 - `"Heptatonic Blues"`
-
 
 ## Live Example
 

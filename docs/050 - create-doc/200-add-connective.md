@@ -4,7 +4,6 @@ sidebar_position: 200
 
 import { LiveExample } from "@site/src/Components/LiveExample";
 import ExampleCode from "@site/src/docs/examples/v6/add-connective";
-import Hint from "@site/src/Components/Hint";
 
 # Add Connective
 
@@ -54,10 +53,6 @@ Add slur connected at stem tip:
 ```ts
 builder.addConnective("slur", 2, "stemTip");
 ```
-
----
-
-<Hint>You can as well use `Score.Connective` and `Score.NoteAnchor` enum values.</Hint>
 
 ## Live Example
 
