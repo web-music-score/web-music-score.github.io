@@ -14,15 +14,15 @@ function ExampleCode() {
         .endRow()
 
         .addMeasure()
-        .addNote(0, "C4", "4n").addAnnotation("tempo", "accel.")
+        .addNote(0, "C4", "4n").addAnnotation("accel.")
         .addNote(0, "E4", "4n")
         .addNote(0, "G4", "4n")
-        .addNote(0, "C4", "4n").addAnnotation("tempo", "a tempo")
+        .addNote(0, "C4", "4n").addAnnotation("a tempo")
         .addMeasure()
-        .addNote(0, "C4", "4n").addAnnotation("tempo", "rit.")
+        .addNote(0, "C4", "4n").addAnnotation("rit.")
         .addNote(0, "E4", "4n")
         .addNote(0, "G4", "4n")
-        .addNote(0, "C4", "4n").addAnnotation("tempo", "a tempo")
+        .addNote(0, "C4", "4n").addAnnotation("a tempo")
         
         .getDocument();
 

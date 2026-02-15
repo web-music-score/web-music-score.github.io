@@ -20,21 +20,30 @@ Planned changes for 6.4.x are:
 <Hint>See API Reference for `Score.AnnotationKind` for list of annotation kinds.</Hint>
 
 ```ts
-// Add annotation from list of known annotation kinds.
+// Add annotation
 builder.addAnnotation("fff");
-// Add annotation to a specific annotation group
+
+// Some common anotations are:
+// Dynamics: "ppp", "pp", "p", "mp", "mf", "f", "ff", "fff", "cresc.", "decresc.", "dim."
+// Tempo: "accel.", "rit.", "a tempo"
+
+// Add any annotation text to a given annotation group
 builder.addAnnotation("accel.", { group "tempo" });
 
 // Add fermata
 builder.addAnnotation("fermata");
-// Add fermata over right bar line at measure end
+// Add fermata to right bar line
 builder.addAnnotation("fermata", { anchor: "rightBarLine" });
 
-// Add label
+// Add label examples
 builder.addAnnotation("pitchLabel", "C4");
 builder.addAnnotation("chordLabel", "Am");
 
-// Add navigation
+// Add articulation examples
+builder.addAnnotation("staccato");
+builder.addAnnotation("accent");
+
+// Add navigation examples
 builder.addAnnotation("D.C. al Fine");
 builder.addAnnotation("D.C. al Coda");
 builder.addAnnotation("D.S. al Fine");
