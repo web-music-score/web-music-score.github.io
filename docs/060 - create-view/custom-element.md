@@ -37,7 +37,7 @@ import Warn from "@site/src/Components/Warn";
     const doc = new Score.DocumentBuilder().getDocument();
     doc.bindElement("viewId");
 
-    // Bind paint to element (optional)
+    // Deprecated (see Paint section): bind paint to element
     const paint = new Score.Paint();
     paint.bindElement("viewId");
 </script>

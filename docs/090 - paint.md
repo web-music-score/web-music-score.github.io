@@ -4,17 +4,33 @@ sidebar_position: 90
 
 import { DeprecatedRename } from '@site/src/Components/ChangeNote' ;
 import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/use-paint";
+import ExampleCode from "@site/src/docs/examples/v6/use-color";
 import Hint from "@site/src/Components/Hint";
 
-# Paint
+# Paint (Deprecated)
 
-<Hint>This is considered an experimental feature and there might be changes.</Hint>
+Made a decision to deprecate this whole coloring method with Paint. It was more distraction than purposeful.
 
-Coloring scores is like a non essential but nice extra feature.
-It could be useful for educational purposes to color certain elements, as an example.
+However, there are `"color"` properties in `DocumentOptions`, `NoteOptions`, `RestOptions` and
+`AnnotationOptions`. These are fully supported.
 
-## Use Paint
+```ts
+// Set document foreground and background color.
+new DocumentBuilder({ color: "white", background: "black" });
+
+// Set note color
+builder.addNote(0, "C4", "2n", { color: "red" });
+
+// Set rest color
+builder.addRest(0, "2n", { color: "red" });
+
+// Set annotation color
+builder.addAnnotation("ppp", { color: "red" });
+```
+
+It is possible new stuff will also get `"color"` property in the future but it is not priority currently.
+
+## Use Paint (Deprecated)
 
 See [**Create View**](./category/create-view) category for ways to set paint to a view.
 
@@ -39,7 +55,7 @@ paint.setColor("all", "red");
 paint.setColor("background", "#99D");
 ```
 
-## Color Keys
+## Color Keys (Deprecated)
 
 In previous examples `"staff.signature.clef"` is an example color key.
 Next is a list of color keys.
@@ -124,5 +140,7 @@ new `*.annotation.*` keys (planned for 6.4.x).</Hint>
 ```
 
 ## Live Example
+
+This example uses `"color"` properties.
 
 <LiveExample code={ExampleCode} />

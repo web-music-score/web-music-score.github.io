@@ -11,16 +11,12 @@ function ExampleCode() {
             .addChord(0, ["C4", "E4", "G4"], "2.", { arpeggio: true })
             .getDocument();
 
-        const paint = new Score.Paint();
-        paint.setColor("background", "#ffd")
-
         const view = new Score.WmsView();
         
         const canvas = document.getElementById("canvasId");
 
         view.setCanvas(canvas);
         view.setDocument(doc);
-        view.setPaint(paint);
         view.setZoom(1.2);
 
         view.draw();

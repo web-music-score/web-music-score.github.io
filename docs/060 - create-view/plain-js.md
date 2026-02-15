@@ -31,7 +31,7 @@ view.setCanvas(canvas);
 const doc = new Score.DocumentBuilder().getdocument();
 view.setDocument(doc);
 
-// Set paint (optional)
+// Deprecated (see Paint section): set paint
 const paint = new Score.Paint();
 view.setPaint(paint);
 

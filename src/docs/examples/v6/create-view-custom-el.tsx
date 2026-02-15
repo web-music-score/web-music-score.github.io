@@ -11,11 +11,7 @@ function ExampleCode() {
             .addChord(0, ["C4", "E4", "G4"], "2.", { arpeggio: true })
             .getDocument();
 
-        const paint = new Score.Paint();
-        paint.setColor("background", "#ffd")
-
         doc.bindElement("viewId");
-        paint.bindElement("viewId");
     }, []);
 
     return <wms-view id="viewId" zoom="1.2"></wms-view>;

@@ -19,7 +19,7 @@ import Warn from "@site/src/Components/Warn";
 const doc = new Score.DocumentBuilder().getDocument();
 <ReactUI.WmsView doc={doc} />
 
-// Create view and set paint (optional)
+// Deprecated (see Paint section): create view with paint
 const paint = new Score.Paint();
 <ReactUI.WmsView doc={doc} paint={paint} />
 
