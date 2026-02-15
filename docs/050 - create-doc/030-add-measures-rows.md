@@ -19,13 +19,13 @@ builder.addMeasure();
 ### Show Measure Numbers
 
 By default measure number is shown on first measure of every row after first row.
-This can be changed by `DocumentOptions` and `MeasureOptions`.
+This can be changed by `DocumentOptions`  (planned for 6.4.x) and `MeasureOptions`.
 
 ```ts
-// Show all measure numbers
+// Show all measure numbers (planned for 6.4.x)
 new DocumentBuilder({ showMeasureNumbers: true });
 
-// Hide all measure numbers
+// Hide all measure numbers (planned for 6.4.x)
 new DocumentBuilder({ showMeasureNumbers: false });
 
 // Show measure number on single measure
