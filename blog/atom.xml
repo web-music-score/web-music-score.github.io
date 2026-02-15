@@ -2,11 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://web-music-score.github.io/blog</id>
     <title>Web Music Score Blog</title>
-    <updated>2026-02-09T00:00:00.000Z</updated>
+    <updated>2026-02-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://web-music-score.github.io/blog"/>
     <subtitle>Web Music Score Blog</subtitle>
     <icon>https://web-music-score.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Update 2026 Week 7]]></title>
+        <id>https://web-music-score.github.io/blog/update-2026-week-07</id>
+        <link href="https://web-music-score.github.io/blog/update-2026-week-07"/>
+        <updated>2026-02-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello!]]></summary>
+        <content type="html"><![CDATA[<p>Hello!</p>
+<p>I have published patch version 6.3.8 and pre-release version 6.4.0-pre.7.</p>
+<p>My updates have been quite irregular. I am thinking of going into weekly updates.</p>
+<p>The design hasn’t been very clear from the start. Since I’m not a professional
+musician, many questions are still open. My focus has shifted from trying to
+build a large, ambitious product to creating a simple, solid piece of music
+software instead. For now, the priority is to refine what already works and
+keep the scope small and manageable.</p>]]></content>
+        <author>
+            <name>Stefan B.</name>
+        </author>
+        <category label="web-music-score.org" term="web-music-score.org"/>
+        <category label="web-music-score" term="web-music-score"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Version 6.4.0-pre-release Update]]></title>
         <id>https://web-music-score.github.io/blog/version-6-4-0-pre-update</id>
