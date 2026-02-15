@@ -1,19 +1,19 @@
 const code = `
 function ExampleCode() {
-    const doc = new Score.DocumentBuilder()
+    const doc = new Score.DocumentBuilder({ showMeasureNumbers: true })
         .setMeasuresPerRow(3)
-        .addMeasure({ showNumber: true })    // Measure 1
+        .addMeasure()    // Measure 1
         .fillWithRests()
-        .addMeasure({ showNumber: true })    // Measure 2
+        .addMeasure({ showNumber: false }) // Measure 2
         .fillWithRests()
-        .addMeasure({ showNumber: true })    // Measure 3
+        .addMeasure()    // Measure 3
         .fillWithRests()
-        .addMeasure({ showNumber: true })    // Measure 4 (auto new row)
+        .addMeasure()    // Measure 4 (auto new row)
         .fillWithRests()
-        .addMeasure({ showNumber: true })    // Measure 5
+        .addMeasure()    // Measure 5
         .fillWithRests()
         .endRow()
-        .addMeasure({ showNumber: true })    // Measure 6 (requested new row)
+        .addMeasure()    // Measure 6 (requested new row)
         .fillWithRests()
         .getDocument();
 
