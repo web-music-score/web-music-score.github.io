@@ -11,7 +11,7 @@ import ExampleCode from "@site/src/docs/examples/v6/add-fermata";
 
 ## Planned for 6.4.x
 
-ℹ️ Available currently in 6.4.0-pre-releaes.
+ℹ️ Available currently in 6.4.0-pre-release.
 
 Fermata will be part of annotation. See [Add Annotation](./add-annotation).
 

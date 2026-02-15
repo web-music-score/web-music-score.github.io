@@ -10,7 +10,7 @@ import Hint from "@site/src/Components/Hint";
 
 ## Planned for 6.4.x
 
-ℹ️ Available currently in 6.4.0-pre-releaes.
+ℹ️ Available currently in 6.4.0-pre-release.
 
 Label will be part of annotation. See [Add Annotation](./add-annotation).
 

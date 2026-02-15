@@ -9,7 +9,7 @@ import ExampleCode from "@site/src/docs/examples/v6/error-handling";
 
 ## Planned for 6.4.x
 
-ℹ️ Available currently in 6.4.0-pre-releaes.
+ℹ️ Available currently in 6.4.0-pre-release.
 
 You can set error handler for documentation builder.
 
