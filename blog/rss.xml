@@ -4,10 +4,24 @@
         <title>Web Music Score Blog</title>
         <link>https://web-music-score.github.io/blog</link>
         <description>Web Music Score Blog</description>
-        <lastBuildDate>Sun, 15 Feb 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Update 2026 Week 9]]></title>
+            <link>https://web-music-score.github.io/blog/update-2026-week-09</link>
+            <guid>https://web-music-score.github.io/blog/update-2026-week-09</guid>
+            <pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Past two weeks have been quiet.]]></description>
+            <content:encoded><![CDATA[<p>Past two weeks have been quiet.</p>
+<p>Work for coming weeks is to finish audio update.
+It will include samples for about ten most common instruments.
+Each instrument will have corresponding synthesizers that will work out of the box.</p>
+<p>After that there are no big updates planned and things will become more stable.</p>]]></content:encoded>
+            <category>web-music-score.org</category>
+            <category>web-music-score</category>
+        </item>
         <item>
             <title><![CDATA[Update 2026 Week 7]]></title>
             <link>https://web-music-score.github.io/blog/update-2026-week-07</link>
