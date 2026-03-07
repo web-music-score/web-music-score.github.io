@@ -32,7 +32,7 @@ Version 6.3.x has only two instruments: `ClassicalGuitar` and `Synthesizer`. `Sy
 import { ClassicalGuitar } from "web-music-score/audio-cg";
 
 // Or require
-const { ClassicalGuitar } = require()"web-music-score/audio-cg");
+const { ClassicalGuitar } = require("web-music-score/audio-cg");
 ```
 
 ```html
