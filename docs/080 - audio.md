@@ -10,9 +10,18 @@ import Hint from "@site/src/Components/Hint";
 
 ## Planned for 6.4.x
 
-For version 6.4.x there will be audio update and a separate package for instrument samples, `web-music-score-samples`.
-It will contain samples for about ten most common instruments, and
-each instrument will have a corresponding built-in synthesizer.
+Version 6.4.x (currently in 6.4.0-pre.9) will automatically register instruments and load
+samples dynamically at runtime. This keeps bundle smaller and there is not longer need to
+manually add instruments.
+
+Use currently supported instruments:
+
+```ts
+Audio.useInstrument("Synthesizer");
+Audio.useInstrument("Classical Guitar");
+```
+
+Small collection of most common instruments is planned.
 
 ## 6.3.x and Earlier
 
@@ -35,12 +44,11 @@ const { ClassicalGuitar } = require()"web-music-score/audio-cg");
 </script>
 ```
 
-## Add Instrument
-
 ```ts
-// In this example add the ClassicalGuitar imported in previous section.
+// Add instrument
 Audio.addInstrument(ClassicalGuitar);
 ```
+
 
 ## Manage Instruments
 

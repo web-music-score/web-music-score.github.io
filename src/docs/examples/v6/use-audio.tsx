@@ -1,9 +1,5 @@
 const code = `
 function ExampleCode() {
-    // Add classical guitar
-    const { ClassicalGuitar } = AudioCG;
-    Audio.addInstrument(ClassicalGuitar);
-    
     // Audio.useInstrument("Classical Guitar");
     Audio.useInstrument("Synthesizer");
 
