@@ -128,12 +128,6 @@ const config: Config = {
             { label: 'License', to: '/license', },
           ],
         },
-        {
-          title: 'Other',
-          items: [
-            { label: 'PahkaSoft.com', href: 'https://pahkasoft.com', },
-          ],
-        },
       ],
       copyright: `Copyright © 2023-${new Date().getFullYear()} Stefan B.`,
     },
