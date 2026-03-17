@@ -24,7 +24,7 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-live": "^4.1.8",
-    "web-music-score-v6": "npm:web-music-score@next"
+    "web-music-score-v6": "npm:web-music-score@^6.4.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
