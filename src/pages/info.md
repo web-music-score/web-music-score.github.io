@@ -5,17 +5,13 @@ import { DonateKoFi } from "@site/src/Components/Donate";
 
 ## Author
 
-I am Stefan, the author of **Web Music Score**, and I am about {new Date().getFullYear()-1980} years old.
+I’m Stefan, the creator of WebMusicScore.
 
-I am hobbyist in both guitar and programming, but I am quite passionate and dedicated with this project.
+I’m a hobbyist in both music and programming. I play classical guitar and have studied music theory independently, more recently with the help of AI.
 
-I have learned some music theory independently, and more recently with the help of AI. As a result, there
-may be musical errors, but I fix them on the go.
+This project has evolved over many years, starting as a simple app for playing guitar notes on a staff and gradually growing into something more capable.
 
-This project has been evolving for many years, starting with very simple app to play guitar notes on a staff.
-
-There have been many changes, both internally and in the public interface. I do my best to avoid breaking
-anything and continue supporting deprecated features until the next major version.
+I’m continuously improving both the project and my own skills, with the goal of building something reliable and well-designed.
 
 ## Create an Issue
 
