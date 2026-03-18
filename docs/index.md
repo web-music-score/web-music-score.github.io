@@ -73,11 +73,4 @@ Supports play, pause and stop.
 Easy playback using:
 - Controls
 - Programmatically
-
-Instruments:
-- Synthesizer (default)
-- Classical Guitar (optional)
-
-## 🎨 Colors
-
-Use `Score.Paint` for coloring.
+- Built-in support for General MIDI instruments
