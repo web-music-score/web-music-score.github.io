@@ -43,8 +43,8 @@ builder.setTimeSignature("7/8", "3-2-2");
 <NewFeature since="6.4.0">Cut time signature "`C|`".</NewFeature>
 
 ```ts
-builder.setTimeSignature("C");  // Since 6.3
-builder.setTimeSignature("C|"); // Planned for 6.4
+builder.setTimeSignature("C");  // Since 6.3.0
+builder.setTimeSignature("C|"); // Since 6.4.0
 ```
 
 ## Live Example

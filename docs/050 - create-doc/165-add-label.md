@@ -8,13 +8,11 @@ import Hint from "@site/src/Components/Hint";
 
 # Add Label
 
-## Planned for 6.4.x
+## Version 6.4.x
 
-ℹ️ Available currently in 6.4.0-pre-release.
+Label is part of annotation. See [Add Annotation](./add-annotation).
 
-Label will be part of annotation. See [Add Annotation](./add-annotation).
-
-## 6.3.x and Earlier
+## Version 6.3.x and Earlier
 
 Labels have their own `addLabel` function.
 

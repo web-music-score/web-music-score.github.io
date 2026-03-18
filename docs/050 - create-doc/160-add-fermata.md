@@ -9,13 +9,11 @@ import ExampleCode from "@site/src/docs/examples/v6/add-fermata";
 
 # Add Fermata
 
-## Planned for 6.4.x
+## Version 6.4.x
 
-ℹ️ Available currently in 6.4.0-pre-release.
+Fermata is part of annotation. See [Add Annotation](./add-annotation).
 
-Fermata will be part of annotation. See [Add Annotation](./add-annotation).
-
-## 6.3.x and Earlier
+## Version 6.3.x and Earlier
 
 Fermata has it's own `addFermata` function.
 

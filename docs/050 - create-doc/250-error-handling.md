@@ -7,9 +7,7 @@ import ExampleCode from "@site/src/docs/examples/v6/error-handling";
 
 # Error Handling
 
-## Planned for 6.4.x
-
-ℹ️ Available currently in 6.4.0-pre-release.
+## Version 6.4.x
 
 You can set error handler for documentation builder.
 
@@ -47,7 +45,7 @@ catch (e) {
 }
 ```
 
-## 6.3.x and Earlier
+## Version 6.3.x and Earlier
 
 Catch errors.
 

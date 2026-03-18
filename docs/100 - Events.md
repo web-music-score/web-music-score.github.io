@@ -7,9 +7,9 @@ import ExampleCode from "@site/src/docs/examples/v6/event-handling";
 
 # Events
 
-## Planned for 6.4.x
+## Version 6.4.x
 
-Upcoming release 6.4.x will have some event handling.
+Version 6.4.x has some event handling.
 
 ```ts
 function onScoreEvent(event: Score.ScoreEvent) {
@@ -59,10 +59,10 @@ function onScoreEvent(event: Score.ScoreEvent) {
 }
 ```
 
-## 6.3.x and Earlier
+## Version 6.3.x and Earlier
 
 Versions 6.3.x and earlier also have some event handling but they are undocumented.
-Events for 6.4 required update after internal changes.
+Events for 6.4.x required update after internal changes.
 
 ## Live Example
 

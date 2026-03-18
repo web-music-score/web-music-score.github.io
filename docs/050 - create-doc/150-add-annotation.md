@@ -8,13 +8,12 @@ import Hint from "@site/src/Components/Hint";
 
 # Add Annotation
 
-## Planned for 6.4.x
+## Version 6.4.x
 
 ℹ️ Available currently in 6.4.0-pre-release.
 
-Planned changes for 6.4.x are:
-- Make `addAnnotation()` more future compatible by adding annotation options (last argument).
-- More extensive list of known annotation kinds.
+Version 6.4.0 made `addAnnotation()` more future compatible by adding annotation options (last argument).
+It also includes more extensive list of built-in annotation kinds.
 
 <Hint>See API Reference for `Score.AnnotationGroup` for list of annotation groups.</Hint>
 <Hint>See API Reference for `Score.AnnotationKind` for list of annotation kinds.</Hint>
@@ -57,7 +56,7 @@ builder.addAnnotation("endRepeat", { repeatCount: 2 });
 builder.addAnnotation("ending", { endingPassages: [1, 2]});
 ```
 
-## 6.3.x and Earlier
+## Version 6.3.x and Earlier
 
 <Hint>List of known annotation kinds is minimal.</Hint>
 

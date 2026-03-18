@@ -8,7 +8,7 @@ import Hint from "@site/src/Components/Hint";
 
 # Audio
 
-## Planned for 6.4.x
+## Version 6.4.x
 
 Version 6.4.x (currently in 6.4.0-pre.9) will automatically register instruments and load
 samples dynamically at runtime. This keeps bundle smaller and there is not longer need to
@@ -23,7 +23,7 @@ Audio.useInstrument("Classical Guitar");
 
 Small collection of most common instruments is planned.
 
-## 6.3.x and Earlier
+## Version 6.3.x and Earlier
 
 Version 6.3.x has only two instruments: `ClassicalGuitar` and `Synthesizer`. `Synthesizer` is installed by default and `ClassicalGuitar` can be loaded.
 

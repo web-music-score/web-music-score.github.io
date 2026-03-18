@@ -60,8 +60,8 @@ paint.setColor("background", "#99D");
 In previous examples `"staff.signature.clef"` is an example color key.
 Next is a list of color keys.
 
-<Hint>All `*.element.*` keys (6.3.x and earlier) are mapped to
-new `*.annotation.*` keys (planned for 6.4.x).</Hint>
+<Hint>All `*.element.*` keys (version 6.3.x and earlier) are mapped to
+new `*.annotation.*` keys (version 6.4.x).</Hint>
 
 ```ts
 "background"
@@ -98,9 +98,9 @@ new `*.annotation.*` keys (planned for 6.4.x).</Hint>
 "tab.signature.tempo"
 "tab.signature.measurenum"
 
-// -------------------------
-// --- 6.3.x and Earlier ---
-// -------------------------
+// ---------------------------------
+// --- Version 6.3.x and Earlier ---
+// ---------------------------------
 
 "staff.element.annotation"
 "staff.element.navigation"
@@ -112,9 +112,9 @@ new `*.annotation.*` keys (planned for 6.4.x).</Hint>
 "tab.element.fermata"
 "tab.element.label"
 
-// -------------------------
-// --- Planned for 6.4.x ---
-// -------------------------
+// ---------------------
+// --- Version 6.4.x ---
+// ---------------------
 
 "staff.annotation.navigation"
 "staff.annotation.dynamics"
