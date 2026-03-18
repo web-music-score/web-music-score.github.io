@@ -1,19 +1,24 @@
 const code = `
 function ExampleCode() {
-    // Audio.useInstrument("Classical Guitar");
-    Audio.useInstrument("Synthesizer");
+    Audio.setDefaultInstrument("Banjo");
 
     const doc = new Score.DocumentBuilder()
         .setKeySignature("C Major")
         .addNote(0, ["C4", "E4", "G4", "C5"], "4n")
+        .addMeasure()
+        .setInstrument(0, "Rock Organ")
+        .addNote(0, ["C4", "E4", "G4", "C5"], "4n")
         .getDocument();
 
+    doc.loadInstruments();
+
     return <div>
-        <p>Available instruments are: {Audio.getInstrumentList().map(s => '"' + s + '"').join(", ")}</p>
-        <p>Current instrument is: "{Audio.getCurrentInstrument()}"</p>
         <ReactUI.WmsControls doc={doc} playStopPause />
         <br />
         <ReactUI.WmsView doc={doc} />
+        <br />
+        <p><b>Default instrument is:</b> "{Audio.getCurrentInstrument()}"</p>
+        <p><b>Available instruments:</b> {Audio.getInstrumentList().map(s => '"' + s + '"').join(", ")}</p>
     </div>;
 }`;
 
