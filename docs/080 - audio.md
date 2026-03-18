@@ -37,8 +37,8 @@ const { ClassicalGuitar } = require("web-music-score/audio-cg");
 
 ```html
 <!-- Or load script via unpkg or jsDelivr CDM -->
-<script src="https://unpkg.com/web-music-score@6.3.8/dist/iife/audio-cg.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/web-music-score@6.3.8/dist/iife/audio-cg.js"></script>
+<script src="https://unpkg.com/web-music-score@6.3.9/dist/iife/audio-cg.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/web-music-score@6.3.9/dist/iife/audio-cg.js"></script>
 <script>
     const { ClassicalGuitar } = window.AudioCG;
 </script>

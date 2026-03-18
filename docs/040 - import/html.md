@@ -16,10 +16,10 @@ Main library modules can be accessed using `window.WebMusicScore` global variabl
 
 ```html
 <!-- Load script via unpkg CDN -->
-<script src="https://unpkg.com/web-music-score@6.3.8/dist/iife/index.js"></script>
+<script src="https://unpkg.com/web-music-score@6.3.9/dist/iife/index.js"></script>
 
 <!-- Or load script via jsDelivr CDN -->
-<script src="https://cdn.jsdelivr.net/npm/web-music-score@6.3.8/dist/iife/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/web-music-score@6.3.9/dist/iife/index.js"></script>
 
 <script>
     const { Core, Audio, Pieces, Theory, Score } = window.WebMusicScore;
