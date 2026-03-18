@@ -1,12 +1,12 @@
 ---
-sidebar_position: 260
+sidebar_position: 225
 ---
 
 import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/use-audio";
+import ExampleCode from "@site/src/docs/examples/v6/set-instrument";
 import Hint from "@site/src/Components/Hint";
 
-# Audio
+# Set Instrument
 
 ## Version 6.4.x
 
