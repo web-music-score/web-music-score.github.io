@@ -4,10 +4,22 @@
         <title>Web Music Score Blog</title>
         <link>https://web-music-score.github.io/blog</link>
         <description>Web Music Score Blog</description>
-        <lastBuildDate>Sat, 28 Feb 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Mar 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Update 2026 Week 12]]></title>
+            <link>https://web-music-score.github.io/blog/update-2026-week-12</link>
+            <guid>https://web-music-score.github.io/blog/update-2026-week-12</guid>
+            <pubDate>Wed, 18 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Finally published version 6.4.0 with audio update.]]></description>
+            <content:encoded><![CDATA[<p>Finally published version 6.4.0 with audio update.</p>
+<p>Added support for General MIDI instruments.</p>
+<p>Future plan now is to take it easy for some time (and of course fix bugs) 🫡</p>]]></content:encoded>
+            <category>web-music-score.org</category>
+            <category>web-music-score</category>
+        </item>
         <item>
             <title><![CDATA[Update 2026 Week 9]]></title>
             <link>https://web-music-score.github.io/blog/update-2026-week-09</link>
