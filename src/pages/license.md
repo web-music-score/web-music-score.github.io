@@ -25,6 +25,11 @@ These licenses apply only to the respective libraries, not to WebMusicScore itse
 - License: MIT
 - Copyright © 2023 Simon Lepel
 
+### MIDI-JS Soundfonts collection
+- ZIP: https://codeload.github.com/gleitz/midi-js-soundfonts/zip/gh-pages
+- License: MIT
+- Copyright © 2012 Benjamin Gleitzman
+
 ## Disclaimer
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
