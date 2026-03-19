@@ -115,6 +115,6 @@ Audio.unmute();
 Audio.isMuted();
 ```
 
-## Live Example for Version 6.4.x
+## Live Example
 
 <LiveExample code={ExampleCode} />

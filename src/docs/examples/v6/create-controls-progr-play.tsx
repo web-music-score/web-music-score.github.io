@@ -8,7 +8,8 @@ function ExampleCode() {
         .addChord(0, ["C4", "E4", "G4"], "2.", { arpeggio: true })
         .getDocument();
 
-    doc.play();
+    // Uncomment following line to play.
+    // doc.play();
 
     return <p>Should play now!</p>;
 }`;
