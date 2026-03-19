@@ -44,7 +44,8 @@ const doc = new Score.DocumentBuilder()
     .getDocument();
 
 // Load instruments
-doc.loadInstruments();
+doc.loadInstruments()
+    .catch(err => console.error("Failed to load instruments:", err));
 
 // Get player
 const player = doc.getDefaultPlayer();

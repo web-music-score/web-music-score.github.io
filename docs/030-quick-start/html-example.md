@@ -44,8 +44,9 @@ Simply copy the code into a HTML file and open the file in a web browser.
             .getDocument();
 
         // Load instruments
-        doc.loadInstruments();
-        
+        doc.loadInstruments()
+            .catch(err => console.error("Failed to load instruments:", err));
+
         // Get player
         const player = doc.getDefaultPlayer();
 
