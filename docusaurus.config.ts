@@ -25,7 +25,7 @@ const config: Config = {
   organizationName: 'web-music-score',      // Usually your GitHub org/user name.
   projectName: 'web-music-score.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-  
+
   trailingSlash: false, // optional but recommended
 
   onBrokenLinks: 'throw',
@@ -103,7 +103,7 @@ const config: Config = {
       items: [
         { label: 'Showcase', type: 'docSidebar', sidebarId: 'showcaseSidebar', docsPluginId: 'showcase', position: 'left' },
         { label: 'Quick Start', type: 'docSidebar', sidebarId: 'quickStartSidebar', docsPluginId: 'quick-start', position: 'left' },
-        { label: 'Documentation', type: 'docSidebar', sidebarId: 'docSidebar', position: 'left' },
+        { label: 'Docs', type: 'docSidebar', sidebarId: 'docSidebar', position: 'left' },
         { label: 'Blog', to: '/blog', position: 'left' },
         { label: 'Info', to: '/info', position: 'left' },
         { label: 'GitHub', href: 'https://github.com/web-music-score', position: 'right', },
@@ -116,13 +116,20 @@ const config: Config = {
         {
           title: 'Learn',
           items: [
-            { label: 'Documentation', to: '/docs', },
+            { label: 'Quick Start', to: '/quick-start', },
+            { label: 'Docs', to: '/docs', },
           ],
         },
         {
-          title: 'Connections',
+          title: 'Connect',
           items: [
             { label: 'Email', href: 'mailto:web-music-score@outlook.com', },
+          ],
+        },
+        {
+          title: 'Legal',
+          items: [
+            { label: 'License', to: '/license', },
           ],
         },
         {
@@ -130,12 +137,6 @@ const config: Config = {
           items: [
             { label: 'GitHub', href: 'https://github.com/web-music-score/wms', },
             { label: 'NPM Package', href: 'https://npmjs.org/package/web-music-score', },
-          ],
-        },
-        {
-          title: 'Legal',
-          items: [
-            { label: 'License', to: '/license', },
           ],
         },
       ],
