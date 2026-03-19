@@ -73,6 +73,15 @@ const config: Config = {
         sidebarPath: require.resolve('./sidebarsShowcase.ts'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'quick-start',
+        path: 'quick-start',              // folder containing MDX pages for quick-start
+        routeBasePath: 'quick-start',     // URL prefix: /quick-start/
+        sidebarPath: require.resolve('./sidebarsQuickStart.ts'),
+      },
+    ],
   ],
 
   clientModules: [
@@ -93,6 +102,7 @@ const config: Config = {
       },
       items: [
         { label: 'Showcase', type: 'docSidebar', sidebarId: 'showcaseSidebar', docsPluginId: 'showcase', position: 'left' },
+        { label: 'Quick Start', type: 'docSidebar', sidebarId: 'quickStartSidebar', docsPluginId: 'quick-start', position: 'left' },
         { label: 'Documentation', type: 'docSidebar', sidebarId: 'docSidebar', position: 'left' },
         { label: 'Blog', to: '/blog', position: 'left' },
         { label: 'Info', to: '/info', position: 'left' },

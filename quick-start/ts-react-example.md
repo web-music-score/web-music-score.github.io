@@ -1,5 +1,5 @@
 ---
-sidebar_position: 20
+sidebar_position: 3
 ---
 
 # TS React Example
@@ -8,7 +8,7 @@ Use your favourite method to create TypeScript React app.
 
 This example is using vite.
 
-I prefer TypeScript but you can as well create JavaScript app.
+I prefer TypeScript but you can also create JavaScript app.
 
 ## Create Project
 
@@ -50,7 +50,7 @@ doc.loadInstruments()
 // Get player
 const player = doc.getDefaultPlayer();
 
-// Create App with view and controls
+// Create App with wms view and controls
 function App() {
     return (
         <>
@@ -59,7 +59,7 @@ function App() {
             <br />
             <ReactUI.WmsControls player={player} />
         </>
-    )
+    );
 }
 
 export default App

@@ -1,12 +1,12 @@
 ---
-sidebar_position: 10
+sidebar_position: 2
 ---
 
 # HTML Example
 
-Here is a very simple working HTML example file.
+This is a simple working HTML example file.
 
-Simply copy the code into a HTML file and open the file in a web browser.
+Copy the code into a HTML file and open the file in a web browser.
 
 ```html
 <!doctype html>
