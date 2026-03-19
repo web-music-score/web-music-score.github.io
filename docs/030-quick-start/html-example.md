@@ -5,6 +5,7 @@ sidebar_position: 10
 # HTML Example
 
 Here is a very simple working HTML example file.
+
 Simply copy the code into a HTML file and open the file in a web browser.
 
 ```html
@@ -28,8 +29,10 @@ Simply copy the code into a HTML file and open the file in a web browser.
     <br />
 
     <script>
+        // Get lib modules
         const { Score } = window.WebMusicScore;
 
+        // Create music document
         const doc = new Score.DocumentBuilder()
             .setScoreConfiguration("treble")
             .setTimeSignature("3/4")
@@ -40,10 +43,13 @@ Simply copy the code into a HTML file and open the file in a web browser.
             .addChord(0, ["G4", "B4", "D5"], "2.", { arpeggio: true })
             .getDocument();
 
+        // Load instruments
         doc.loadInstruments();
         
+        // Get player
         const player = doc.getDefaultPlayer();
 
+        // Bind doc and player to HTML elements
         doc.bindElement("viewId");
         player.bindElement("controlsId");
     </script>

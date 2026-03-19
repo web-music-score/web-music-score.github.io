@@ -28,7 +28,7 @@ npm install --save-dev web-music-score
 Edit the `src/App.tsx` source file for this simple example.
 
 ```ts
-// Import modules
+// Import lib modules
 import * as Score from 'web-music-score/score';
 import * as ReactUI from 'web-music-score/react-ui';
 
@@ -46,14 +46,17 @@ const doc = new Score.DocumentBuilder()
 // Load instruments
 doc.loadInstruments();
 
-// Create App
+// Get player
+const player = doc.getDefaultPlayer();
+
+// Create App with view and controls
 function App() {
     return (
         <>
             <h1>TS React Example</h1>
             <ReactUI.WmsView doc={doc} />
             <br />
-            <ReactUI.WmsControls doc={doc} />
+            <ReactUI.WmsControls player={player} />
         </>
     )
 }
