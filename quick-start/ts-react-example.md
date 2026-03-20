@@ -1,12 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# TS React Example
+# TS React App Demo
 
 Use your favourite method to create TypeScript React app.
 
-This example is using vite.
+This demonstration uses vite.
 
 I prefer TypeScript but you can also create JavaScript app.
 
