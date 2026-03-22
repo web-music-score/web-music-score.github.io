@@ -10,8 +10,6 @@ import Hint from "@site/src/Components/Hint";
 
 ## Version 6.4.x
 
-ℹ️ Available currently in 6.4.0-pre-release.
-
 Version 6.4.0 made `addAnnotation()` more future compatible by adding annotation options (last argument).
 It also includes more extensive list of built-in annotation kinds.
 

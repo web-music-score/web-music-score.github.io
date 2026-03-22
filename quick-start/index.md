@@ -21,7 +21,7 @@ Copy the code into a HTML file and open the file in a web browser.
 <body>
     <h1>HTML Example</h1>
 
-    <script src="https://cdn.jsdelivr.net/npm/web-music-score@6.4.0/dist/iife/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-music-score@6.4.1/dist/iife/index.js"></script>
 
     <wms-view id="viewId"></wms-view>
     <br />

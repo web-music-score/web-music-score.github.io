@@ -66,6 +66,4 @@ Events for 6.4.x required update after internal changes.
 
 ## Live Example
 
-This example runs on 6.4.0-pre-release.
-
 <LiveExample code={ExampleCode} />
