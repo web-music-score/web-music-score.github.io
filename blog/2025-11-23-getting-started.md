@@ -9,4 +9,4 @@ Started learning [Docusaurus](https:docusaurus.io) today and creating web site f
 
 Hope I get everything up and running soon!
 
-<!-- truncate -->
+{/* truncate */}
