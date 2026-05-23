@@ -1,0 +1,26 @@
+"use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["9190"],{5797(e,a,n){n.r(a),n.d(a,{metadata:()=>d,default:()=>v,frontMatter:()=>s,contentTitle:()=>l,toc:()=>u,assets:()=>c});var d=JSON.parse('{"id":"create-doc/add-navigation","title":"Add Navigation","description":"Version 6.4.x","source":"@site/docs/060-create-doc/155-add-navigation.md","sourceDirName":"060-create-doc","slug":"/create-doc/add-navigation","permalink":"/docs/create-doc/add-navigation","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":155,"frontMatter":{"sidebar_position":155},"sidebar":"docSidebar","previous":{"title":"Add Annotation","permalink":"/docs/create-doc/add-annotation"},"next":{"title":"Add Fermata","permalink":"/docs/create-doc/add-fermata"}}'),i=n(4848),r=n(8453),t=n(7159);let o=`
+function ExampleCode() {
+    const doc = new Score.DocumentBuilder()
+        .addMeasure()
+        .addNavigation("startRepeat")
+        .addNote(0, "G4", "1n")
+        
+        .addMeasure()
+        .addNote(0, "G4", "1n")
+        .addNavigation("ending", 1, 2) // Enter current measure on first and second runs.
+        .addNavigation("endRepeat") // Jump to "startRepeat"
+
+        .addMeasure()
+        .addNote(0, "G4", "1n")
+        .addNavigation("ending", 3) // Enter current measure on third run.
+
+        .getDocument();
+
+    return <div>
+        <ReactUI.WmsControls doc={doc} playStopPause />
+        <br />
+        <ReactUI.WmsView doc={doc} />
+    </div>;
+}`;n(4461);let s={sidebar_position:155},l="Add Navigation",c={},u=[{value:"Version 6.4.x",id:"version-64x",level:2},{value:"Version 6.3.x and Earlier",id:"version-63x-and-earlier",level:2},{value:"Live Example",id:"live-example",level:2}];function p(e){let a={a:"a",code:"code",h1:"h1",h2:"h2",header:"header",p:"p",pre:"pre",...(0,r.R)(),...e.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(a.header,{children:(0,i.jsx)(a.h1,{id:"add-navigation",children:"Add Navigation"})}),"\n",(0,i.jsx)(a.h2,{id:"version-64x",children:"Version 6.4.x"}),"\n",(0,i.jsx)(a.p,{children:"\u2139\uFE0F Available currently in 6.4.0-pre-release."}),"\n",(0,i.jsxs)(a.p,{children:["Navigation will be part of annotation. See ",(0,i.jsx)(a.a,{href:"./add-annotation",children:"Add Annotation"}),"."]}),"\n",(0,i.jsxs)(a.p,{children:["Support for ",(0,i.jsx)(a.code,{children:"addNavigation()"})," function will remain because navigation\r\nis meaningful annotation kind."]}),"\n",(0,i.jsx)(a.h2,{id:"version-63x-and-earlier",children:"Version 6.3.x and Earlier"}),"\n",(0,i.jsx)(a.pre,{children:(0,i.jsx)(a.code,{className:"language-ts",children:'builder.addNavigation("D.C. al Fine"); // Add "D.C. al Fine"\r\nbuilder.addNavigation("D.C. al Coda"); // Add "D.C. al Coda"\r\nbuilder.addNavigation("D.S. al Fine"); // Add "D.S. al Fine"\r\nbuilder.addNavigation("D.S. al Coda"); // Add "D.S. al Coda"\r\nbuilder.addNavigation("Coda");         // Add "Coda"\r\nbuilder.addNavigation("toCoda");       // Ass "toCoda"\r\nbuilder.addNavigation("Segno");        // Add "Segno" symbol\r\nbuilder.addNavigation("Fine");         // Add "Fine"\r\nbuilder.addNavigation("startRepeat");  // Add start repeat at start of measure\r\nbuilder.addNavigation("endRepeat", 3); // Add end repeat at end of measure, play 3 times\r\nbuilder.addNavigation("ending", 1, 2); // Add ending, play on 1st and 2nd passes\n'})}),"\n",(0,i.jsx)(a.h2,{id:"live-example",children:"Live Example"}),"\n",(0,i.jsx)(t.r,{code:o})]})}function v(e={}){let{wrapper:a}={...(0,r.R)(),...e.components};return a?(0,i.jsx)(a,{...e,children:(0,i.jsx)(p,{...e})}):p(e)}},4461(e,a,n){n.d(a,{A:()=>r});var d=n(4848);n(6540);var i=n(4164);function r({children:e,icon:a}){return(0,d.jsxs)("div",{className:(0,i.A)("hint_M8wi"),children:[(0,d.jsx)("span",{className:"icon_S8Po",children:a??"\u{1F4A1}"}),(0,d.jsx)("div",{className:"content_vBYW",children:e})]})}},7159(e,a,n){n.d(a,{r:()=>h});var d,i=n(4848),r=n(6540),t=n(923),o=n(5690),s=n(3721),l=n(1978),c=n(8500),u=n(9041),p=n(4388),v=n(3774),g=n(2175),x=n(9526);function m(e){let[a,m]=r.useState(e.entry.code),h=a=>{e.onEdit&&e.onEdit(a),m(a),s.stop()};return(0,i.jsx)(x.A,{children:()=>(0,i.jsxs)(i.Fragment,{children:[(0,i.jsxs)(t.Q,{language:"jsx",code:a,scope:{Core:o,Audio:s,AudioCG:l,AudioSynth:c,Score:u,Theory:p,Pieces:v,ReactUI:g,React:d||(d=n.t(r,2))},children:[(0,i.jsx)(t.w,{onChange:h}),(0,i.jsx)(t.p1,{}),(0,i.jsx)("br",{}),(0,i.jsx)(t.pA,{})]}),(0,i.jsx)("br",{}),(0,i.jsxs)("p",{children:["\u2139\uFE0F Runs on ",(0,i.jsx)("code",{children:o.getLibInfo()}),"."]})]})})}function h(e){var a;let[n,d]=r.useState(0),t=(Array.isArray(a=e.code)?a:[a]).map((e,a,n)=>{if("string"==typeof e){let d=n.length>1?"Example "+(a+1):"",i=""===d?e.trim():`// ${d}
+${e.trim()}`;return{name:d,code:i}}{let a=e.name.trim(),n=""===a?e.code.trim():`// ${a}
+${e.code.trim()}`;return{name:a,code:n}}}),o=t[n];return(0,i.jsxs)(i.Fragment,{children:[t.length>1?(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)("select",{value:n,onChange:e=>d(Number(e.target.value)),className:"select",children:t.map((e,a)=>(0,i.jsx)("option",{value:a,children:e.name},a))}),(0,i.jsx)("br",{}),(0,i.jsx)("br",{})]}):null,(0,i.jsx)(m,{entry:o},n)]})}}}]);

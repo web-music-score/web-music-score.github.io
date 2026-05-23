@@ -1,0 +1,18 @@
+"use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["3333"],{1784(e,t,r){r.r(t),r.d(t,{metadata:()=>n,default:()=>p,frontMatter:()=>c,contentTitle:()=>i,toc:()=>m,assets:()=>l});var n=JSON.parse('{"id":"create-doc/add-tempo","title":"Add Tempo","description":"Set tempo from the start of current measure.","source":"@site/docs/060-create-doc/080-add-tempo.md","sourceDirName":"060-create-doc","slug":"/create-doc/add-tempo","permalink":"/docs/create-doc/add-tempo","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":80,"frontMatter":{"sidebar_position":80},"sidebar":"docSidebar","previous":{"title":"Add Time Signature","permalink":"/docs/create-doc/add-time-signature"},"next":{"title":"Add Note","permalink":"/docs/create-doc/add-note"}}'),s=r(4848),o=r(8453),d=r(7159);let a=`
+function ExampleCode() {
+    const doc = new Score.DocumentBuilder()
+        .setTimeSignature("2/4")
+        .addMeasure()
+        .setTempo(80)
+        .addMeasure()
+        .setTempo(120, "2n")
+        .getDocument();
+
+    return <div>
+        <ReactUI.WmsControls doc={doc} playStopPause />
+        <br />
+        <ReactUI.WmsView doc={doc} />
+    </div>;
+}`,c={sidebar_position:80},i="Add Tempo",l={},m=[{value:"Live Example",id:"live-example",level:2}];function u(e){let t={code:"code",h1:"h1",h2:"h2",header:"header",p:"p",pre:"pre",...(0,o.R)(),...e.components};return(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)(t.header,{children:(0,s.jsx)(t.h1,{id:"add-tempo",children:"Add Tempo"})}),"\n",(0,s.jsx)(t.p,{children:"Set tempo from the start of current measure."}),"\n",(0,s.jsx)(t.pre,{children:(0,s.jsx)(t.code,{className:"language-ts",children:"// Set tempo 100 bpm (betas per minute).\r\nbuilder.setTempo(100);\n"})}),"\n",(0,s.jsx)(t.p,{children:"You can also set tempo together with custom beat length."}),"\n",(0,s.jsx)(t.pre,{children:(0,s.jsx)(t.code,{className:"language-ts",children:'// Use beat length of quarter note.\r\nbuilder.setTempo(100, "4n");\r\n\r\n// Use beat length of double dotted quarter note.\r\nbuilder.setTempo(100, "4..");\n'})}),"\n",(0,s.jsx)(t.h2,{id:"live-example",children:"Live Example"}),"\n",(0,s.jsx)(d.r,{code:a})]})}function p(e={}){let{wrapper:t}={...(0,o.R)(),...e.components};return t?(0,s.jsx)(t,{...e,children:(0,s.jsx)(u,{...e})}):u(e)}},7159(e,t,r){r.d(t,{r:()=>g});var n,s=r(4848),o=r(6540),d=r(923),a=r(5690),c=r(3721),i=r(1978),l=r(8500),m=r(9041),u=r(4388),p=r(3774),h=r(2175),x=r(9526);function j(e){let[t,j]=o.useState(e.entry.code),g=t=>{e.onEdit&&e.onEdit(t),j(t),c.stop()};return(0,s.jsx)(x.A,{children:()=>(0,s.jsxs)(s.Fragment,{children:[(0,s.jsxs)(d.Q,{language:"jsx",code:t,scope:{Core:a,Audio:c,AudioCG:i,AudioSynth:l,Score:m,Theory:u,Pieces:p,ReactUI:h,React:n||(n=r.t(o,2))},children:[(0,s.jsx)(d.w,{onChange:g}),(0,s.jsx)(d.p1,{}),(0,s.jsx)("br",{}),(0,s.jsx)(d.pA,{})]}),(0,s.jsx)("br",{}),(0,s.jsxs)("p",{children:["\u2139\uFE0F Runs on ",(0,s.jsx)("code",{children:a.getLibInfo()}),"."]})]})})}function g(e){var t;let[r,n]=o.useState(0),d=(Array.isArray(t=e.code)?t:[t]).map((e,t,r)=>{if("string"==typeof e){let n=r.length>1?"Example "+(t+1):"",s=""===n?e.trim():`// ${n}
+${e.trim()}`;return{name:n,code:s}}{let t=e.name.trim(),r=""===t?e.code.trim():`// ${t}
+${e.code.trim()}`;return{name:t,code:r}}}),a=d[r];return(0,s.jsxs)(s.Fragment,{children:[d.length>1?(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)("select",{value:r,onChange:e=>n(Number(e.target.value)),className:"select",children:d.map((e,t)=>(0,s.jsx)("option",{value:t,children:e.name},t))}),(0,s.jsx)("br",{}),(0,s.jsx)("br",{})]}):null,(0,s.jsx)(j,{entry:a},r)]})}}}]);

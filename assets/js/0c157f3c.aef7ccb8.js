@@ -1,0 +1,19 @@
+"use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["1244"],{5828(e,r,d){d.r(r),d.d(r,{metadata:()=>t,default:()=>h,frontMatter:()=>o,contentTitle:()=>i,toc:()=>u,assets:()=>l});var t=JSON.parse('{"id":"create-doc/add-header","title":"Add Document Header","description":"Document header can contain title, composer and arranger.","source":"@site/docs/060-create-doc/040-add-header.md","sourceDirName":"060-create-doc","slug":"/create-doc/add-header","permalink":"/docs/create-doc/add-header","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":40,"frontMatter":{"sidebar_position":40},"sidebar":"docSidebar","previous":{"title":"Add Measures And Rows","permalink":"/docs/create-doc/add-measures-rows"},"next":{"title":"Add Key Signature","permalink":"/docs/create-doc/add-key-signature"}}'),n=d(4848),a=d(8453),s=d(7159);let c=`
+function ExampleCode() {
+    const doc = new Score.DocumentBuilder()
+        .setHeader("Silence", "Tim", "Tom")
+        .repeat(4, b => {
+            b.addMeasure();
+            b.addNote(0, "C5", "8n");
+            b.fillWithRests();
+        })
+        .getDocument();
+
+    return <div>
+        <ReactUI.WmsControls doc={doc} playStopPause />
+        <br />
+        <ReactUI.WmsView doc={doc} />
+    </div>;
+}`,o={sidebar_position:40},i="Add Document Header",l={},u=[{value:"Live Example",id:"live-example",level:2}];function m(e){let r={code:"code",h1:"h1",h2:"h2",header:"header",p:"p",pre:"pre",...(0,a.R)(),...e.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(r.header,{children:(0,n.jsx)(r.h1,{id:"add-document-header",children:"Add Document Header"})}),"\n",(0,n.jsx)(r.p,{children:"Document header can contain title, composer and arranger."}),"\n",(0,n.jsx)(r.pre,{children:(0,n.jsx)(r.code,{className:"language-ts",children:'builder.setHeader("Title", "Composer", "Arranger");\n'})}),"\n",(0,n.jsxs)(r.p,{children:["Any of ",(0,n.jsx)(r.code,{children:"title"}),", ",(0,n.jsx)(r.code,{children:"composer"})," and ",(0,n.jsx)(r.code,{children:"arranger"})," can be omitted/undefined."]}),"\n",(0,n.jsx)(r.pre,{children:(0,n.jsx)(r.code,{className:"language-ts",children:'builder.setHeader("Title");\n'})}),"\n",(0,n.jsx)(r.h2,{id:"live-example",children:"Live Example"}),"\n",(0,n.jsx)(s.r,{code:c})]})}function h(e={}){let{wrapper:r}={...(0,a.R)(),...e.components};return r?(0,n.jsx)(r,{...e,children:(0,n.jsx)(m,{...e})}):m(e)}},7159(e,r,d){d.d(r,{r:()=>g});var t,n=d(4848),a=d(6540),s=d(923),c=d(5690),o=d(3721),i=d(1978),l=d(8500),u=d(9041),m=d(4388),h=d(3774),p=d(2175),x=d(9526);function j(e){let[r,j]=a.useState(e.entry.code),g=r=>{e.onEdit&&e.onEdit(r),j(r),o.stop()};return(0,n.jsx)(x.A,{children:()=>(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)(s.Q,{language:"jsx",code:r,scope:{Core:c,Audio:o,AudioCG:i,AudioSynth:l,Score:u,Theory:m,Pieces:h,ReactUI:p,React:t||(t=d.t(a,2))},children:[(0,n.jsx)(s.w,{onChange:g}),(0,n.jsx)(s.p1,{}),(0,n.jsx)("br",{}),(0,n.jsx)(s.pA,{})]}),(0,n.jsx)("br",{}),(0,n.jsxs)("p",{children:["\u2139\uFE0F Runs on ",(0,n.jsx)("code",{children:c.getLibInfo()}),"."]})]})})}function g(e){var r;let[d,t]=a.useState(0),s=(Array.isArray(r=e.code)?r:[r]).map((e,r,d)=>{if("string"==typeof e){let t=d.length>1?"Example "+(r+1):"",n=""===t?e.trim():`// ${t}
+${e.trim()}`;return{name:t,code:n}}{let r=e.name.trim(),d=""===r?e.code.trim():`// ${r}
+${e.code.trim()}`;return{name:r,code:d}}}),c=s[d];return(0,n.jsxs)(n.Fragment,{children:[s.length>1?(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)("select",{value:d,onChange:e=>t(Number(e.target.value)),className:"select",children:s.map((e,r)=>(0,n.jsx)("option",{value:r,children:e.name},r))}),(0,n.jsx)("br",{}),(0,n.jsx)("br",{})]}):null,(0,n.jsx)(j,{entry:c},d)]})}}}]);

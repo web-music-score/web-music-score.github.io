@@ -2,11 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://web-music-score.github.io/blog</id>
     <title>Web Music Score Blog</title>
-    <updated>2026-03-18T00:00:00.000Z</updated>
+    <updated>2026-05-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://web-music-score.github.io/blog"/>
     <subtitle>Web Music Score Blog</subtitle>
     <icon>https://web-music-score.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Update 2026 Week 21]]></title>
+        <id>https://web-music-score.github.io/blog/update-2026-week-21</id>
+        <link href="https://web-music-score.github.io/blog/update-2026-week-21"/>
+        <updated>2026-05-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This project has been on rest for some time.]]></summary>
+        <content type="html"><![CDATA[<p>This project has been on rest for some time.</p>
+<p>There is no new developments planned currently.</p>
+<p>Current major version has quite many changes and deprecations, and one
+thing I would like to do is to create a clean major update with all
+deprecated stuff removed. It would be good for future developments.</p>
+]]></content>
+        <author>
+            <name>Stefan B.</name>
+        </author>
+        <category label="web-music-score.org" term="web-music-score.org"/>
+        <category label="web-music-score" term="web-music-score"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Update 2026 Week 12]]></title>
         <id>https://web-music-score.github.io/blog/update-2026-week-12</id>
@@ -15,7 +33,8 @@
         <summary type="html"><![CDATA[Finally published version 6.4.0 with audio update.]]></summary>
         <content type="html"><![CDATA[<p>Finally published version 6.4.0 with audio update.</p>
 <p>Added support for General MIDI instruments.</p>
-<p>Future plan now is to take it easy for some time (and of course fix bugs) 🫡</p>]]></content>
+<p>Future plan now is to take it easy for some time (and of course fix bugs) 🫡</p>
+]]></content>
         <author>
             <name>Stefan B.</name>
         </author>
@@ -32,7 +51,8 @@
 <p>Work for coming weeks is to finish audio update.
 It will include samples for about ten most common instruments.
 Each instrument will have corresponding synthesizers that will work out of the box.</p>
-<p>After that there are no big updates planned and things will become more stable.</p>]]></content>
+<p>After that there are no big updates planned and things will become more stable.</p>
+]]></content>
         <author>
             <name>Stefan B.</name>
         </author>
@@ -52,7 +72,8 @@ Each instrument will have corresponding synthesizers that will work out of the b
 musician, many questions are still open. My focus has shifted from trying to
 build a large, ambitious product to creating a simple, solid piece of music
 software instead. For now, the priority is to refine what already works and
-keep the scope small and manageable.</p>]]></content>
+keep the scope small and manageable.</p>
+]]></content>
         <author>
             <name>Stefan B.</name>
         </author>
@@ -72,7 +93,8 @@ and changes to make things more future compatible.</p>
 <li class="">6.3.x - working on bug fixes.</li>
 <li class="">6.4.x-pre - working on improvements and new features.</li>
 </ul>
-<p>Versions 6.2.x and earlier are not maintained.</p>]]></content>
+<p>Versions 6.2.x and earlier are not maintained.</p>
+]]></content>
         <author>
             <name>Stefan B.</name>
         </author>
@@ -97,7 +119,8 @@ and changes to make things more future compatible.</p>
 <ul>
 <li class="">Improved website documents section a lot, also internal improvements.</li>
 <li class="">Removed AI generated stuff and wrote things myself.</li>
-</ul>]]></content>
+</ul>
+]]></content>
         <author>
             <name>Stefan B.</name>
         </author>
@@ -120,7 +143,8 @@ and changes to make things more future compatible.</p>
 <p><code>v6.1.0</code> renamed and deprecated following classes:</p>
 <table><thead><tr><th>Deprecated Name</th><th>New Name</th></tr></thead><tbody><tr><td>Score.MRenderContext</td><td>Score.WmsView</td></tr><tr><td>Score.MPlaybackButtons</td><td>Score.WmsControls</td></tr><tr><td>Score.MPlayer</td><td>Score.PLayer</td></tr><tr><td>Score.MRenderContext</td><td>Score.WmsView</td></tr><tr><td>ReactUI.MusicScoreView</td><td>ReactUI.WmsView</td></tr><tr><td>ReactUI.PlaybackButtons</td><td>ReactUI.WmsControls</td></tr></tbody></table>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="website-update">Website update<a href="https://web-music-score.github.io/blog/update-2026-week-02#website-update" class="hash-link" aria-label="Direct link to Website update" title="Direct link to Website update" translate="no">​</a></h2>
-<p>Introduced changes to support multiple versions in the future.</p>]]></content>
+<p>Introduced changes to support multiple versions in the future.</p>
+]]></content>
         <author>
             <name>Stefan B.</name>
         </author>
@@ -134,7 +158,8 @@ and changes to make things more future compatible.</p>
         <updated>2025-12-18T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This website web-music-score.org is now ready to be]]></summary>
         <content type="html"><![CDATA[<p>This website <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a> is now ready to be
-published together with WebMusicScore stable version 6.0.0.</p>]]></content>
+published together with WebMusicScore stable version 6.0.0.</p>
+]]></content>
         <author>
             <name>Stefan B.</name>
         </author>
@@ -148,7 +173,8 @@ published together with WebMusicScore stable version 6.0.0.</p>]]></content>
         <updated>2025-11-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Started learning Docusaurus today and creating web site for web-music-score.org.]]></summary>
         <content type="html"><![CDATA[<p>Started learning <a href="https://web-music-score.github.io/blog/docusaurus.io" target="_blank" rel="noopener noreferrer" class="">Docusaurus</a> today and creating web site for <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a>.</p>
-<p>Hope I get everything up and running soon!</p>]]></content>
+<p>Hope I get everything up and running soon!</p>
+]]></content>
         <author>
             <name>Stefan B.</name>
         </author>

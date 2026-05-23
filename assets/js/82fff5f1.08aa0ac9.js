@@ -1,0 +1,24 @@
+"use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["9638"],{1255(e,n,s){s.r(n),s.d(n,{metadata:()=>r,default:()=>x,frontMatter:()=>o,contentTitle:()=>l,toc:()=>h,assets:()=>a});var r=JSON.parse('{"id":"create-doc/add-rest","title":"Add Rest","description":"Arguments:","source":"@site/docs/060-create-doc/110-add-rest.md","sourceDirName":"060-create-doc","slug":"/create-doc/add-rest","permalink":"/docs/create-doc/add-rest","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":110,"frontMatter":{"sidebar_position":110},"sidebar":"docSidebar","previous":{"title":"Add Note","permalink":"/docs/create-doc/add-note"},"next":{"title":"Add Tuplet","permalink":"/docs/create-doc/add-tuplet"}}'),t=s(4848),d=s(8453),i=s(7159);let c=`
+function ExampleCode() {
+    const doc = new Score.DocumentBuilder()
+        .setTimeSignature("4/4")
+        .addRest(0, "1n")
+        .addMeasure()
+        .addRest(1, "2n")
+        .addRest(1, "4n")
+        .addRest(1, "8n")
+        .addRest(1, "16n", { staffPos: "G4" })
+        .addRest(1, "16n", { staffPos: "C5" })
+        .addMeasure()
+        .addRest(2, "32n")
+        .fillWithRests()
+        .getDocument();
+
+    return <div>
+        <ReactUI.WmsControls doc={doc} playStopPause />
+        <br />
+        <ReactUI.WmsView doc={doc} />
+    </div>;
+}`,o={sidebar_position:110},l="Add Rest",a={},h=[{value:"Live Example",id:"live-example",level:2}];function u(e){let n={code:"code",h1:"h1",h2:"h2",header:"header",li:"li",p:"p",pre:"pre",ul:"ul",...(0,d.R)(),...e.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.header,{children:(0,t.jsx)(n.h1,{id:"add-rest",children:"Add Rest"})}),"\n",(0,t.jsx)(n.pre,{children:(0,t.jsx)(n.code,{className:"language-ts",children:'// Add rest.\r\nbuilder.addRest(voiceId, restLength, restOptions?);\r\n\r\n// Example: add quarter rest\r\nbuilder.addRest(0, "4n");\n'})}),"\n",(0,t.jsx)(n.p,{children:"Arguments:"}),"\n",(0,t.jsxs)(n.ul,{children:["\n",(0,t.jsxs)(n.li,{children:["\n",(0,t.jsxs)(n.p,{children:[(0,t.jsx)(n.code,{children:"voiceId"}),"\r\nThere are 4 voice tracks: ",(0,t.jsx)(n.code,{children:"0"}),", ",(0,t.jsx)(n.code,{children:"1"}),", ",(0,t.jsx)(n.code,{children:"2"})," and ",(0,t.jsx)(n.code,{children:"3"}),"."]}),"\n"]}),"\n",(0,t.jsxs)(n.li,{children:["\n",(0,t.jsxs)(n.p,{children:[(0,t.jsx)(n.code,{children:"restLength"}),"\r\nRest length (equal to note length) can be:"]}),"\n",(0,t.jsxs)(n.ul,{children:["\n",(0,t.jsxs)(n.li,{children:[(0,t.jsx)(n.code,{children:'"1n"'})," (whole note), ",(0,t.jsx)(n.code,{children:'"2n"'})," (half note), etc."]}),"\n",(0,t.jsxs)(n.li,{children:[(0,t.jsx)(n.code,{children:'"4."'})," (dotted quarter note), ",(0,t.jsx)(n.code,{children:'"4.."'})," (double dotted quarter note), etc."]}),"\n"]}),"\n"]}),"\n",(0,t.jsxs)(n.li,{children:["\n",(0,t.jsxs)(n.p,{children:[(0,t.jsx)(n.code,{children:"restOptions"})," (optional)\r\nRest options is object. All fields are optional."]}),"\n"]}),"\n"]}),"\n",(0,t.jsx)(n.pre,{children:(0,t.jsx)(n.code,{className:"language-ts",children:'{\r\n    staffPos: Note | string | number, // position on staff (e.g. "C4")\r\n    hide: boolean                     // invisible rest\r\n}\n'})}),"\n",(0,t.jsx)(n.h2,{id:"live-example",children:"Live Example"}),"\n",(0,t.jsx)(i.r,{code:c})]})}function x(e={}){let{wrapper:n}={...(0,d.R)(),...e.components};return n?(0,t.jsx)(n,{...e,children:(0,t.jsx)(u,{...e})}):u(e)}},7159(e,n,s){s.d(n,{r:()=>g});var r,t=s(4848),d=s(6540),i=s(923),c=s(5690),o=s(3721),l=s(1978),a=s(8500),h=s(9041),u=s(4388),x=s(3774),j=s(2175),p=s(9526);function m(e){let[n,m]=d.useState(e.entry.code),g=n=>{e.onEdit&&e.onEdit(n),m(n),o.stop()};return(0,t.jsx)(p.A,{children:()=>(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)(i.Q,{language:"jsx",code:n,scope:{Core:c,Audio:o,AudioCG:l,AudioSynth:a,Score:h,Theory:u,Pieces:x,ReactUI:j,React:r||(r=s.t(d,2))},children:[(0,t.jsx)(i.w,{onChange:g}),(0,t.jsx)(i.p1,{}),(0,t.jsx)("br",{}),(0,t.jsx)(i.pA,{})]}),(0,t.jsx)("br",{}),(0,t.jsxs)("p",{children:["\u2139\uFE0F Runs on ",(0,t.jsx)("code",{children:c.getLibInfo()}),"."]})]})})}function g(e){var n;let[s,r]=d.useState(0),i=(Array.isArray(n=e.code)?n:[n]).map((e,n,s)=>{if("string"==typeof e){let r=s.length>1?"Example "+(n+1):"",t=""===r?e.trim():`// ${r}
+${e.trim()}`;return{name:r,code:t}}{let n=e.name.trim(),s=""===n?e.code.trim():`// ${n}
+${e.code.trim()}`;return{name:n,code:s}}}),c=i[s];return(0,t.jsxs)(t.Fragment,{children:[i.length>1?(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)("select",{value:s,onChange:e=>r(Number(e.target.value)),className:"select",children:i.map((e,n)=>(0,t.jsx)("option",{value:n,children:e.name},n))}),(0,t.jsx)("br",{}),(0,t.jsx)("br",{})]}):null,(0,t.jsx)(m,{entry:c},s)]})}}}]);

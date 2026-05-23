@@ -1,0 +1,24 @@
+"use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["3701"],{9086(e,d,a){a.r(d),a.d(d,{metadata:()=>r,default:()=>u,frontMatter:()=>l,contentTitle:()=>i,toc:()=>h,assets:()=>c});var r=JSON.parse('{"id":"create-doc/add-label","title":"Add Label","description":"Version 6.4.x","source":"@site/docs/060-create-doc/165-add-label.md","sourceDirName":"060-create-doc","slug":"/create-doc/add-label","permalink":"/docs/create-doc/add-label","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":165,"frontMatter":{"sidebar_position":165},"sidebar":"docSidebar","previous":{"title":"Add Fermata","permalink":"/docs/create-doc/add-fermata"},"next":{"title":"Add Extension","permalink":"/docs/create-doc/add-extension"}}'),n=a(4848),t=a(8453),o=a(7159);let s=`
+function ExampleCode() {
+    const doc = new Score.DocumentBuilder()
+        .addNote(0, "C4", "4n").addLabel("note", "C4")
+        .addNote(0, "E4", "4n").addLabel("note", "E4")
+        .addNote(0, "G4", "4n").addLabel("note", "G4")
+        .addNote(0, "C4", "4n").addLabel("note", "C4")
+
+        .addMeasure()
+        .addChord(0, ["C4", "E4", "G4"], "4n").addLabel("chord", "C")
+        .addChord(0, ["G4", "B4", "D5"], "4n").addLabel("chord", "G")
+        .addChord(0, ["A4", "C5", "E5"], "4n").addLabel("chord", "Am")
+        .addChord(0, ["F4", "A4", "C5"], "4n").addLabel("chord", "F")
+
+        .getDocument();
+
+    return <div>
+        <ReactUI.WmsControls doc={doc} playStopPause />
+        <br />
+        <ReactUI.WmsView doc={doc} />
+    </div>;
+}`;a(4461);let l={sidebar_position:165},i="Add Label",c={},h=[{value:"Version 6.4.x",id:"version-64x",level:2},{value:"Version 6.3.x and Earlier",id:"version-63x-and-earlier",level:2},{value:"Live Example",id:"live-example",level:2}];function x(e){let d={a:"a",code:"code",h1:"h1",h2:"h2",header:"header",p:"p",pre:"pre",...(0,t.R)(),...e.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(d.header,{children:(0,n.jsx)(d.h1,{id:"add-label",children:"Add Label"})}),"\n",(0,n.jsx)(d.h2,{id:"version-64x",children:"Version 6.4.x"}),"\n",(0,n.jsxs)(d.p,{children:["Label is part of annotation. See ",(0,n.jsx)(d.a,{href:"./add-annotation",children:"Add Annotation"}),"."]}),"\n",(0,n.jsx)(d.h2,{id:"version-63x-and-earlier",children:"Version 6.3.x and Earlier"}),"\n",(0,n.jsxs)(d.p,{children:["Labels have their own ",(0,n.jsx)(d.code,{children:"addLabel"})," function."]}),"\n",(0,n.jsx)(d.p,{children:"Label text will be anchored to previously added note or rest."}),"\n",(0,n.jsx)(d.pre,{children:(0,n.jsx)(d.code,{className:"language-ts",children:'// Add note/pitch label.\r\nbuilder.addNote(0, "C#5", "1n").addLabel("note", "C#5");\r\n\r\n// Add chord label.\r\nbuilder.addChord(0, ["A3", "C4", "E4"], "1n").addLabel("chord", "Am");\n'})}),"\n",(0,n.jsx)(d.h2,{id:"live-example",children:"Live Example"}),"\n",(0,n.jsx)(o.r,{code:s})]})}function u(e={}){let{wrapper:d}={...(0,t.R)(),...e.components};return d?(0,n.jsx)(d,{...e,children:(0,n.jsx)(x,{...e})}):x(e)}},4461(e,d,a){a.d(d,{A:()=>t});var r=a(4848);a(6540);var n=a(4164);function t({children:e,icon:d}){return(0,r.jsxs)("div",{className:(0,n.A)("hint_M8wi"),children:[(0,r.jsx)("span",{className:"icon_S8Po",children:d??"\u{1F4A1}"}),(0,r.jsx)("div",{className:"content_vBYW",children:e})]})}},7159(e,d,a){a.d(d,{r:()=>j});var r,n=a(4848),t=a(6540),o=a(923),s=a(5690),l=a(3721),i=a(1978),c=a(8500),h=a(9041),x=a(4388),u=a(3774),p=a(2175),b=a(9526);function m(e){let[d,m]=t.useState(e.entry.code),j=d=>{e.onEdit&&e.onEdit(d),m(d),l.stop()};return(0,n.jsx)(b.A,{children:()=>(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)(o.Q,{language:"jsx",code:d,scope:{Core:s,Audio:l,AudioCG:i,AudioSynth:c,Score:h,Theory:x,Pieces:u,ReactUI:p,React:r||(r=a.t(t,2))},children:[(0,n.jsx)(o.w,{onChange:j}),(0,n.jsx)(o.p1,{}),(0,n.jsx)("br",{}),(0,n.jsx)(o.pA,{})]}),(0,n.jsx)("br",{}),(0,n.jsxs)("p",{children:["\u2139\uFE0F Runs on ",(0,n.jsx)("code",{children:s.getLibInfo()}),"."]})]})})}function j(e){var d;let[a,r]=t.useState(0),o=(Array.isArray(d=e.code)?d:[d]).map((e,d,a)=>{if("string"==typeof e){let r=a.length>1?"Example "+(d+1):"",n=""===r?e.trim():`// ${r}
+${e.trim()}`;return{name:r,code:n}}{let d=e.name.trim(),a=""===d?e.code.trim():`// ${d}
+${e.code.trim()}`;return{name:d,code:a}}}),s=o[a];return(0,n.jsxs)(n.Fragment,{children:[o.length>1?(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)("select",{value:a,onChange:e=>r(Number(e.target.value)),className:"select",children:o.map((e,d)=>(0,n.jsx)("option",{value:d,children:e.name},d))}),(0,n.jsx)("br",{}),(0,n.jsx)("br",{})]}):null,(0,n.jsx)(m,{entry:s},a)]})}}}]);

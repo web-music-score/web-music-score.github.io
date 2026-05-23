@@ -4,10 +4,25 @@
         <title>Web Music Score Blog</title>
         <link>https://web-music-score.github.io/blog</link>
         <description>Web Music Score Blog</description>
-        <lastBuildDate>Wed, 18 Mar 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 23 May 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Update 2026 Week 21]]></title>
+            <link>https://web-music-score.github.io/blog/update-2026-week-21</link>
+            <guid>https://web-music-score.github.io/blog/update-2026-week-21</guid>
+            <pubDate>Sat, 23 May 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[This project has been on rest for some time.]]></description>
+            <content:encoded><![CDATA[<p>This project has been on rest for some time.</p>
+<p>There is no new developments planned currently.</p>
+<p>Current major version has quite many changes and deprecations, and one
+thing I would like to do is to create a clean major update with all
+deprecated stuff removed. It would be good for future developments.</p>
+]]></content:encoded>
+            <category>web-music-score.org</category>
+            <category>web-music-score</category>
+        </item>
         <item>
             <title><![CDATA[Update 2026 Week 12]]></title>
             <link>https://web-music-score.github.io/blog/update-2026-week-12</link>
@@ -16,7 +31,8 @@
             <description><![CDATA[Finally published version 6.4.0 with audio update.]]></description>
             <content:encoded><![CDATA[<p>Finally published version 6.4.0 with audio update.</p>
 <p>Added support for General MIDI instruments.</p>
-<p>Future plan now is to take it easy for some time (and of course fix bugs) 🫡</p>]]></content:encoded>
+<p>Future plan now is to take it easy for some time (and of course fix bugs) 🫡</p>
+]]></content:encoded>
             <category>web-music-score.org</category>
             <category>web-music-score</category>
         </item>
@@ -30,7 +46,8 @@
 <p>Work for coming weeks is to finish audio update.
 It will include samples for about ten most common instruments.
 Each instrument will have corresponding synthesizers that will work out of the box.</p>
-<p>After that there are no big updates planned and things will become more stable.</p>]]></content:encoded>
+<p>After that there are no big updates planned and things will become more stable.</p>
+]]></content:encoded>
             <category>web-music-score.org</category>
             <category>web-music-score</category>
         </item>
@@ -47,7 +64,8 @@ Each instrument will have corresponding synthesizers that will work out of the b
 musician, many questions are still open. My focus has shifted from trying to
 build a large, ambitious product to creating a simple, solid piece of music
 software instead. For now, the priority is to refine what already works and
-keep the scope small and manageable.</p>]]></content:encoded>
+keep the scope small and manageable.</p>
+]]></content:encoded>
             <category>web-music-score.org</category>
             <category>web-music-score</category>
         </item>
@@ -64,7 +82,8 @@ and changes to make things more future compatible.</p>
 <li class="">6.3.x - working on bug fixes.</li>
 <li class="">6.4.x-pre - working on improvements and new features.</li>
 </ul>
-<p>Versions 6.2.x and earlier are not maintained.</p>]]></content:encoded>
+<p>Versions 6.2.x and earlier are not maintained.</p>
+]]></content:encoded>
             <category>web-music-score.org</category>
             <category>web-music-score</category>
         </item>
@@ -86,7 +105,8 @@ and changes to make things more future compatible.</p>
 <ul>
 <li class="">Improved website documents section a lot, also internal improvements.</li>
 <li class="">Removed AI generated stuff and wrote things myself.</li>
-</ul>]]></content:encoded>
+</ul>
+]]></content:encoded>
             <category>web-music-score.org</category>
             <category>web-music-score</category>
         </item>
@@ -106,7 +126,8 @@ and changes to make things more future compatible.</p>
 <p><code>v6.1.0</code> renamed and deprecated following classes:</p>
 <table><thead><tr><th>Deprecated Name</th><th>New Name</th></tr></thead><tbody><tr><td>Score.MRenderContext</td><td>Score.WmsView</td></tr><tr><td>Score.MPlaybackButtons</td><td>Score.WmsControls</td></tr><tr><td>Score.MPlayer</td><td>Score.PLayer</td></tr><tr><td>Score.MRenderContext</td><td>Score.WmsView</td></tr><tr><td>ReactUI.MusicScoreView</td><td>ReactUI.WmsView</td></tr><tr><td>ReactUI.PlaybackButtons</td><td>ReactUI.WmsControls</td></tr></tbody></table>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="website-update">Website update<a href="https://web-music-score.github.io/blog/update-2026-week-02#website-update" class="hash-link" aria-label="Direct link to Website update" title="Direct link to Website update" translate="no">​</a></h2>
-<p>Introduced changes to support multiple versions in the future.</p>]]></content:encoded>
+<p>Introduced changes to support multiple versions in the future.</p>
+]]></content:encoded>
             <category>web-music-score.org</category>
             <category>web-music-score</category>
         </item>
@@ -117,7 +138,8 @@ and changes to make things more future compatible.</p>
             <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[This website web-music-score.org is now ready to be]]></description>
             <content:encoded><![CDATA[<p>This website <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a> is now ready to be
-published together with WebMusicScore stable version 6.0.0.</p>]]></content:encoded>
+published together with WebMusicScore stable version 6.0.0.</p>
+]]></content:encoded>
             <category>web-music-score.org</category>
             <category>web-music-score</category>
         </item>
@@ -128,7 +150,8 @@ published together with WebMusicScore stable version 6.0.0.</p>]]></content:enco
             <pubDate>Sun, 23 Nov 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Started learning Docusaurus today and creating web site for web-music-score.org.]]></description>
             <content:encoded><![CDATA[<p>Started learning <a href="https://web-music-score.github.io/blog/docusaurus.io" target="_blank" rel="noopener noreferrer" class="">Docusaurus</a> today and creating web site for <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a>.</p>
-<p>Hope I get everything up and running soon!</p>]]></content:encoded>
+<p>Hope I get everything up and running soon!</p>
+]]></content:encoded>
             <category>web-music-score.org</category>
         </item>
     </channel>

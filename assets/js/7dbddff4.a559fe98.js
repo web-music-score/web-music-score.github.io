@@ -1,0 +1,24 @@
+"use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["8325"],{3040(e,n,d){d.r(n),d.d(n,{metadata:()=>t,default:()=>x,frontMatter:()=>a,contentTitle:()=>o,toc:()=>u,assets:()=>l});var t=JSON.parse('{"id":"create-doc/add-connective","title":"Add Connective","description":"Add tie:","source":"@site/docs/060-create-doc/200-add-connective.md","sourceDirName":"060-create-doc","slug":"/create-doc/add-connective","permalink":"/docs/create-doc/add-connective","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":200,"frontMatter":{"sidebar_position":200},"sidebar":"docSidebar","previous":{"title":"Add Extension","permalink":"/docs/create-doc/add-extension"},"next":{"title":"Use Repeat","permalink":"/docs/create-doc/use-repeat"}}'),s=d(4848),r=d(8453),c=d(7159);let i=`
+function ExampleCode() {
+    const doc = new Score.DocumentBuilder()
+        .setTempo(80)
+        .addNote(0, "C4", "4n").addConnective("tie")
+        .addNote(0, "C4", "4n")
+        .addNote(0, "G4", "8n").addConnective("slur")
+        .addNote(0, "B4", "8n")
+        .addNote(0, "C4", "4n")
+
+        .addMeasure()
+        .addNote(0, "C4", "2n").addConnective("slide")
+        .addNote(0, "E4", "2n")
+
+        .getDocument();
+
+    return <div>
+        <ReactUI.WmsControls doc={doc} playStopPause />
+        <br />
+        <ReactUI.WmsView doc={doc} />
+    </div>;
+}`,a={sidebar_position:200},o="Add Connective",l={},u=[{value:"Live Example",id:"live-example",level:2}];function h(e){let n={code:"code",h1:"h1",h2:"h2",header:"header",p:"p",pre:"pre",...(0,r.R)(),...e.components};return(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)(n.header,{children:(0,s.jsx)(n.h1,{id:"add-connective",children:"Add Connective"})}),"\n",(0,s.jsx)(n.p,{children:"Add tie:"}),"\n",(0,s.jsx)(n.pre,{children:(0,s.jsx)(n.code,{className:"language-ts",children:'builder.addConnective("tie");\n'})}),"\n",(0,s.jsx)(n.p,{children:"Add slur:"}),"\n",(0,s.jsx)(n.pre,{children:(0,s.jsx)(n.code,{className:"language-ts",children:'builder.addConnective("slur");\n'})}),"\n",(0,s.jsx)(n.p,{children:"Add slide:"}),"\n",(0,s.jsx)(n.pre,{children:(0,s.jsx)(n.code,{className:"language-ts",children:'builder.addConnective("slide");\n'})}),"\n",(0,s.jsx)(n.p,{children:"Add tie with span (how many notes the connective is across):"}),"\n",(0,s.jsx)(n.pre,{children:(0,s.jsx)(n.code,{className:"language-ts",children:'builder.addConnective("tie", 3);\n'})}),"\n",(0,s.jsx)(n.p,{children:"Add slur connected above note head:"}),"\n",(0,s.jsx)(n.pre,{children:(0,s.jsx)(n.code,{className:"language-ts",children:'builder.addConnective("slur", 2, "above");\n'})}),"\n",(0,s.jsx)(n.p,{children:"Add slur connected below note head:"}),"\n",(0,s.jsx)(n.pre,{children:(0,s.jsx)(n.code,{className:"language-ts",children:'builder.addConnective("slur", 2, "below");\n'})}),"\n",(0,s.jsx)(n.p,{children:"Add slur connected next to note head:"}),"\n",(0,s.jsx)(n.pre,{children:(0,s.jsx)(n.code,{className:"language-ts",children:'builder.addConnective("slur", 2, "center");\n'})}),"\n",(0,s.jsx)(n.p,{children:"Add slur connected at stem tip:"}),"\n",(0,s.jsx)(n.pre,{children:(0,s.jsx)(n.code,{className:"language-ts",children:'builder.addConnective("slur", 2, "stemTip");\n'})}),"\n",(0,s.jsx)(n.h2,{id:"live-example",children:"Live Example"}),"\n",(0,s.jsx)(c.r,{code:i})]})}function x(e={}){let{wrapper:n}={...(0,r.R)(),...e.components};return n?(0,s.jsx)(n,{...e,children:(0,s.jsx)(h,{...e})}):h(e)}},7159(e,n,d){d.d(n,{r:()=>v});var t,s=d(4848),r=d(6540),c=d(923),i=d(5690),a=d(3721),o=d(1978),l=d(8500),u=d(9041),h=d(4388),x=d(3774),p=d(2175),j=d(9526);function m(e){let[n,m]=r.useState(e.entry.code),v=n=>{e.onEdit&&e.onEdit(n),m(n),a.stop()};return(0,s.jsx)(j.A,{children:()=>(0,s.jsxs)(s.Fragment,{children:[(0,s.jsxs)(c.Q,{language:"jsx",code:n,scope:{Core:i,Audio:a,AudioCG:o,AudioSynth:l,Score:u,Theory:h,Pieces:x,ReactUI:p,React:t||(t=d.t(r,2))},children:[(0,s.jsx)(c.w,{onChange:v}),(0,s.jsx)(c.p1,{}),(0,s.jsx)("br",{}),(0,s.jsx)(c.pA,{})]}),(0,s.jsx)("br",{}),(0,s.jsxs)("p",{children:["\u2139\uFE0F Runs on ",(0,s.jsx)("code",{children:i.getLibInfo()}),"."]})]})})}function v(e){var n;let[d,t]=r.useState(0),c=(Array.isArray(n=e.code)?n:[n]).map((e,n,d)=>{if("string"==typeof e){let t=d.length>1?"Example "+(n+1):"",s=""===t?e.trim():`// ${t}
+${e.trim()}`;return{name:t,code:s}}{let n=e.name.trim(),d=""===n?e.code.trim():`// ${n}
+${e.code.trim()}`;return{name:n,code:d}}}),i=c[d];return(0,s.jsxs)(s.Fragment,{children:[c.length>1?(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)("select",{value:d,onChange:e=>t(Number(e.target.value)),className:"select",children:c.map((e,n)=>(0,s.jsx)("option",{value:n,children:e.name},n))}),(0,s.jsx)("br",{}),(0,s.jsx)("br",{})]}):null,(0,s.jsx)(m,{entry:i},d)]})}}}]);
