@@ -35,5 +35,5 @@ npm run deploy
 I also had to config git because of two github accounts:
 
 ```bash
-git config --global url."git@github.com-wms:web-music-score /".insteadOf "git@github.com:web-music-score/"
+git config --global url."git@github.com-wms:web-music-score/".insteadOf "git@github.com:web-music-score/"
 ```
