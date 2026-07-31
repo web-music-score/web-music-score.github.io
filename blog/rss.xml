@@ -20,7 +20,7 @@
 thing I would like to do is to create a clean major update with all
 deprecated stuff removed. It would be good for future developments.</p>
 ]]></content:encoded>
-            <category>web-music-score.org</category>
+            <category>web-music-score-website</category>
             <category>web-music-score</category>
         </item>
         <item>
@@ -33,7 +33,7 @@ deprecated stuff removed. It would be good for future developments.</p>
 <p>Added support for General MIDI instruments.</p>
 <p>Future plan now is to take it easy for some time (and of course fix bugs) 🫡</p>
 ]]></content:encoded>
-            <category>web-music-score.org</category>
+            <category>web-music-score-website</category>
             <category>web-music-score</category>
         </item>
         <item>
@@ -48,7 +48,7 @@ It will include samples for about ten most common instruments.
 Each instrument will have corresponding synthesizers that will work out of the box.</p>
 <p>After that there are no big updates planned and things will become more stable.</p>
 ]]></content:encoded>
-            <category>web-music-score.org</category>
+            <category>web-music-score-website</category>
             <category>web-music-score</category>
         </item>
         <item>
@@ -66,7 +66,7 @@ build a large, ambitious product to creating a simple, solid piece of music
 software instead. For now, the priority is to refine what already works and
 keep the scope small and manageable.</p>
 ]]></content:encoded>
-            <category>web-music-score.org</category>
+            <category>web-music-score-website</category>
             <category>web-music-score</category>
         </item>
         <item>
@@ -84,7 +84,7 @@ and changes to make things more future compatible.</p>
 </ul>
 <p>Versions 6.2.x and earlier are not maintained.</p>
 ]]></content:encoded>
-            <category>web-music-score.org</category>
+            <category>web-music-score-website</category>
             <category>web-music-score</category>
         </item>
         <item>
@@ -107,7 +107,7 @@ and changes to make things more future compatible.</p>
 <li class="">Removed AI generated stuff and wrote things myself.</li>
 </ul>
 ]]></content:encoded>
-            <category>web-music-score.org</category>
+            <category>web-music-score-website</category>
             <category>web-music-score</category>
         </item>
         <item>
@@ -128,7 +128,7 @@ and changes to make things more future compatible.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="website-update">Website update<a href="https://web-music-score.github.io/blog/update-2026-week-02#website-update" class="hash-link" aria-label="Direct link to Website update" title="Direct link to Website update" translate="no">​</a></h2>
 <p>Introduced changes to support multiple versions in the future.</p>
 ]]></content:encoded>
-            <category>web-music-score.org</category>
+            <category>web-music-score-website</category>
             <category>web-music-score</category>
         </item>
         <item>
@@ -140,7 +140,7 @@ and changes to make things more future compatible.</p>
             <content:encoded><![CDATA[<p>This website <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a> is now ready to be
 published together with WebMusicScore stable version 6.0.0.</p>
 ]]></content:encoded>
-            <category>web-music-score.org</category>
+            <category>web-music-score-website</category>
             <category>web-music-score</category>
         </item>
         <item>
@@ -152,7 +152,7 @@ published together with WebMusicScore stable version 6.0.0.</p>
             <content:encoded><![CDATA[<p>Started learning <a href="https://web-music-score.github.io/blog/docusaurus.io" target="_blank" rel="noopener noreferrer" class="">Docusaurus</a> today and creating web site for <a href="https://web-music-score.org/" target="_blank" rel="noopener noreferrer" class="">web-music-score.org</a>.</p>
 <p>Hope I get everything up and running soon!</p>
 ]]></content:encoded>
-            <category>web-music-score.org</category>
+            <category>web-music-score-website</category>
         </item>
     </channel>
 </rss>
