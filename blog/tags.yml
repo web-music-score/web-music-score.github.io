@@ -1,6 +1,6 @@
 website:
-  label: web-music-score.org
-  permalink: /web-music-score-org
+  label: web-music-score-website
+  permalink: /web-music-score-website
   description: WebMusicScore website
 
 lib:

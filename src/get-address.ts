@@ -4,7 +4,7 @@ export function getStaticAddress(path: string) {
 
     return process.env.NODE_ENV === 'development'
         ? `http://localhost:3000/${path}`
-        : `https://web-music-score.org/${path}`;
+        : `https://web-music-score.github.io/${path}`;
 }
 
 export function getApiAddress(version: string) {
