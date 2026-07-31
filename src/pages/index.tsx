@@ -5,7 +5,6 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import Admonition from '@theme/Admonition';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -41,10 +40,6 @@ export default function Home(): ReactNode {
     <Layout
       title={siteConfig.title}
       description="Web Music Score is a TypeScript/JavaScript library for rendering and playing music notation directly in the browser.">
-      <Admonition type="info" title="Website Address">
-        Planning to abandon custom domain web-musicscore.org.<br />
-        use <a href="https://web-music-score.github.io">https://web-music-score.github.io</a> instead.
-      </Admonition>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

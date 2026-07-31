@@ -144,6 +144,14 @@ const config: Config = {
       ],
       copyright: `Copyright © 2023-${new Date().getFullYear()} Stefan B.`,
     },
+    announcementBar: {
+      id: 'website-address',
+      content:
+        'Planning to abandon domain <strong>web-music-score.org</strong>. Use <a href="https://web-music-score.github.io">https://web-music-score.github.io</a> instead!',
+      backgroundColor: '#3578e5',
+      textColor: '#ffffff',
+      isCloseable: true,
+    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
