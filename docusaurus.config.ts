@@ -123,12 +123,6 @@ const config: Config = {
           ],
         },
         {
-          title: 'Connect',
-          items: [
-            { label: 'Email', href: 'mailto:web-music-score@outlook.com', },
-          ],
-        },
-        {
           title: 'Legal',
           items: [
             { label: 'License', to: '/license', },
@@ -142,7 +136,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © 2023-${new Date().getFullYear()} Stefan B.`,
+      copyright: `Copyright © 2023-${new Date().getFullYear()} WebMusicScore`,
     },
     announcementBar: {
       id: 'website-address',
