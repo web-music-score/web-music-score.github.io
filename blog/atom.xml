@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://web-music-score.github.io/blog</id>
-    <title>Web Music Score Blog</title>
+    <title>WebMusicScore Blog</title>
     <updated>2026-05-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://web-music-score.github.io/blog"/>
-    <subtitle>Web Music Score Blog</subtitle>
+    <subtitle>WebMusicScore Blog</subtitle>
     <icon>https://web-music-score.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Update 2026 Week 21]]></title>
@@ -20,7 +20,7 @@ thing I would like to do is to create a clean major update with all
 deprecated stuff removed. It would be good for future developments.</p>
 ]]></content>
         <author>
-            <name>Stefan B.</name>
+            <name>Stefan</name>
         </author>
         <category label="web-music-score-website" term="web-music-score-website"/>
         <category label="web-music-score" term="web-music-score"/>
@@ -36,7 +36,7 @@ deprecated stuff removed. It would be good for future developments.</p>
 <p>Future plan now is to take it easy for some time (and of course fix bugs) 🫡</p>
 ]]></content>
         <author>
-            <name>Stefan B.</name>
+            <name>Stefan</name>
         </author>
         <category label="web-music-score-website" term="web-music-score-website"/>
         <category label="web-music-score" term="web-music-score"/>
@@ -54,7 +54,7 @@ Each instrument will have corresponding synthesizers that will work out of the b
 <p>After that there are no big updates planned and things will become more stable.</p>
 ]]></content>
         <author>
-            <name>Stefan B.</name>
+            <name>Stefan</name>
         </author>
         <category label="web-music-score-website" term="web-music-score-website"/>
         <category label="web-music-score" term="web-music-score"/>
@@ -75,7 +75,7 @@ software instead. For now, the priority is to refine what already works and
 keep the scope small and manageable.</p>
 ]]></content>
         <author>
-            <name>Stefan B.</name>
+            <name>Stefan</name>
         </author>
         <category label="web-music-score-website" term="web-music-score-website"/>
         <category label="web-music-score" term="web-music-score"/>
@@ -96,7 +96,7 @@ and changes to make things more future compatible.</p>
 <p>Versions 6.2.x and earlier are not maintained.</p>
 ]]></content>
         <author>
-            <name>Stefan B.</name>
+            <name>Stefan</name>
         </author>
         <category label="web-music-score-website" term="web-music-score-website"/>
         <category label="web-music-score" term="web-music-score"/>
@@ -122,7 +122,7 @@ and changes to make things more future compatible.</p>
 </ul>
 ]]></content>
         <author>
-            <name>Stefan B.</name>
+            <name>Stefan</name>
         </author>
         <category label="web-music-score-website" term="web-music-score-website"/>
         <category label="web-music-score" term="web-music-score"/>
@@ -146,7 +146,7 @@ and changes to make things more future compatible.</p>
 <p>Introduced changes to support multiple versions in the future.</p>
 ]]></content>
         <author>
-            <name>Stefan B.</name>
+            <name>Stefan</name>
         </author>
         <category label="web-music-score-website" term="web-music-score-website"/>
         <category label="web-music-score" term="web-music-score"/>
@@ -161,7 +161,7 @@ and changes to make things more future compatible.</p>
 published together with WebMusicScore stable version 6.0.0.</p>
 ]]></content>
         <author>
-            <name>Stefan B.</name>
+            <name>Stefan</name>
         </author>
         <category label="web-music-score-website" term="web-music-score-website"/>
         <category label="web-music-score" term="web-music-score"/>
@@ -176,7 +176,7 @@ published together with WebMusicScore stable version 6.0.0.</p>
 <p>Hope I get everything up and running soon!</p>
 ]]></content>
         <author>
-            <name>Stefan B.</name>
+            <name>Stefan</name>
         </author>
         <category label="web-music-score-website" term="web-music-score-website"/>
     </entry>
