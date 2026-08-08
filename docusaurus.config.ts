@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Web Music Score',
+  title: 'WebMusicScore',
   tagline: 'A music score component for the web.',
   favicon: 'img/favicon.ico',
 
@@ -97,9 +97,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Web Music Score',
+      title: 'WebMusicScore',
       logo: {
-        alt: 'Web Music Score Logo',
+        alt: 'WebMusicScore',
         src: 'img/logo.png',
       },
       items: [

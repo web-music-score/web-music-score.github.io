@@ -39,7 +39,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={siteConfig.title}
-      description="Web Music Score is a TypeScript/JavaScript library for rendering and playing music notation directly in the browser.">
+      description="WebMusicScore is a TypeScript/JavaScript library for rendering and playing music notation directly in the browser.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
