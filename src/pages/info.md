@@ -3,14 +3,13 @@ import { DonateKoFi } from "@site/src/Components/Donate";
 
 # Info
 
-I’m Stefan, the creator of WebMusicScore.
+I’m Stefan, the developer of WebMusicScore. I’m a hobbyist in both music and programming.
 
-I’m a hobbyist in both music and programming. I play classical guitar and have studied music theory independently, more recently with the help of AI.
+This project has evolved over many years, starting as a simple app for playing guitar notes on a staff
+and gradually growing into something more capable.
 
-This project has evolved over many years, starting as a simple app for playing guitar notes on a staff and gradually growing into something more capable.
-
-This is an open-source hobby project developed in my spare time, combining my interests in music and programming. It is
-independently developed and not a very professional commercial project.
+This is an open-source hobby project developed in my spare time, combining my interests in music and programming.
+It is independently developed and is neither professional nor commercial project.
 
 ## Create an Issue
 
