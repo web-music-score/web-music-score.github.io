@@ -13,6 +13,8 @@ Adds extension line to previously added element (label, annotation).
 builder.addExtension(ext => {
     // Add extension length by noteLength * noteCount (1 if omitted).
     ext.notes(noteLength, noteCount?);
+    // Add extension length by number of beats (since v6.5.0).
+    ext.beats(beatCount);
     // Add extension length by number of measures.
     ext.measures(measureCount);
     // Set as extension long as possible.
@@ -28,6 +30,12 @@ Add extension line, length is 2 whole notes:
 
 ```ts
 builder.addExtension(ext => ext.notes("1n", 2));
+```
+
+Add extension line, length is 2 beats (since v6.5.0):
+
+```ts
+builder.addExtension(ext => ext.beats(2));
 ```
 
 Add extension line, length is 3 measures, hidden:
