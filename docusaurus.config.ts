@@ -138,6 +138,14 @@ const config: Config = {
       ],
       copyright: `Copyright © 2023-${new Date().getFullYear()} WebMusicScore`,
     },
+    announcementBar: {
+      id: 'announcement-1',
+      content:
+        'This project is currently inactive. Occasional updates may still happen, but it is not currently a priority.',
+      isCloseable: false,
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
