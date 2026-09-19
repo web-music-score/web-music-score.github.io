@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://web-music-score.github.io/blog</id>
     <title>WebMusicScore Blog</title>
-    <updated>2026-05-23T00:00:00.000Z</updated>
+    <updated>2026-09-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://web-music-score.github.io/blog"/>
     <subtitle>WebMusicScore Blog</subtitle>
     <icon>https://web-music-score.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Update 2026 Week 38]]></title>
+        <id>https://web-music-score.github.io/blog/update-2026-week-38</id>
+        <link href="https://web-music-score.github.io/blog/update-2026-week-38"/>
+        <updated>2026-09-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Finally decided to update, version 7.0.0-pre.0 now published with next tag.]]></summary>
+        <content type="html"><![CDATA[<p>Finally decided to update, version 7.0.0-pre.0 now published with <code>next</code> tag.</p>
+<p>Soon I will update this website with version 7 docs.</p>
+<p>It will be cleaner. Version 6 was development version and had so many changes and
+deprecations. All that is removed from version 7.</p>
+]]></content>
+        <author>
+            <name>Stefan</name>
+        </author>
+        <category label="web-music-score-website" term="web-music-score-website"/>
+        <category label="web-music-score" term="web-music-score"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Update 2026 Week 21]]></title>
         <id>https://web-music-score.github.io/blog/update-2026-week-21</id>

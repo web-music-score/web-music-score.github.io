@@ -4,10 +4,24 @@
         <title>WebMusicScore Blog</title>
         <link>https://web-music-score.github.io/blog</link>
         <description>WebMusicScore Blog</description>
-        <lastBuildDate>Sat, 23 May 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 19 Sep 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Update 2026 Week 38]]></title>
+            <link>https://web-music-score.github.io/blog/update-2026-week-38</link>
+            <guid>https://web-music-score.github.io/blog/update-2026-week-38</guid>
+            <pubDate>Sat, 19 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Finally decided to update, version 7.0.0-pre.0 now published with next tag.]]></description>
+            <content:encoded><![CDATA[<p>Finally decided to update, version 7.0.0-pre.0 now published with <code>next</code> tag.</p>
+<p>Soon I will update this website with version 7 docs.</p>
+<p>It will be cleaner. Version 6 was development version and had so many changes and
+deprecations. All that is removed from version 7.</p>
+]]></content:encoded>
+            <category>web-music-score-website</category>
+            <category>web-music-score</category>
+        </item>
         <item>
             <title><![CDATA[Update 2026 Week 21]]></title>
             <link>https://web-music-score.github.io/blog/update-2026-week-21</link>
