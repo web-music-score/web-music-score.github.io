@@ -15,6 +15,7 @@ There is `"color"` property in
 - `NoteOptions`
 - `RestOptions`
 - `LyricsOptions`
+- `ConnectiveOptions`
 
 ```ts
 // Set document foreground and background color.
