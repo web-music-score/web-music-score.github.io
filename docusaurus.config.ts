@@ -44,6 +44,16 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'v7',
+              path: 'v7',
+            },
+            v6: {
+              label: 'v6',
+            },
+          },
         },
         blog: {
           showReadingTime: true,
@@ -108,6 +118,7 @@ const config: Config = {
         { label: 'Docs', type: 'docSidebar', sidebarId: 'docSidebar', position: 'left' },
         { label: 'Blog', to: '/blog', position: 'left' },
         { label: 'Info', to: '/info', position: 'left' },
+        { type: 'docsVersionDropdown', position: 'right', },
         { label: 'GitHub', href: 'https://github.com/web-music-score', position: 'right', },
         { label: 'NPM Package', href: 'https://npmjs.org/package/web-music-score', position: 'right' },
       ],
