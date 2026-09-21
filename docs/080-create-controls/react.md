@@ -2,30 +2,24 @@
 sidebar_position: 40
 ---
 
-import { DeprecatedRename } from '@site/src/Components/ChangeNote' ;
 import { LiveExample } from "@site/src/Components/LiveExample/v7";
 import ExampleCode from "@site/src/docs/examples/v7/create-controls-react";
 import Hint from "@site/src/Components/Hint";
-import NewFeature from "@site/src/Components/NewFeature";
 
 # JSX/TSX React
 
 ## Use WmsControls
-
-<DeprecatedRename since="6.1.0" from="ReactUI.PlaybackButtons" to="ReactUI.WmsControls" simpleRename />
-
-<NewFeature since="6.3.0"><code>doc.getDefaultPlayer()</code> and <code>player</code> property of <code>WmsControls</code>.</NewFeature>
 
 ```ts
 // Create controls and set document
 const doc = new Score.DocumentBuilder().getDocument();
 <ReactUI.WmsControls doc={doc} />
 
-// Use with default player (since v6.3.0)
+// Use with default player
 const player = doc.getDefaultPlayer();
 <ReactUI.WmsControls player={player} />
 
-// Use with new player (since v6.3.0)
+// Use with new player
 const player = new Score.Player(doc);
 <ReactUI.WmsControls player={player} />
 

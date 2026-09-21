@@ -2,7 +2,6 @@
 sidebar_position: 30
 ---
 
-import { DeprecatedRename } from '@site/src/Components/ChangeNote' ;
 import { LiveExample } from "@site/src/Components/LiveExample/v7";
 import ExampleCode from "@site/src/docs/examples/v7/create-view-react";
 import Hint from "@site/src/Components/Hint";
@@ -12,16 +11,10 @@ import Warn from "@site/src/Components/Warn";
 
 ## Use WmsView
 
-<DeprecatedRename since="6.1.0" from="ReactUI.MusicScoreView" to="ReactUI.WmsView" simpleRename />
-
 ```ts
 // Create view and set document
 const doc = new Score.DocumentBuilder().getDocument();
 <ReactUI.WmsView doc={doc} />
-
-// Deprecated (see Paint section): create view with paint
-const paint = new Score.Paint();
-<ReactUI.WmsView doc={doc} paint={paint} />
 
 // Create view and set zoom (optional)
 <ReactUI.WmsView doc={doc} zoom="1.5" />

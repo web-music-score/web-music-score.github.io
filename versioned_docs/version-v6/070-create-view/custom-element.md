@@ -18,7 +18,7 @@ import Warn from "@site/src/Components/Warn";
 <!-- Add view in HTML -->
 <wms-view id="viewId"></wms-view>
 
-<!-- Add view with zoom (optional) ->
+<!-- Add view with zoom (optional) -->
 <wms-view id="viewId" zoom="1.5"></wms-view>
 
 <!-- Add view with staff size, the distance between bottom and top staff lines (optional) -->
