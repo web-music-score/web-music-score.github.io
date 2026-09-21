@@ -2,29 +2,15 @@
 sidebar_position: 40
 ---
 
-import { WmsVersion } from "@site/src/version";
-
 # Install
 
 ## Latest
 
-Install latest stable release:
+Install latest stable release for version 6:
 
 ```bash
-npm install web-music-score
+npm install web-music-score@6
 ```
-
-## Pre-release
-
-Install latest pre-release:
-
-```bash
-npm install web-music-score@next
-```
-
-## This Website Runs On
-
-This website runs on <WmsVersion />.
 
 ## React Peer Dependency
 
