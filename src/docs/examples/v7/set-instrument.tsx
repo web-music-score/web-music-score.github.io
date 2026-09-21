@@ -17,7 +17,7 @@ function ExampleCode() {
         <br />
         <ReactUI.WmsView doc={doc} />
         <br />
-        <p><b>Default instrument is:</b> "{Audio.getCurrentInstrument()}"</p>
+        <p><b>Default instrument is:</b> "{Audio.getDefaultInstrument()}"</p>
         <p><b>Available instruments:</b> {Audio.getInstrumentList().map(s => '"' + s + '"').join(", ")}</p>
     </div>;
 }`;
