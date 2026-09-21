@@ -2,8 +2,8 @@
 sidebar_position: 80
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/add-tempo";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/add-tempo";
 
 # Add Tempo
 

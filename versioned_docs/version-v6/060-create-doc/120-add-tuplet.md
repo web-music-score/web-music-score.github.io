@@ -2,7 +2,7 @@
 sidebar_position: 120
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
+import { LiveExample } from "@site/src/Components/LiveExample/v6";
 import ExampleCode from "@site/src/docs/examples/v6/add-tuplet";
 import Hint from "@site/src/Components/Hint";
 

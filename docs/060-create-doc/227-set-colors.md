@@ -2,8 +2,8 @@
 sidebar_position: 227
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/set-colors";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/set-colors";
 
 # Set Colors
 

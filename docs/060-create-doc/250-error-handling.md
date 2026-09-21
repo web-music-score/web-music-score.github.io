@@ -2,8 +2,8 @@
 sidebar_position: 250
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/error-handling";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/error-handling";
 
 # Error Handling
 

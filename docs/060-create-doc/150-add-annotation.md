@@ -2,8 +2,8 @@
 sidebar_position: 150
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/add-annotation";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/add-annotation";
 import Hint from "@site/src/Components/Hint";
 
 # Add Annotation

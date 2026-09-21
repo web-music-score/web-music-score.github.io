@@ -2,8 +2,8 @@
 sidebar_position: 10
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/build-doc";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/build-doc";
 import Hint from "@site/src/Components/Hint";
 
 # Build Document

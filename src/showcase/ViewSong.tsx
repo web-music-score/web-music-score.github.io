@@ -1,8 +1,8 @@
 import BrowserOnly from "@docusaurus/BrowserOnly";
-import { getLibInfo } from "web-music-score-v6/core";
-import { setDefaultInstrument } from "web-music-score-v6/audio";
-import { WmsView, WmsControls } from "web-music-score-v6/react-ui";
-import { MDocument } from "web-music-score-v6/score";
+import { getLibInfo } from "web-music-score-v7/core";
+import { setDefaultInstrument } from "web-music-score-v7/audio";
+import { WmsView, WmsControls } from "web-music-score-v7/react-ui";
+import { MDocument } from "web-music-score-v7/score";
 
 export default function ViewSong({ doc }: { doc: MDocument }) {
     

@@ -3,8 +3,8 @@ sidebar_position: 50
 ---
 
 import { DeprecatedRename } from '@site/src/Components/ChangeNote' ;
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/create-controls-progr-play";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/create-controls-progr-play";
 import NewFeature from "@site/src/Components/NewFeature";
 
 # Programmatic Playback

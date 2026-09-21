@@ -2,8 +2,8 @@
 sidebar_position: 200
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/add-connective";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/add-connective";
 
 # Add Connective
 

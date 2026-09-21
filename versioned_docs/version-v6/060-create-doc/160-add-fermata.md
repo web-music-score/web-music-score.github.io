@@ -4,7 +4,7 @@ sidebar_position: 160
 
 import { ChangeNote } from '@site/src/Components/ChangeNote' ;
 import Hint from "@site/src/Components/Hint";
-import { LiveExample } from "@site/src/Components/LiveExample";
+import { LiveExample } from "@site/src/Components/LiveExample/v6";
 import ExampleCode from "@site/src/docs/examples/v6/add-fermata";
 
 # Add Fermata

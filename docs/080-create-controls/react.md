@@ -3,8 +3,8 @@ sidebar_position: 40
 ---
 
 import { DeprecatedRename } from '@site/src/Components/ChangeNote' ;
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/create-controls-react";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/create-controls-react";
 import Hint from "@site/src/Components/Hint";
 import NewFeature from "@site/src/Components/NewFeature";
 

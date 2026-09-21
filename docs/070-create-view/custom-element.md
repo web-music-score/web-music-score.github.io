@@ -3,8 +3,8 @@ sidebar_position: 30
 ---
 
 import NewFeature from "@site/src/Components/NewFeature";
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/create-view-custom-el";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/create-view-custom-el";
 import Hint from "@site/src/Components/Hint";
 import Warn from "@site/src/Components/Warn";
 

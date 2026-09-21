@@ -2,8 +2,8 @@
 sidebar_position: 220
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/element-pos";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/element-pos";
 
 # Element Position
 

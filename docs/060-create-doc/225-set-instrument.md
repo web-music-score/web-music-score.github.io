@@ -2,8 +2,8 @@
 sidebar_position: 225
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/set-instrument";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/set-instrument";
 import Hint from "@site/src/Components/Hint";
 
 # Set Instrument

@@ -2,8 +2,8 @@
 sidebar_position: 40
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/add-header";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/add-header";
 
 # Add Document Header
 

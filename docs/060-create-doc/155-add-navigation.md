@@ -2,8 +2,8 @@
 sidebar_position: 155
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
-import ExampleCode from "@site/src/docs/examples/v6/add-navigation";
+import { LiveExample } from "@site/src/Components/LiveExample/v7";
+import ExampleCode from "@site/src/docs/examples/v7/add-navigation";
 import Hint from "@site/src/Components/Hint";
 
 # Add Navigation

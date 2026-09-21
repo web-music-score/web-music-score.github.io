@@ -2,7 +2,7 @@
 sidebar_position: 30
 ---
 
-import { LiveExample } from "@site/src/Components/LiveExample";
+import { LiveExample } from "@site/src/Components/LiveExample/v6";
 import ExampleCode from "@site/src/docs/examples/v6/add-measures-rows";
 
 # Add Measures And Rows

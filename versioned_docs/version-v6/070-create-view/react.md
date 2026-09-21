@@ -3,7 +3,7 @@ sidebar_position: 30
 ---
 
 import { DeprecatedRename } from '@site/src/Components/ChangeNote' ;
-import { LiveExample } from "@site/src/Components/LiveExample";
+import { LiveExample } from "@site/src/Components/LiveExample/v6";
 import ExampleCode from "@site/src/docs/examples/v6/create-view-react";
 import Hint from "@site/src/Components/Hint";
 import Warn from "@site/src/Components/Warn";
