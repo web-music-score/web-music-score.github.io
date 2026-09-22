@@ -11,10 +11,10 @@ function ExampleCode() {
         .addStaffGroup("grp3", 1, "below")
         .addStaffGroup("grp4", "staff2", "both")
 
-        .addNote(0, "C4", "4n").addLabelTo("grp1", "note", "C4")
-        .addNote(0, "E4", "4n").addLabelTo("grp2", "note", "E4")
-        .addNote(0, "G4", "4n").addLabelTo("grp3", "note", "G4")
-        .addNote(0, "C4", "4n").addLabelTo("grp4", "note", "C4")
+        .addNote(0, "C4", "4n").addAnnotationTo("grp1", "fermata")
+        .addNote(0, "E4", "4n").addAnnotationTo("grp2", "fermata")
+        .addNote(0, "G4", "4n").addAnnotationTo("grp3", "fermata")
+        .addNote(0, "C4", "4n").addAnnotationTo("grp4", "fermata")
 
         .getDocument();
 

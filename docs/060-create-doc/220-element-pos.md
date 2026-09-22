@@ -12,22 +12,21 @@ import ExampleCode from "@site/src/docs/examples/v7/element-pos";
 Add a staff group that contains element positioning information.
 
 ```ts
-builder.addStaffGroup(groupName, staffTabOrGroup, verticalPosition?);
+builder.addStaffGroup(groupName, staffTarget, verticalPosition?);
 ```
 
 Arguments:
 
-`groupName`
+`groupName` is the name of group, e.g. `"grp1"`
 
-Name of the group, e.g. `"grp1"`
+`staffTarget` tells where this element will be added to, and it can be:
 
-`staffTabOrGroup`
+- Staff/tab id.
+- Staff/tab/group name.
+- Array of above ids or names.
 
-Explained above.
+`verticalPosition` (optional) can be:
 
-`verticalPosition` (optional)
-
-Element position can be
 - `"above"`: above staff/tab.
 - `"below"`: below staff/tab.
 - `"both"`: both above and below staff/tab.
@@ -64,13 +63,13 @@ There are alternative functions to add elements.
 | `addLyrics`     | `addLyricsTo`     |
 | `addAnnotation` | `addAnnotationTo` |
 
-These alternative functions containe extra first argument: `staffTabOrGroup`.
+These alternative functions containe extra first argument: `staffTarget`.
 
-`staffTabOrGroup` tells where this element will be added to, and it can be:
+`staffTarget` tells where this element will be added to, and it can be:
 
-1. Staff/tab id.
-2. Staff/tab/group name.
-3. Array of above ids or names.
+- Staff/tab id.
+- Staff/tab/group name.
+- Array of above ids or names.
 
 ## Examples
 
@@ -86,7 +85,7 @@ Add annotation to top two staves/tabs (id 0 and 1).
 builder.addAnnotationTo([0, 1], "pp");
 ```
 
-Add annotation to a named staff, tab or group.
+Add annotation to a named staff group.
 
 ```ts
 builder.addAnnotationTo("staff1", "f");
