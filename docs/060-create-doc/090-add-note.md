@@ -51,10 +51,9 @@ Arguments:
 ```ts
 {
     stem: "up" | "down" | "auto", // stem direction
-    staccato: boolean,            // show and play in staccato
     diamond: boolean,             // show diamond note head
-    arpeggio: "up" | "down",      // show and play in arpeggio
-    string: StringNumber          // for tab: string to show fret number of this note on
+    arpeggio: "up" | "down",      // show curly arrow and play in arpeggio
+    string: StringNumber          // string number for tab
 }
 ```
 
