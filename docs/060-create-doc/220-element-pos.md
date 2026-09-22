@@ -62,10 +62,7 @@ There are alternative functions to add elements.
 | Function        | Alternative       |
 |-----------------|-------------------|
 | `addLyrics`     | `addLyricsTo`     |
-| `addFermata`    | `addFermataTo`    |
-| `addNavigation` | `addNavigationTo` |
 | `addAnnotation` | `addAnnotationTo` |
-| `addLabel`      | `addLabelTo`      |
 
 These alternative functions containe extra first argument: `staffTabOrGroup`.
 
