@@ -50,8 +50,8 @@ builder.addAnnotation("toCoda");
 builder.addAnnotation("Segno");
 builder.addAnnotation("Fine");
 builder.addAnnotation("startRepeat");
-builder.addAnnotation("endRepeat", { repeatCount: 2 });
-builder.addAnnotation("ending", { endingPassages: [1, 2]});
+builder.addAnnotation("endRepeat", { playCount: 2 });
+builder.addAnnotation("ending", { playNumbers: [1, 2]});
 ```
 
 ## Version 6.3.x and Earlier
