@@ -7,8 +7,6 @@ import ExampleCode from "@site/src/docs/examples/v7/error-handling";
 
 # Error Handling
 
-## Version 6.4.x
-
 You can set error handler for documentation builder.
 
 ```ts
@@ -41,21 +39,6 @@ try {
 catch (e) {
     if(e instanceof Core.MusicError) {
         // Catch all errors.
-    }
-}
-```
-
-## Version 6.3.x and Earlier
-
-Catch errors.
-
-```ts
-try {
-    // Do your music stuff here.
-}
-catch (e) {
-    if(e instanceof Core.MusicError) {
-        // Catch all music errors.
     }
 }
 ```
