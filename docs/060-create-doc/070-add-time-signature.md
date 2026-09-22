@@ -39,12 +39,10 @@ builder.setTimeSignature("5/8", "2-3");
 builder.setTimeSignature("7/8", "3-2-2");
 ```
 
-<NewFeature since="6.3.0">Common time signature "`C`".</NewFeature>
-<NewFeature since="6.4.0">Cut time signature "`C|`".</NewFeature>
-
+Common and cut time signatures.
 ```ts
-builder.setTimeSignature("C");  // Since 6.3.0
-builder.setTimeSignature("C|"); // Since 6.4.0
+builder.setTimeSignature("C");
+builder.setTimeSignature("C|");
 ```
 
 ## Live Example
