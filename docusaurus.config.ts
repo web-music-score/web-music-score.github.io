@@ -49,9 +49,12 @@ const config: Config = {
             current: {
               label: 'v7',
               path: 'v7',
+              banner: 'none',
             },
             v6: {
               label: 'v6',
+              path: 'v6',
+              banner: 'none',
             },
           },
         },
