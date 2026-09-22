@@ -74,23 +74,23 @@ These alternative functions containe extra first argument: `staffTabOrGroup`.
 
 ## Examples
 
-Add element to top staff/tab (id 0).
+Add annotation to top staff/tab (id 0).
 
 ```ts
-builder.addLabelTo(0, "chord", "Am");
+builder.addAnnotationTo(0, "p");
 ```
 
-Add label to top two staves/tabs (id 0 and 1).
+Add annotation to top two staves/tabs (id 0 and 1).
 
 ```ts
-builder.addLabelTo([0, 1], "chord", "Am");
+builder.addAnnotationTo([0, 1], "pp");
 ```
 
-Add label to a named staff, tab or group.
+Add annotation to a named staff, tab or group.
 
 ```ts
-builder.addLabelTo("staff1", "chord", "Am");
-builder.addLabelTo("grp1", "chord", "Am");
+builder.addAnnotationTo("staff1", "f");
+builder.addAnnotationTo("grp1", "ff");
 ```
 
 ## Live Example
