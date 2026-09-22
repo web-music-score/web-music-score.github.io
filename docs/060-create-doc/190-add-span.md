@@ -34,7 +34,7 @@ Add span, length is 2 whole notes:
 builder.addSpan("<", span => span.notes("1n", 2));
 ```
 
-Add span, length is 2 beats (since v6.5.0):
+Add span, length is 2 beats:
 
 ```ts
 builder.addSpan("<", span => span.beats(2));

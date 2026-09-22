@@ -4,7 +4,6 @@ sidebar_position: 40
 
 import { LiveExample } from "@site/src/Components/LiveExample/v7";
 import ExampleCode from "@site/src/docs/examples/v7/create-controls-plain-js";
-import NewFeature from "@site/src/Components/NewFeature";
 import Hint from "@site/src/Components/Hint";
 
 # Plain JavaScript

@@ -4,7 +4,6 @@ sidebar_position: 70
 
 import { LiveExample } from "@site/src/Components/LiveExample/v7";
 import ExampleCode from "@site/src/docs/examples/v7/add-time-signature";
-import NewFeature from "@site/src/Components/NewFeature";
 
 # Add Time Signature
 
