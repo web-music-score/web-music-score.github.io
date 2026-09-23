@@ -116,11 +116,12 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
+        { label: 'Features', to: '/features', position: 'left' },
         { label: 'Showcase', type: 'docSidebar', sidebarId: 'showcaseSidebar', docsPluginId: 'showcase', position: 'left' },
         { label: 'Quick Start', type: 'docSidebar', sidebarId: 'quickStartSidebar', docsPluginId: 'quick-start', position: 'left' },
         { label: 'Docs', type: 'docSidebar', sidebarId: 'docSidebar', position: 'left' },
-        { label: 'Blog', to: '/blog', position: 'left' },
         { label: 'Info', to: '/info', position: 'left' },
+        { label: 'Blog', to: '/blog', position: 'left' },
         { type: 'docsVersionDropdown', position: 'right', },
         { label: 'GitHub', href: 'https://github.com/web-music-score', position: 'right', },
         { label: 'NPM Package', href: 'https://npmjs.org/package/web-music-score', position: 'right' },
