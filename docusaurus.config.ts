@@ -134,7 +134,7 @@ const config: Config = {
           title: 'Learn',
           items: [
             { label: 'Quick Start', to: '/quick-start', },
-            { label: 'Docs', to: '/docs', },
+            { label: 'Docs For Version 7', to: '/docs/v7', },
           ],
         },
         {
