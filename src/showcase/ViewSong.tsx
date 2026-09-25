@@ -1,22 +1,43 @@
 import BrowserOnly from "@docusaurus/BrowserOnly";
-import { getLibInfo } from "web-music-score-v7/core";
-import { setDefaultInstrument } from "web-music-score-v7/audio";
-import { WmsView, WmsControls } from "web-music-score-v7/react-ui";
-import { MDocument } from "web-music-score-v7/score";
 
-export default function ViewSong({ doc }: { doc: MDocument }) {
-    
-    // Play with "Acoustic Grand Piano"
-    setDefaultInstrument(0);
+import * as Core from "web-music-score-v7/core";
+import * as Audio from "web-music-score-v7/audio";
+import * as ReactUI from "web-music-score-v7/react-ui";
+import * as Score from "web-music-score-v7/score";
+import * as Pieces from "web-music-score-v7/pieces";
+
+export default function ViewSong(props: { songName: string }) {
 
     return <BrowserOnly>
         {() => {
+            let doc: Score.MDocument;
+
+            switch (props.songName) {
+                case "AndanteByDiabelli":
+                    doc = Pieces.createAndanteByDiabelli();
+                    break;
+                case "CanonInD":
+                    doc = Pieces.createCanonInD();
+                    break;
+                case "FrereJacques":
+                    doc = Pieces.createFrereJacques();
+                    break;
+                case "Greensleeves":
+                    doc = Pieces.createGreensleeves();
+                    break;
+                default:
+                    doc = new Score.DocumentBuilder().getDocument();
+                    break;
+            }
+
+            Audio.setDefaultInstrument(0); // Play with "Acoustic Grand Piano"
+
             return <>
-                <WmsControls doc={doc} playPauseStop />
+                <ReactUI.WmsControls doc={doc} playPauseStop />
                 <br />
-                <WmsView doc={doc} />
+                <ReactUI.WmsView doc={doc} />
                 <br />
-                <p>ℹ️ Runs on <code>{getLibInfo()}</code>.</p>
+                <p>ℹ️ Runs on <code>{Core.getLibInfo()}</code>.</p>
             </>
         }}
     </BrowserOnly>;
