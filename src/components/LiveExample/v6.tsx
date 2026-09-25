@@ -3,26 +3,47 @@ import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { CodeEntry, getCodeEntries } from "./code-entry";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 
-import * as Core from "web-music-score-v6/core";
-import * as Audio from "web-music-score-v6/audio";
-import * as AudioCG from "web-music-score-v6/audio-cg";
-import * as AudioSynth from "web-music-score-v6/audio-synth";
-import * as Score from "web-music-score-v6/score";
-import * as Theory from "web-music-score-v6/theory";
-import * as Pieces from "web-music-score-v6/pieces";
-import * as ReactUI from "web-music-score-v6/react-ui";
+async function loadWebMusicScore6() {
+    const [Core, Audio, AudioCG, AudioSynth, ReactUI, Theory, Score, Pieces] = await Promise.all([
+        import('web-music-score-v6/core'),
+        import('web-music-score-v6/audio'),
+        import('web-music-score-v6/audio-cg'),
+        import('web-music-score-v6/audio-synth'),
+        import('web-music-score-v6/react-ui'),
+        import('web-music-score-v6/theory'),
+        import('web-music-score-v6/score'),
+        import('web-music-score-v6/pieces'),
+    ]);
+
+    return { Core, Audio, AudioCG, AudioSynth, ReactUI, Theory, Score, Pieces };
+}
 
 function SingleLiveExample(props: { entry: CodeEntry, onEdit?: (newCode: string) => void }) {
     const [entryCode, setEntryCode] = React.useState(props.entry.code);
 
-    const onEdit = (newCode: string) => {
-        if (props.onEdit) props.onEdit(newCode);
-        setEntryCode(newCode);
-        Audio.stop();
-    };
-
     return <BrowserOnly>
         {() => {
+            const [modules, setModules] = React.useState<Awaited<ReturnType<typeof loadWebMusicScore6>> | null>(null);
+
+            React.useEffect(() => {
+                loadWebMusicScore6().then(modules => {
+                    modules.Audio.stop();
+                    setModules(modules);
+                });
+            }, []);
+
+            if (!modules) {
+                return <div>Loading...</div>;
+            }
+
+            const { Core, Audio, AudioCG, AudioSynth, ReactUI, Score, Theory, Pieces } = modules;
+
+            const onEdit = (newCode: string) => {
+                if (props.onEdit) props.onEdit(newCode);
+                setEntryCode(newCode);
+                Audio.stop();
+            };
+
             return <>
                 <LiveProvider language="jsx" code={entryCode} scope={{ Core, Audio, AudioCG, AudioSynth, Score, Theory, Pieces, ReactUI, React }} >
                     <LiveEditor onChange={onEdit} />
