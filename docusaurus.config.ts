@@ -131,10 +131,16 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Learn',
+          title: 'Quick Start',
           items: [
             { label: 'Quick Start', to: '/quick-start', },
-            { label: 'Docs For Version 7', to: '/docs/v7', },
+          ],
+        },
+        {
+          title: 'Docs',
+          items: [
+            { label: '7.x', to: '/docs/v7', },
+            { label: '6.x', to: '/docs/v6', },
           ],
         },
         {
