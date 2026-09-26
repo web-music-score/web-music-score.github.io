@@ -4,12 +4,12 @@ sidebar_position: 40
 
 # Install
 
-## Pre-release
+## Latest
 
-Install pre-release for version 7:
+Install version 7:
 
 ```bash
-npm install web-music-score@next
+npm install web-music-score@7
 ```
 
 ## React Peer Dependency
