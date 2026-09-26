@@ -8,14 +8,9 @@ import Hint from "@site/src/Components/Hint";
 
 # Add Navigation
 
-## Version 6.4.x
+## Since Version 6.4.x
 
-ℹ️ Available currently in 6.4.0-pre-release.
-
-Navigation will be part of annotation. See [Add Annotation](./add-annotation).
-
-Support for `addNavigation()` function will remain because navigation
-is meaningful annotation kind.
+Navigation is part of annotation. See [Add Annotation](./add-annotation).
 
 ## Version 6.3.x and Earlier
 
