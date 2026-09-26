@@ -99,10 +99,6 @@ const config: Config = {
     ],
   ],
 
-  clientModules: [
-    require.resolve('./src/client-modules/init-web-music-score.ts'),
-  ],
-
   themeConfig: {
     // TODO: Replace with your project's social card
     image: 'img/wms-social-card.jpg',
