@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["5522"],{6666(e){e.exports=JSON.parse('{"authors":[{"name":"Stefan","title":"Creator of WebMusicScore","imageURL":"/img/authors/stefanb.png","key":"stefanb","page":null,"count":11}]}')}}]);

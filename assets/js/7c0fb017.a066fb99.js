@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["2794"],{6822(e){e.exports=JSON.parse('{"metadata":{"permalink":"/news","page":1,"postsPerPage":10,"totalPages":2,"totalCount":11,"nextPage":"/news/page/2","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
