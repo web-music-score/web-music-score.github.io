@@ -1,0 +1,20 @@
+"use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["2541"],{3996(e,n,t){t.r(n),t.d(n,{metadata:()=>r,default:()=>h,frontMatter:()=>o,contentTitle:()=>c,toc:()=>u,assets:()=>l});var r=JSON.parse('{"id":"create-doc/use-repeat","title":"Use Repeat","description":"You can repeat builder actions given number of times using repeat function.","source":"@site/docs/060-create-doc/210-use-repeat.md","sourceDirName":"060-create-doc","slug":"/create-doc/use-repeat","permalink":"/docs/v7/create-doc/use-repeat","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":210,"frontMatter":{"sidebar_position":210},"sidebar":"docSidebar","previous":{"title":"Add Connective","permalink":"/docs/v7/create-doc/add-connective"},"next":{"title":"Element Position","permalink":"/docs/v7/create-doc/element-pos"}}'),s=t(4848),a=t(8453),i=t(7282);let d=`
+function ExampleCode() {
+    const doc = new Score.DocumentBuilder()
+        .repeat(2, b1 => {
+            b1.repeat(3, b2 => {
+            b1.addMeasure();
+                b2.addNote(0, "C4", "8n");
+                b2.addNote(0, "E4", "8n");
+                b2.addRest(0, "4n");
+            })
+            b1.endRow();
+        })
+        .getDocument();
+
+    return <div>
+        <ReactUI.WmsControls doc={doc} playStopPause />
+        <br />
+        <ReactUI.WmsView doc={doc} />
+    </div>;
+}`,o={sidebar_position:210},c="Use Repeat",l={},u=[{value:"Live Example",id:"live-example",level:2}];function p(e){let n={code:"code",h1:"h1",h2:"h2",header:"header",p:"p",pre:"pre",...(0,a.R)(),...e.components};return(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)(n.header,{children:(0,s.jsx)(n.h1,{id:"use-repeat",children:"Use Repeat"})}),"\n",(0,s.jsxs)(n.p,{children:["You can repeat builder actions given number of times using ",(0,s.jsx)(n.code,{children:"repeat"})," function."]}),"\n",(0,s.jsx)(n.pre,{children:(0,s.jsx)(n.code,{className:"language-ts",children:'builder.repeat(2, b => {\r\n    b.addNote(0, "C4", "8n");\r\n    b.addNote(0, "E4", "8n");\r\n    b.addRest(0, "4n");\r\n});\n'})}),"\n",(0,s.jsx)(n.h2,{id:"live-example",children:"Live Example"}),"\n",(0,s.jsx)(i.r,{code:d})]})}function h(e={}){let{wrapper:n}={...(0,a.R)(),...e.components};return n?(0,s.jsx)(n,{...e,children:(0,s.jsx)(p,{...e})}):p(e)}},7282(e,n,t){t.d(n,{r:()=>u});var r,s=t(4848),a=t(6540),i=t(923),d=t(85),o=t(9526);async function c(){let[e,n,r,s,a,i]=await Promise.all([t.e("8040").then(t.bind(t,8923)),Promise.all([t.e("8040"),t.e("4818"),t.e("9171")]).then(t.bind(t,6462)),Promise.all([t.e("8040"),t.e("4818"),t.e("9171"),t.e("5099"),t.e("5851")]).then(t.bind(t,6838)),Promise.all([t.e("8040"),t.e("4818")]).then(t.bind(t,8793)),Promise.all([t.e("8040"),t.e("4818"),t.e("9171"),t.e("5099")]).then(t.bind(t,486)),Promise.all([t.e("8040"),t.e("4818"),t.e("9171"),t.e("5099"),t.e("80")]).then(t.bind(t,2515))]);return{Core:e,Audio:n,ReactUI:r,Theory:s,Score:a,Pieces:i}}function l(e){let[n,d]=a.useState(e.entry.code);return(0,s.jsx)(o.A,{children:()=>{let[o,l]=a.useState(null);if(a.useEffect(()=>{c().then(e=>{l(e)})},[]),!o)return(0,s.jsx)("div",{children:"Loading..."});let{Core:u,Audio:p,ReactUI:h,Score:m,Theory:b,Pieces:x}=o;return(0,s.jsxs)(s.Fragment,{children:[(0,s.jsxs)(i.Q,{language:"jsx",code:n,scope:{Core:u,Audio:p,Score:m,Theory:b,Pieces:x,ReactUI:h,React:r||(r=t.t(a,2))},children:[(0,s.jsx)(i.w,{onChange:n=>{e.onEdit&&e.onEdit(n),d(n),p.stop()}}),(0,s.jsx)(i.p1,{}),(0,s.jsx)("br",{}),(0,s.jsx)(i.pA,{})]}),(0,s.jsx)("br",{}),(0,s.jsxs)("p",{children:["\u2139\uFE0F Runs on ",(0,s.jsx)("code",{children:u.getLibInfo()}),"."]})]})}})}function u(e){let[n,t]=a.useState(0),r=(0,d.M)(e.code),i=r[n];return(0,s.jsxs)(s.Fragment,{children:[r.length>1?(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)("select",{value:n,onChange:e=>t(Number(e.target.value)),className:"select",children:r.map((e,n)=>(0,s.jsx)("option",{value:n,children:e.name},n))}),(0,s.jsx)("br",{}),(0,s.jsx)("br",{})]}):null,(0,s.jsx)(l,{entry:i},n)]})}}}]);
