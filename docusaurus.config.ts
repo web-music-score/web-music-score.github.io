@@ -59,6 +59,7 @@ const config: Config = {
           },
         },
         blog: {
+          routeBasePath: 'news',
           showReadingTime: true,
           blogSidebarCount: 'ALL',
           blogSidebarTitle: 'All posts',
@@ -116,8 +117,8 @@ const config: Config = {
         { label: 'Showcase', type: 'docSidebar', sidebarId: 'showcaseSidebar', docsPluginId: 'showcase', position: 'left' },
         { label: 'Quick Start', type: 'docSidebar', sidebarId: 'quickStartSidebar', docsPluginId: 'quick-start', position: 'left' },
         { label: 'Docs', type: 'docSidebar', sidebarId: 'docSidebar', position: 'left' },
+        { label: 'News', to: '/news', position: 'left' },
         { label: 'Info', to: '/info', position: 'left' },
-        { label: 'Blog', to: '/blog', position: 'left' },
         { type: 'docsVersionDropdown', position: 'right', },
         { label: 'GitHub', href: 'https://github.com/web-music-score', position: 'right', },
         { label: 'NPM Package', href: 'https://npmjs.org/package/web-music-score', position: 'right' },
