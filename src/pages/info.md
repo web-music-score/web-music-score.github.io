@@ -11,9 +11,9 @@ and gradually growing into something more capable.
 This is an open-source hobby project developed in my spare time, combining my interests in music and programming.
 It is independently developed and is neither professional nor commercial project.
 
-## Create an Issue
+## Contact
 
-If you encounter a bug or have an idea for a new feature, please consider opening an issue.  
+If you encounter a bug or have an idea for a new feature, please consider opening an issue. 
 
 <p>
 <Link
@@ -21,4 +21,12 @@ If you encounter a bug or have an idea for a new feature, please consider openin
     to="https://github.com/web-music-score/wms/issues/new/choose"
     target="_blank"
 >🐛 Create an Issue</Link>
+</p>
+
+<p>
+<Link
+    className="button button--primary"
+    to="mailto:web-music-score@outlook.com"
+    target="_blank"
+>📧 E-Mail Me</Link>
 </p>
