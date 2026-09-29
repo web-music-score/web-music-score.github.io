@@ -7,49 +7,73 @@ import ExampleCode from "@site/src/docs/examples/v7/add-span";
 
 # Add Span
 
-Span is annotation with length (extension line/hairpin).
+Span is annotation with span in form of extension line or hairpin. It can cover multiple measures.
 
-Function `addSpan()` is very similar to `addAnnotation()`, it only has extra `spanBuilder` arg.
+Function `addSpan()` is very similar to `addAnnotation()`, with the extra `spanBuilder` argument.
+
+See: [Add Annotation](./add-annotation)
+
+There are two functions for adding span:
+
+- `DocumentBuilder.addSpan(kind, spanBuilder, options?)`
+- `DocumentBuilder.addSpan(kind, group, spanBuilder, options?)`
+
+Below are examples of using `spanBuilder` argument.
 
 ```ts
-builder.addSpan("dim.", span => {
-    // Add span length by noteLength * noteCount (1 if omitted).
-    span.notes(noteLength, noteCount?);
-    // Add span length by number of beats.
-    span.beats(beatCount);
-    // Add span length by number of measures.
-    span.measures(measureCount);
-    // Set span length to infinity (as long as possible).
-    span.infinity();
-    // Hide span.
-    span.hide();
-});
+// Add span length by 3 quarter notes.
+builder.addSpan("dim.", span => span.notes("4n", 3));
+
+// Add span length by 3 beats.
+builder.addSpan("dim.", span => span.beats(3));
+
+// Add span length by 3 measures.
+builder.addSpan("dim.", span => span.measures(3));
+
+// Set span length to infinity (as long as possible).
+builder.addSpan("dim.", span => span.infinity());
+
+// Span builder operations can be queued.
+builder.addSpan("dim.", span => span.measures(3).beats(2));
+
+// Create hidden span, length of 3 measures.
+builder.addSpan("dim.", span => span.measures(3).hide());
 ```
 
-## Examples
+💡 Span can be discontinued even if it was set to cover more (e.g. "cresc." will be discontinued by following by "fff").
 
-Add span, length is 2 whole notes:
+
+## Span Examples
+
+### Dynamics Annotation
 
 ```ts
-builder.addSpan("<", span => span.notes("1n", 2));
+builder.addSpan("cresc.", span => span.beats(4));
+builder.addSpan("dim.", span => span.beats(4));
+builder.addSpan("<", span => span.beats(4));
+builder.addSpan(">", span => span.beats(4));
 ```
 
-Add span, length is 2 beats:
+### Tempo Annotation
 
 ```ts
-builder.addSpan("<", span => span.beats(2));
+builder.addSpan("accel.", span => span.beats(4));
+builder.addSpan("rit.", span => span.beats(4));
 ```
 
-Add hidden span, length is 3 measures:
+### Misc Annotation
 
 ```ts
-builder.addSpan("<", span => span.measures(3).hide());
+builder.addSpan("8va", span => span.beats(4));
+builder.addSpan("8vb", span => span.beats(4));
 ```
 
-Add span, length is as long as possible:
+## Span Anchor
+
+Similar to annotation, span will be anchored to previously added note or rest:
 
 ```ts
-builder.addSpan("<", span => span.infinity());
+builder.addNote(0, "C4", "4n").addSpan("<", span => span.measures(2));
 ```
 
 ## Live Example
