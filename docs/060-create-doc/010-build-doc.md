@@ -35,8 +35,6 @@ const doc = new Score.DocumentBuilder()
         .getDocument();
 ```
 
-<Hint>Calling getDocument() sets up some stuff for the document. Call once when finished!</Hint>
-
 <Hint>From now on the `builder` is used as a known thing.</Hint>
 
 ## Live Example
