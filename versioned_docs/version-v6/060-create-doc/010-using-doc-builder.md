@@ -6,9 +6,7 @@ import { LiveExample } from "@site/src/Components/LiveExample/v6";
 import ExampleCode from "@site/src/docs/examples/v6/build-doc";
 import Hint from "@site/src/Components/Hint";
 
-# Build Document
-
-## Using `DocumentBuilder`
+# Using `DocumentBuilder`
 
 ```ts
 // Create document builder.
@@ -35,7 +33,7 @@ const doc = new Score.DocumentBuilder()
         .getDocument();
 ```
 
-<Hint>From now on the `builder` is used as a known thing.</Hint>
+<Hint>In this documentation from now on `builder` is used as a known thing.</Hint>
 
 ## Live Example
 
