@@ -6,15 +6,22 @@ function ExampleCode() {
             { type: "staff", clef: "G", name: "staff2" }
         ])
 
+        .addNote(0, "C4", "4n").addAnnotationTo(0, "fermata")
+        .addNote(0, "E4", "4n").addAnnotationTo(1, "fermata")
+        .addNote(0, "G4", "4n").addAnnotationTo("staff1", "fermata")
+        .addNote(0, "C4", "4n").addAnnotationTo("staff2", "fermata")
+
+        .addMeasure()
+
         .addStaffGroup("grp1", 0, "auto")
         .addStaffGroup("grp2", "staff1", "above")
         .addStaffGroup("grp3", 1, "below")
         .addStaffGroup("grp4", "staff2", "both")
 
-        .addNote(0, "C4", "4n").addLabelTo("grp1", "note", "C4")
-        .addNote(0, "E4", "4n").addLabelTo("grp2", "note", "E4")
-        .addNote(0, "G4", "4n").addLabelTo("grp3", "note", "G4")
-        .addNote(0, "C4", "4n").addLabelTo("grp4", "note", "C4")
+        .addNote(0, "C4", "4n").addAnnotationTo("grp1", "fermata")
+        .addNote(0, "E4", "4n").addAnnotationTo("grp2", "fermata")
+        .addNote(0, "G4", "4n").addAnnotationTo("grp3", "fermata")
+        .addNote(0, "C4", "4n").addAnnotationTo("grp4", "fermata")
 
         .getDocument();
 
