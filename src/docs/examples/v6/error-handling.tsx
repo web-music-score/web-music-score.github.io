@@ -2,6 +2,7 @@ const code = `
 function ExampleCode() {
     try {
         const doc = new Score.DocumentBuilder()
+            .setErrorHandler((e) => { console.error("Doc build failed:", e); throw e; })
             .addNote(0, "E4", "2n")
             .addNote(0, "E4", "2")  // Error!
             .getDocument();

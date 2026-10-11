@@ -7,32 +7,24 @@ import ExampleCode from "@site/src/docs/examples/v6/error-handling";
 
 # Error Handling
 
+All errors are subclasses of `Core.MusicError`.
+
 ## Version 6.4.x
 
-You can set error handler for documentation builder.
+To set error handler for `DocumentBuilder`:
 
 ```ts
-// throw (default)
+// Throw (default)
 builder.setErrorHandler((e) => { throw e; });
-// log
+// Log
 builder.setErrorHandler((e) => { console.error("Doc build failed:", e); });
-// log and throw
+// Log and throw
 builder.setErrorHandler((e) => { console.error("Doc build failed:", e); throw e; });
 // Silent
 builder.setErrorHandler((e) => { });
 ```
 
-There are separate error classes. They all derive from `Core.MusicError`.
-- `Core.InvalidArgError`
-- `Audio.AudioError`
-- `Score.ScoreError`
-- `Theory.KeySignatureError`
-- `Theory.TimeSignatureError`
-- `Theory.NoteError`
-- `Theory.NoteDurationError`
-- `Theory.ScaleError`
-
-Catch errors.
+To catch errors:
 
 ```ts
 try {
@@ -40,14 +32,14 @@ try {
 }
 catch (e) {
     if(e instanceof Core.MusicError) {
-        // Catch all errors.
+        // Catch all music errors.
     }
 }
 ```
 
 ## Version 6.3.x and Earlier
 
-Catch errors.
+To catch errors.
 
 ```ts
 try {
