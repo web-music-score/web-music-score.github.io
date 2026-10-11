@@ -1,13 +1,25 @@
 "use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["9168"],{7583(e,n,d){d.r(n),d.d(n,{metadata:()=>t,default:()=>p,frontMatter:()=>a,contentTitle:()=>l,toc:()=>h,assets:()=>c});var t=JSON.parse('{"id":"create-doc/add-note","title":"Add Note","description":"Add single note.","source":"@site/versioned_docs/version-v6/060-create-doc/090-add-note.md","sourceDirName":"060-create-doc","slug":"/create-doc/add-note","permalink":"/docs/v6/create-doc/add-note","draft":false,"unlisted":false,"tags":[],"version":"v6","sidebarPosition":90,"frontMatter":{"sidebar_position":90},"sidebar":"docSidebar","previous":{"title":"Add Tempo","permalink":"/docs/v6/create-doc/add-tempo"},"next":{"title":"Add Rest","permalink":"/docs/v6/create-doc/add-rest"}}'),o=d(4848),r=d(8453),s=d(5751);let i=`
 function ExampleCode() {
     const doc = new Score.DocumentBuilder()
+        .setScoreConfiguration("treble")
         .setTimeSignature("3/4")
         .addNote(0, "C4", "4.", { stem: "down" })
         .addNote(0, "E4", "4.", { stem: "up" })
         .addMeasure()
-        .addNote(0, ["G4", "B4", "D5"], "4n", { stem: "auto" })
+        .addNote(0, ["G4", "B4", "D5"], "4n", { stem: "auto", diamond: true })
         .addMeasure()
-        .addChord(0, ["C4", "E4", "G4"], "1n")
+        .addChord(0, ["C4", "E4", "G4"], "2.", { arpeggio: "down" })
+        .endRow()
+
+        .setScoreConfiguration("guitarCombined")
+        .addMeasure()
+        .addNote(0, "E2", "4n", { string: 6 })
+        .addNote(0, "E3", "4n", { string: 4 })
+        .addNote(0, "E4", "4n", { string: 1 })
+        .addMeasure()
+        .addNote(0, ["G3", "B3", "D4"], "4n", { string: [3, 2, 2] })
+        .addMeasure()
+        .addChord(0, ["C3", "E3", "G3"], "2.", { string: [5, 4, 3] })
         .getDocument();
 
     return <div>
