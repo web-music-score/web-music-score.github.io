@@ -8,8 +8,10 @@ I’m Stefan, the developer of WebMusicScore. I’m a hobbyist in both music and
 This project has evolved over many years, starting as a simple app for playing guitar notes on a staff
 and gradually growing into something more capable.
 
-This is an open-source hobby project developed in my spare time, combining my interests in music and programming.
-It is independently developed and is neither professional nor commercial project.
+This is an open-source non-commercial hobby project developed in my spare time.
+
+I know AI is everywhere these days, and this project may seem a little old-fashioned.
+But it is my project, built out of my own interest in music and programming.
 
 ## Contact
 

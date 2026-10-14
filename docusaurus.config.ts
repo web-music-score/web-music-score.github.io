@@ -159,8 +159,7 @@ const config: Config = {
     },
     announcementBar: {
       id: 'announcement-1',
-      content:
-        'This project is currently inactive. Occasional updates may still happen, but it is not currently a priority.',
+      content: 'This project is currently maintained at a low pace. I work on it whenever I can, whether to fix issues or explore new ideas.',
       isCloseable: false,
       backgroundColor: '#fafbfc',
       textColor: '#091E42',
