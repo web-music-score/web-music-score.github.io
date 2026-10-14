@@ -45,6 +45,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          showLastUpdateTime: true,
           lastVersion: 'current',
           versions: {
             current: {
