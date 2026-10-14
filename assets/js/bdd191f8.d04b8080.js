@@ -1,0 +1,20 @@
+"use strict";(self.webpackChunkweb_music_score_org=self.webpackChunkweb_music_score_org||[]).push([["2541"],{3996(e,t,n){n.r(t),n.d(t,{metadata:()=>r,default:()=>h,frontMatter:()=>c,contentTitle:()=>o,toc:()=>u,assets:()=>l});var r=JSON.parse('{"id":"create-doc/use-repeat","title":"Use Repeat","description":"You can repeat builder actions given number of times using repeat function.","source":"@site/docs/060-create-doc/210-use-repeat.md","sourceDirName":"060-create-doc","slug":"/create-doc/use-repeat","permalink":"/docs/v7/create-doc/use-repeat","draft":false,"unlisted":false,"tags":[],"version":"current","lastUpdatedAt":1790002493000,"sidebarPosition":210,"frontMatter":{"sidebar_position":210},"sidebar":"docSidebar","previous":{"title":"Add Connective","permalink":"/docs/v7/create-doc/add-connective"},"next":{"title":"Set Instrument","permalink":"/docs/v7/create-doc/set-instrument"}}'),s=n(4848),a=n(8453),d=n(7282);let i=`
+function ExampleCode() {
+    const doc = new Score.DocumentBuilder()
+        .repeat(2, b1 => {
+            b1.repeat(3, b2 => {
+            b1.addMeasure();
+                b2.addNote(0, "C4", "8n");
+                b2.addNote(0, "E4", "8n");
+                b2.addRest(0, "4n");
+            })
+            b1.endRow();
+        })
+        .getDocument();
+
+    return <div>
+        <ReactUI.WmsControls doc={doc} playStopPause />
+        <br />
+        <ReactUI.WmsView doc={doc} />
+    </div>;
+}`,c={sidebar_position:210},o="Use Repeat",l={},u=[{value:"Live Example",id:"live-example",level:2}];function p(e){let t={code:"code",h1:"h1",h2:"h2",header:"header",p:"p",pre:"pre",...(0,a.R)(),...e.components};return(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)(t.header,{children:(0,s.jsx)(t.h1,{id:"use-repeat",children:"Use Repeat"})}),"\n",(0,s.jsxs)(t.p,{children:["You can repeat builder actions given number of times using ",(0,s.jsx)(t.code,{children:"repeat"})," function."]}),"\n",(0,s.jsx)(t.pre,{children:(0,s.jsx)(t.code,{className:"language-ts",children:'builder.repeat(2, b => {\r\n    b.addNote(0, "C4", "8n");\r\n    b.addNote(0, "E4", "8n");\r\n    b.addRest(0, "4n");\r\n});\n'})}),"\n",(0,s.jsx)(t.h2,{id:"live-example",children:"Live Example"}),"\n",(0,s.jsx)(d.r,{code:i})]})}function h(e={}){let{wrapper:t}={...(0,a.R)(),...e.components};return t?(0,s.jsx)(t,{...e,children:(0,s.jsx)(p,{...e})}):p(e)}},7282(e,t,n){n.d(t,{r:()=>u});var r,s=n(4848),a=n(6540),d=n(923),i=n(85),c=n(9526);async function o(){let[e,t,r,s,a,d]=await Promise.all([n.e("8040").then(n.bind(n,8923)),Promise.all([n.e("8040"),n.e("4818"),n.e("9171")]).then(n.bind(n,6462)),Promise.all([n.e("8040"),n.e("4818"),n.e("9171"),n.e("5099"),n.e("5851")]).then(n.bind(n,6838)),Promise.all([n.e("8040"),n.e("4818")]).then(n.bind(n,8793)),Promise.all([n.e("8040"),n.e("4818"),n.e("9171"),n.e("5099")]).then(n.bind(n,486)),Promise.all([n.e("8040"),n.e("4818"),n.e("9171"),n.e("5099"),n.e("80")]).then(n.bind(n,2515))]);return{Core:e,Audio:t,ReactUI:r,Theory:s,Score:a,Pieces:d}}function l(e){let[t,i]=a.useState(e.entry.code);return(0,s.jsx)(c.A,{children:()=>{let[c,l]=a.useState(null);if(a.useEffect(()=>{o().then(e=>{l(e)})},[]),!c)return(0,s.jsx)("div",{children:"Loading..."});let{Core:u,Audio:p,ReactUI:h,Score:m,Theory:b,Pieces:x}=c;return(0,s.jsxs)(s.Fragment,{children:[(0,s.jsxs)(d.Q,{language:"jsx",code:t,scope:{Core:u,Audio:p,Score:m,Theory:b,Pieces:x,ReactUI:h,React:r||(r=n.t(a,2))},children:[(0,s.jsx)(d.w,{onChange:t=>{e.onEdit&&e.onEdit(t),i(t),p.stop()}}),(0,s.jsx)(d.p1,{}),(0,s.jsx)("br",{}),(0,s.jsx)(d.pA,{})]}),(0,s.jsx)("br",{}),(0,s.jsxs)("p",{children:["\u2139\uFE0F Runs on ",(0,s.jsx)("code",{children:u.getLibInfo()}),"."]})]})}})}function u(e){let[t,n]=a.useState(0),r=(0,i.M)(e.code),d=r[t];return(0,s.jsxs)(s.Fragment,{children:[r.length>1?(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)("select",{value:t,onChange:e=>n(Number(e.target.value)),className:"select",children:r.map((e,t)=>(0,s.jsx)("option",{value:t,children:e.name},t))}),(0,s.jsx)("br",{}),(0,s.jsx)("br",{})]}):null,(0,s.jsx)(l,{entry:d},t)]})}}}]);
