@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb_music_score_website=self.webpackChunkweb_music_score_website||[]).push([["1668"],{6569(e,s,r){r.r(s),r.d(s,{default:()=>w});var c=r(4848);r(6540);var u=r(4164),a=r(4308),t=r(8287),i=r(2831),n=r(1085);function w(e){return(0,c.jsx)(a.e3,{className:(0,u.A)(t.G.wrapper.docsPages),children:(0,c.jsx)(n.A,{children:(0,i.v)(e.route.routes)})})}}}]);
